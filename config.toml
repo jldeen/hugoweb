@@ -1,4 +1,4 @@
-baseurl = "https://xenodochial-jackson-457b82.netlify.app/"  # Include trailing slash
+baseurl = "https://lively-flower-06433c20f.1.azurestaticapps.net"  # Include trailing slash
 title = "Deen of DevOps"
 theme = "hugo-swift"
 author = "Jessica Deen"
