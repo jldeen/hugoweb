@@ -95,7 +95,7 @@ paginate = 9
   #-------------------------------
   # Comment Section (Disqus)
   [params.disqus]
-    disqusShortname = "jldeen"
+    disqusShortname = "development-19"
 
 
 [markup]
