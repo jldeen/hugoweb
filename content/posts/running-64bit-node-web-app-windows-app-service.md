@@ -1,4 +1,5 @@
 +++
+layout = "post"
 author = "jldeen"
 categories = ["Azure", "app service", "windows", "architecture", "64bit"]
 date = 2020-04-03T21:43:00Z
