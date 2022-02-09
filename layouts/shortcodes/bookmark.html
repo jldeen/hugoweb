@@ -1,0 +1,21 @@
+<figure class="kg-card kg-bookmark-card">
+  <a href="{{ .Get "url" }}" class="kg-bookmark-container">
+    <div class="kg-bookmark-content">
+      <div class="kg-bookmark-title">{{ .Get "title" }}</div>
+      <div class="kg-bookmark-description">{{ .Get "description" }}</div>
+      <div class="kg-bookmark-metadata">
+        {{ with .Get "icon" }}<img src="{{ . }}" class="kg-bookmark-icon">{{ end }}
+        {{ with .Get "author" }}<span class="kg-bookmark-author">{{ . }}</span>{{ end }}
+        {{ with .Get "publisher" }}<span class="kg-bookmark-publisher">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+    {{ with .Get "thumbnail" }}
+    <div class="kg-bookmark-thumbnail">
+      <img src="{{ . }}">
+    </div>
+    {{ end }}
+  </a>
+  {{ if .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>

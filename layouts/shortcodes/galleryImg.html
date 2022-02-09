@@ -1,0 +1,8 @@
+
+  <div class="kg-gallery-image">
+    <img src="{{ .Get "src" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
+  </div>
+{{ if mod .Ordinal 3 | eq 2 }}
+</div>
+<div class="kg-gallery-row">
+{{ end }}

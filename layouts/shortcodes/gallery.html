@@ -1,0 +1,10 @@
+<figure class="kg-gallery-card kg-width-wide">
+  <div class="kg-gallery-container">
+    <div class="kg-gallery-row">
+    {{ .Inner }}
+    </div>
+  </div>
+  {{ with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>
