@@ -1,6 +1,0 @@
-[submodule "themes/hugo-swift"]
-	path = themes/hugo-swift
-	url = https://github.com/onweru/hugo-swift-theme.git
-[submodule "themes/casper3"]
-	path = themes/casper3
-	url = https://github.com/jonathanjanssens/hugo-casper3
