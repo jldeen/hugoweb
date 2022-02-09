@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-09-20-at-20.08.41_iokeke.png"
 slug = "azure-devops-dockerfiles-with-multiline-environment-variables-private-repos-and-ssh-keys"
 title = "Azure DevOps: Dockerfiles with multiline environment variables, private repos, and ssh keys"
+layout = "post"
 
 +++
 

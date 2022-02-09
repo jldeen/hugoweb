@@ -8,6 +8,7 @@ image = "../../images/Google_Chromecast_fbbrpn.jpg"
 slug = "chromecast-or-apple-tvs-airplay"
 tags = ["Chrome", "Chromecast", "Google"]
 title = "Review: Chromecast or Apple TV's AirPlay"
+layout = "post"
 
 +++
 

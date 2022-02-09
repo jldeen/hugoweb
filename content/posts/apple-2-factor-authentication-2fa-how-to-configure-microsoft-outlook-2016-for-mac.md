@@ -6,6 +6,7 @@ draft = false
 image = "../../images/2fa_tpijlj.png"
 slug = "apple-2-factor-authentication-2fa-how-to-configure-microsoft-outlook-2016-for-mac"
 title = "Apple 2 Factor Authentication (2FA) & How to configure Microsoft Outlook 2016 for Mac"
+layout = "post"
 
 +++
 

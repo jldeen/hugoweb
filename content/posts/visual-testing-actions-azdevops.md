@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-03-11%20at%202.12.48%20PM.png"
 slug = "visual-testing-actions-azdevops"
 tags = ["azure devops", "devops", "linux", "code", "testing", "github", "github actions"]
 title = "Things to consider when running visual tests in CI/CD pipelines: Azure Devops & GitHub Actions (Part 2)"
+layout = "post"
 
 +++
 

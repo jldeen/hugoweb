@@ -6,6 +6,7 @@ draft = false
 image = "../../images/0x80244019_mqd2s4.png"
 slug = "windows-10-update-error-0x80244019"
 title = "Windows 10 Update Error 0x80244019"
+layout = "post"
 
 +++
 

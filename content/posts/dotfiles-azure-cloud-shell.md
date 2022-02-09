@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-01-15%20at%2019.37.49.png"
 slug = "dotfiles-azure-cloud-shell"
 tags = ["Azure", "terminal", "linux", "powershell", "dotfiles"]
 title = "Azure Cloud Shell + zsh, oh-my-zsh, tmux, and badass terminal!"
+layout = "post"
 
 +++
 

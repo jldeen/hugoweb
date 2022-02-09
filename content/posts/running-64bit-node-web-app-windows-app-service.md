@@ -1,5 +1,4 @@
 +++
-layout = "post"
 author = "jldeen"
 categories = ["Azure", "app service", "windows", "architecture", "64bit"]
 date = 2020-04-03T21:43:00Z
@@ -9,6 +8,7 @@ image = "../../images/x64appservice_wh.png"
 slug = "running-64bit-node-web-app-windows-app-service"
 tags = ["Azure", "app service", "windows", "architecture", "64bit"]
 title = "Running a 64 bit node Web App in Windows Azure App Service"
+layout = "post"
 
 +++
 

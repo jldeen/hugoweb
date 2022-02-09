@@ -7,6 +7,7 @@ draft = false
 slug = "azure-cli-2-0-azure-container-service-for-docker-swarm-deployment-script-part-1"
 tags = ["ACS", "Azure", "Azure Container Service", "Docker", "linux", "ssh"]
 title = "Azure CLI 2.0 - Azure Container Service for Docker Swarm Deployment Script (Part 1)"
+layout = "post"
 
 +++
 

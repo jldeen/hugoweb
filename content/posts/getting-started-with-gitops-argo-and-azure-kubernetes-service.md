@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "getting-started-with-gitops-argo-and-azure-kubernetes-service"
 title = "Getting started with GitOps, Argo, and Azure Kubernetes Service"
+layout = "post"
 
 +++
 

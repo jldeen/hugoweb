@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-09-25-at-19.08.15_w1mvf6.png"
 slug = "ignite2018-container-devops-with-microsoft-azure-the-blog-post"
 title = "Ignite2018: Container DevOps with Microsoft Azure - the blog post!"
+layout = "post"
 
 +++
 

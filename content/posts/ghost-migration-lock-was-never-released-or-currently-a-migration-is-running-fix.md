@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen%20Shot%202019-08-30%20at%2012.45.56%20PM.png"
 slug = "ghost-migration-lock-was-never-released-or-currently-a-migration-is-running-fix"
 title = "Ghost: Migration lock was never released or currently a migration is running (Fix!)"
+layout = "post"
 
 +++
 

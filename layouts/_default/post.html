@@ -72,8 +72,6 @@
 
 </div>
 
-{{ partial "related-posts.html" . }}
-
 {{ if .Site.Params.disqus.disqusShortname }}
   <div class="container">
     <div class="row">
@@ -83,6 +81,8 @@
     </div>
   </div>
 {{ end }}
+
+{{ partial "related-posts.html" . }}
 
 {{ end }}
 

@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "how-to-make-a-bootable-usb-installer-for-windows-from-macos"
 title = "How to make a bootable USB installer for Windows from macOS"
+layout = "post"
 
 +++
 

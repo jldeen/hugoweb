@@ -6,6 +6,7 @@ draft = false
 image = "../../images/226px-Jenkins_logo.svg__adchzg.png"
 slug = "pro-tip-jenkins-and-docker-build-server"
 title = "Pro tip: Jenkins and Docker build server"
+layout = "post"
 
 +++
 

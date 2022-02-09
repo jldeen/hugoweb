@@ -8,6 +8,7 @@ image = "../../images/Windows_PowerShell_1.0_PD_jbuhuf.png"
 slug = "equivalent-linux-tail-command-windows-powershell"
 tags = ["batch", "command", "linux", "powershell", "script", "tail", "windows"]
 title = "Want something equivalent to the Linux Tail command but for Windows? Use PowerShell!"
+layout = "post"
 
 +++
 

@@ -6,6 +6,7 @@ draft = false
 image = "../../images/anatomy_avm_5_jipier.jpg"
 slug = "windows-10-vmware-esxi-and-missing-vmdk-file"
 title = "Windows 10, VMware ESXi, and missing VMDK File?"
+layout = "post"
 
 +++
 

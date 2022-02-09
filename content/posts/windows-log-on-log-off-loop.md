@@ -7,6 +7,7 @@ draft = false
 slug = "windows-log-on-log-off-loop"
 tags = ["Malicious Software", "Security", "Windows 7", "Windows Vista", "Windows XP"]
 title = "Windows Log On Log Off Loop"
+layout = "post"
 
 +++
 

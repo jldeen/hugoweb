@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2018-11-21-at-13.39.59.png"
 slug = "kubernetes-ingress-controllers-and-certificates-the-walkthrough"
 tags = ["k8s", "aks", "helm"]
 title = "Kubernetes Ingress Controllers and Certificates: The Walkthrough"
+layout = "post"
 
 +++
 

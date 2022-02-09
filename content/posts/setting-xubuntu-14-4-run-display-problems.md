@@ -6,6 +6,7 @@ draft = false
 image = "../../images/1402446966_featured_diglh0.png"
 slug = "setting-xubuntu-14-4-run-display-problems"
 title = "Setting up XUbuntu 14.4 and run into display problems?"
+layout = "post"
 
 +++
 

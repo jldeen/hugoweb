@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "how-to-setup-pihole-5-in-docker-with-traefik2-on-synology"
 title = "How to setup Pihole 5 with Traefik2 using Docker Compose on Synology DSM 6"
+layout = "post"
 
 +++
 

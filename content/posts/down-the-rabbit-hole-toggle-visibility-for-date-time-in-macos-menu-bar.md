@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-08-29-at-13.55.01_rudoob.png"
 slug = "down-the-rabbit-hole-toggle-visibility-for-date-time-in-macos-menu-bar"
 title = "Down the rabbit hole: Toggle Visibility for Date/Time in macOS menu bar"
+layout = "post"
 
 +++
 

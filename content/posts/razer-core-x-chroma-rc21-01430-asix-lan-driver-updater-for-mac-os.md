@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "razer-core-x-chroma-rc21-01430-asix-lan-driver-updater-for-mac-os"
 title = "Razer Core X Chroma | RC21-01430 ASIX Lan Driver Updater for MAC OS 12.0 (Monterey)"
+layout = "post"
 
 +++
 

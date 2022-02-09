@@ -6,6 +6,7 @@ draft = false
 image = "../../images/ssh_b7fplb.png"
 slug = "linux-ssh-remote-host-identification-changed"
 title = "Linux: SSH Remote host identification has changed"
+layout = "post"
 
 +++
 

@@ -6,6 +6,7 @@ draft = false
 image = "../../images/rMBP_Late_2013_pmkhj3.jpg"
 slug = "review-apple-macbook-pro-13-retina-late-2013"
 title = "Review: New Apple MacBook Pro 13\" Retina (Late 2013)"
+layout = "post"
 
 +++
 

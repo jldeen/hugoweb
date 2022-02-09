@@ -6,6 +6,7 @@ draft = true
 image = "../../images/Screen%20Shot%202021-04-23%20at%2014.22.30.png"
 slug = "rearchitecting-for-microservices-featuring-windows-containers"
 title = "Rearchitecting for MicroServices: Featuring Windows Containers & Linux Containers"
+layout = "post"
 
 +++
 

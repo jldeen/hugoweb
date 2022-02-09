@@ -6,6 +6,7 @@ draft = false
 image = "../../images/2018-03-02_pnqvgj.png"
 slug = "badass-terminal-wsl-macos-and-ubuntu-dotfiles-update"
 title = "Badass Terminal: WSL, macOS, and Ubuntu dotfiles update!!!"
+layout = "post"
 
 +++
 

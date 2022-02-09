@@ -8,6 +8,7 @@ image = "../../images/Travel-Hacking-Credit-Card_hls4qb.jpg"
 slug = "credit-cards-start-best"
 tags = ["American Express", "Amex", "Capital One", "CapitalOne", "Chase", "credit", "credit cards", "Discover", "Disney", "finance", "suze orman"]
 title = "Credit Cards - Where to start and which one is best?"
+layout = "post"
 
 +++
 

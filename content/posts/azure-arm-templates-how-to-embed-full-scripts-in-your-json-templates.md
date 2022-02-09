@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-09-05-at-11.27.52_cht85n.png"
 slug = "azure-arm-templates-how-to-embed-full-scripts-in-your-json-templates"
 title = "Azure ARM Templates - How to embed full scripts in your JSON templates!"
+layout = "post"
 
 +++
 

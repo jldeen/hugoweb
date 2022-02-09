@@ -8,6 +8,7 @@ image = "../../images/quote-i-always-knew-i-was-going-to-be-rich-i-don-t-think-i
 slug = "financial-independence-important-20s-age"
 tags = ["financial independence", "IRA", "LearnVest", "money", "plannning", "retirement", "spending", "Young Adults"]
 title = "Why Financial Independence is more important to consider in your 20's than any other age"
+layout = "post"
 
 +++
 

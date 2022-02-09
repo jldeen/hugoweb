@@ -6,6 +6,7 @@ draft = false
 image = "../../images/mlovesl_h6qohf.jpg"
 slug = "getting-started-with-powershell-core-and-azurerm-modules-on-ubuntu-and-os-x"
 title = "Getting started with PowerShell Core and AzureRM Modules on Ubuntu and OS X"
+layout = "post"
 
 +++
 

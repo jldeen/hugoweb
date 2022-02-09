@@ -37,13 +37,13 @@ paginate = 9
 
 [params]
   logo = "" # You can add own logo. For example "/images/logo.png".
-  description = "Menca personal blogging theme for HUGO"
+  description = "Jack of all trades, master of none, but still always better than a master of one."
 
   #-------------------------------
   # Author Settings
   [params.author]
     author__name = "Jessica Deen"
-    author__bio = "Jack of all trades, master of none, but still always better than a master of one."
+    author__bio = "Jack of all trades, master of none, though often better than a master of one."
     author__avatar = "../../images/jessica-deen.png"
 
   [[params.social]]
@@ -74,14 +74,14 @@ paginate = 9
   # Hero Settings
   [params.hero]
     hero__title = "Hey, I’m Jessica Deen"
-    hero__description = "Designs, talks, and writes about web, ethics, privacy, and dev. I share design tutorials, free resources and inspiration."
+    hero__description = "I like to write, code, speak, teach, and learn - not typically in that order. Let's learn together."
     hero__image = "../../images/jessica-deen.png"
 
   # Newsletter
   [params.mailchimp]
     mailchimp__identifier = "frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3" # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
     mailchimp__input__text = "Subscribe here"
-    mailchimp__button__text = "Get a new tip"
+    mailchimp__button__text = "Join the mailing list!"
 
 
   #-------------------------------
@@ -95,7 +95,7 @@ paginate = 9
   #-------------------------------
   # Comment Section (Disqus)
   [params.disqus]
-    disqusShortname = "development-19"
+    disqusShortname = "jldeen"
 
 
 [markup]

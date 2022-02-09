@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2016-08-29-at-15.42.44_lvgi1w.png"
 slug = "aws-tools-for-powershell-core-on-linux-and-os-x"
 title = "AWS Tools for PowerShell Core on Linux and OS X"
+layout = "post"
 
 +++
 

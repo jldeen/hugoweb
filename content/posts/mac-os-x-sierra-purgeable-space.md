@@ -6,6 +6,7 @@ draft = false
 image = "../../images/purgeable-6c_sj7nes.png"
 slug = "mac-os-x-sierra-purgeable-space"
 title = "Mac OS X Sierra - Purgeable Space"
+layout = "post"
 
 +++
 

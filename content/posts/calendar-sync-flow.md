@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2019-01-08-at-14.45.51.png"
 slug = "calendar-sync-flow"
 tags = ["Google", "calendars", "flow", "automation"]
 title = "How I set up a public Google Calendar and enabled auto-sync to an Office365 calendar in 3 steps"
+layout = "post"
 
 +++
 

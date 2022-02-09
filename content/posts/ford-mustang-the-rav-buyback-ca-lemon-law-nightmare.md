@@ -7,6 +7,7 @@ draft = false
 slug = "ford-mustang-the-rav-buyback-ca-lemon-law-nightmare"
 tags = ["CA", "FL", "Ford", "Lemon Law", "RAV"]
 title = "Ford Mustang: The RAV Buyback CA Lemon Law Nightmare"
+layout = "post"
 
 +++
 

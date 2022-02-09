@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-09-13-at-16.52.21_vhvd0i.png"
 slug = "how-to-access-private-azure-devops-repos-from-a-dockerfile"
 title = "How to access private Azure DevOps repos from a Dockerfile!"
+layout = "post"
 
 +++
 

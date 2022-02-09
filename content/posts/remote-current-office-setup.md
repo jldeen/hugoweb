@@ -6,6 +6,7 @@ draft = false
 image = "../../images/AB1D6B8A-55C5-4C21-838E-144C996075F1.JPEG"
 slug = "remote-current-office-setup"
 title = "Tales of a Remote Worker: Current Home Office Setup"
+layout = "post"
 
 +++
 

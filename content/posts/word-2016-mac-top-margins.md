@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2016-04-05-at-18.58.47-1_vie8ad.png"
 slug = "word-2016-mac-top-margins"
 title = "Using Word 2016 for Mac and can't see top margins?"
+layout = "post"
 
 +++
 

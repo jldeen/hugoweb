@@ -6,6 +6,7 @@ draft = false
 image = "../../images/image = -Apr-01-11-31-26_dzjlim.png"
 slug = "official-microsoft-mvp-award-windows-expert-pro"
 title = "It's official! Microsoft MVP Award for Windows Expert - IT Pro"
+layout = "post"
 
 +++
 

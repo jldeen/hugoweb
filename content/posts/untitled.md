@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "untitled"
 title = "WordPress to Ghost Blog Migration"
+layout = "post"
 
 +++
 

@@ -7,6 +7,7 @@ draft = false
 slug = "azure-cli-2-0-azure-container-service-for-docker-swarm-w-dockerized-ssh-tunnel-part-2"
 tags = ["ACS", "Azure", "Azure Container Service", "Docker", "linux", "ssh"]
 title = "Azure CLI 2.0 - Azure Container Service for Docker Swarm w/ Dockerized SSH Tunnel (Part 2)"
+layout = "post"
 
 +++
 

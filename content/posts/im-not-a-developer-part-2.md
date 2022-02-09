@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "im-not-a-developer-part-2"
 title = "I'm not a developer. Part 2."
+layout = "post"
 
 +++
 

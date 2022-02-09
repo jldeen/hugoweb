@@ -8,6 +8,7 @@ image = "../../images/15603_Microsoft-Azure-Container-Service_m6s48o.jpg"
 slug = "azure-container-service-how-to-create-an-ssh-tunnel"
 tags = ["ACS", "Azure", "Azure Container Service", "Docker", "linux", "ssh"]
 title = "Azure Container Service: How to create an SSH Tunnel"
+layout = "post"
 
 +++
 

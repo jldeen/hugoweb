@@ -6,6 +6,7 @@ draft = false
 image = "../../images/sources_aseud4.png"
 slug = "microsoft-azure-how-to-change-a-repository-in-a-linux-ubuntu-vm"
 title = "Microsoft Azure: How to change a repository in a Linux Ubuntu VM"
+layout = "post"
 
 +++
 

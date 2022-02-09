@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-03-01%20at%2011.21.02.png"
 slug = "how-to-configure-azure-application-gateway-v2-on-an-existing-aks-cluster"
 tags = ["aks", "Networking", "kubernetes", "linux", "Azure", "appgateway"]
 title = "How to configure Azure Application Gateway V2 on an existing AKS Cluster - CLI Edition!"
+layout = "post"
 
 +++
 

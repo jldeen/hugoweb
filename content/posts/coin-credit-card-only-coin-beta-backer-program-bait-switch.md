@@ -5,6 +5,7 @@ description = ""
 draft = false
 slug = "coin-credit-card-only-coin-beta-backer-program-bait-switch"
 title = "Coin Credit Card, \"Only Coin\" Beta Backer Program Bait and Switch"
+layout = "post"
 
 +++
 

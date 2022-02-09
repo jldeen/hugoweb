@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202019-09-04%20at%2011.50.47%20PM.png"
 slug = "how-to-setup-an-end-to-end-azure-devops-pipeline-from-the-azure-portal"
 tags = ["azure devops", "Azure", "devops"]
 title = "How to setup an end-to-end Azure DevOps pipeline from an Azure Web App"
+layout = "post"
 
 +++
 

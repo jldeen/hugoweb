@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "untitled-2"
 title = "(Untitled)"
+layout = "post"
 
 +++
 

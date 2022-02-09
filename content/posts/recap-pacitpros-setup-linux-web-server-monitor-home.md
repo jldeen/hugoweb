@@ -6,6 +6,7 @@ draft = false
 image = "../../images/pacitpros_xnss7k.png"
 slug = "recap-pacitpros-setup-linux-web-server-monitor-home"
 title = "RECAP: PacITPros – How to setup a Linux Web Server and use it to monitor your home"
+layout = "post"
 
 +++
 

@@ -6,6 +6,7 @@ draft = false
 image = "../../images/microsoft-linux_q1dxwi.png"
 slug = "powershell-is-now-open-sourced-and-available-on-os-x-10-11-and-linux"
 title = "PowerShell is now open sourced and available on OS X 10.11 and Linux!"
+layout = "post"
 
 +++
 

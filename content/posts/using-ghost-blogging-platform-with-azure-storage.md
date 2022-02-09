@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "using-ghost-blogging-platform-with-azure-storage"
 title = "Using Ghost Blogging Platform with Azure Storage"
+layout = "post"
 
 +++
 

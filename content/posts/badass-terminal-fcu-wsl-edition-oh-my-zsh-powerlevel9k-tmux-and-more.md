@@ -6,6 +6,7 @@ draft = false
 image = "../../images/nerdtree_wjwalf.png"
 slug = "badass-terminal-fcu-wsl-edition-oh-my-zsh-powerlevel9k-tmux-and-more"
 title = "Badass Terminal: FCU WSL Edition (oh-my-zsh, powerlevel9k, tmux, and more!)"
+layout = "post"
 
 +++
 

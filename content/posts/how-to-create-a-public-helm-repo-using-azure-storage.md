@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen%20Shot%202019-09-11%20at%208.43.43%20PM.png"
 slug = "how-to-create-a-public-helm-repo-using-azure-storage"
 title = "How to create a public Helm Repo using Azure Storage (and it works with Helm3 beta3)"
+layout = "post"
 
 +++
 

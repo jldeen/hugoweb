@@ -1,6 +1,6 @@
 <!-- begin comments -->
 <div class="show-comments">
-  <button class="button disqus-button" id="show-comments-button" onclick="disqus();return false;">Show Comments</button>
+  <body onLoad="disqus();"></body>
 </div>
 
 <div id="disqus_thread" class="post__comments">
@@ -10,7 +10,6 @@
 <script>
   var disqus_loaded = false;
   var disqus_shortname = '{{ .Site.Params.disqus.disqusShortname }}';
-  var disqus_container = document.getElementById("disqus_thread");
   function disqus() {
     if (!disqus_loaded) {
       disqus_loaded = true;
@@ -21,10 +20,6 @@
       (document.getElementsByTagName("head")[0] ||
         document.getElementsByTagName("body")[0])
         .appendChild(e);
-      // Hide the button after opening
-      document.getElementById("show-comments-button").style.display = "none";
-      // Show disqus comments
-      disqus_container.classList.add("is-open");
     }
   }
 </script>

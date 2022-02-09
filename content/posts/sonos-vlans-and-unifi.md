@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "sonos-vlans-and-unifi"
 title = "Sonos, VLANs, and Unifi"
+layout = "post"
 
 +++
 

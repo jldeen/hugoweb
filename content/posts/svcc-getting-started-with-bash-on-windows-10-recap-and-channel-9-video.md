@@ -6,6 +6,7 @@ draft = false
 image = "../../images/BashW101607_960_d3qdme.jpg"
 slug = "svcc-getting-started-with-bash-on-windows-10-recap-and-channel-9-video"
 title = "SVCC: Getting Started with Bash on Windows 10 Recap and Channel 9 Video"
+layout = "post"
 
 +++
 

@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen%20Shot%202019-09-01%20at%2011.25.40%20AM-edit.png"
 slug = "how-to-setup-azure-cdn-with-azure-storage-and-allow-twitter-cards"
 title = "How to setup Azure CDN with Azure Storage (and allow Twitter Cards with images)"
+layout = "post"
 
 +++
 

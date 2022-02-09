@@ -9,6 +9,7 @@ slug = "macos-a-problem-occurred"
 summary = "If you're using macOS 10.14 Mojave and are having trouble with the hotspot redirect for wifi networks, this post is for you! \"A problem occurred. The webpage couldn't be loaded.\" This doesn't give me a lot to go on, but thanks to some digging, I discovered the captive redirect wasn't working right. "
 tags = ["macos", "Apple"]
 title = "macOS: A Problem Occurred"
+layout = "post"
 
 +++
 

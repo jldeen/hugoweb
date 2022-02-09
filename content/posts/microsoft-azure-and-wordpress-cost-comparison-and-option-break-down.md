@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Wordpress_azure_pkymmw.jpg"
 slug = "microsoft-azure-and-wordpress-cost-comparison-and-option-break-down"
 title = "Microsoft Azure and WordPress &ndash; Cost Comparison and Option Break Down"
+layout = "post"
 
 +++
 

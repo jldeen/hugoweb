@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "untitled-4"
 title = "Automatic magic Ghost Blog (with Azure DevOps and GitHub Actions!)"
+layout = "post"
 
 +++
 

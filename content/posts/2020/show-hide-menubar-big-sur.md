@@ -1,5 +1,4 @@
 +++
-layout = "post"
 author = "jldeen"
 categories = ["Apple", "big sur", "automation", "applescript", "script editor", "menu bar"]
 date = 2020-10-15T22:04:00Z
@@ -9,6 +8,8 @@ image =  "../../images/Screen%20Shot%202020-10-15%20at%2012.42.47.png"
 slug = "show-hide-menubar-big-sur"
 tags = ["Apple", "big sur", "automation", "applescript", "script editor", "menu bar"]
 title = "How to show/hide the menu bar in macOS 11 Big Sur using AppleScript"
+layout = "post"
+
 +++
 
 

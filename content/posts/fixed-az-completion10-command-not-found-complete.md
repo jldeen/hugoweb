@@ -6,6 +6,7 @@ draft = false
 image = "../../images/fixing-stuff_pu6edm.jpg"
 slug = "fixed-az-completion10-command-not-found-complete"
 title = "Fixed! az.completion:10: command not found: complete"
+layout = "post"
 
 +++
 

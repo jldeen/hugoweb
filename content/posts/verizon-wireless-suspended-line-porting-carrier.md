@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Verizon-Wireless_py00jg.jpg"
 slug = "verizon-wireless-suspended-line-porting-carrier"
 title = "Verizon Wireless - Suspended Line after Porting to another carrier?"
+layout = "post"
 
 +++
 

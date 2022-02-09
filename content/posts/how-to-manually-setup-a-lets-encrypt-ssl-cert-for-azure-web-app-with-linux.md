@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2019-01-06-at-14.28.36.png"
 slug = "how-to-manually-setup-a-lets-encrypt-ssl-cert-for-azure-web-app-with-linux"
 tags = ["Security", "Azure", "linux"]
 title = "How to set up a Let's Encrypt SSL Cert for Azure Web App with Linux in 5 steps"
+layout = "post"
 
 +++
 

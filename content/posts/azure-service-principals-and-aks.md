@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "azure-service-principals-and-aks"
 title = "How to fix Error: Operation failed with status: 'Bad request'. Details: Service Principal clientID"
+layout = "post"
 
 +++
 

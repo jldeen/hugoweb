@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-08-22-at-16.42.24_bnhiyy.png"
 slug = "outlook-for-mac-search-returns-no-results-and-task-items-are-not-displayed-heres-the-fix"
 title = "Outlook for Mac search returns \"No Results,\" and task items are not displayed? Here's the fix!"
+layout = "post"
 
 +++
 

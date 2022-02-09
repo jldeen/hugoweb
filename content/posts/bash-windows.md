@@ -6,6 +6,7 @@ draft = false
 image = "../../images/bash_jdh4nh.png"
 slug = "bash-windows"
 title = "Bash on Windows!"
+layout = "post"
 
 +++
 

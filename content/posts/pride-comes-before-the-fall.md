@@ -6,6 +6,7 @@ draft = false
 image = "../../images/TechDays_logo250-e1402100211556_zdpnei.gif"
 slug = "pride-comes-before-the-fall"
 title = "You’re Not As Important As You Think You Are - Tech Days 2014 Follow Up!"
+layout = "post"
 
 +++
 

@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-01-06-at-11.01.56_ow7tb8.png"
 slug = "kubectl-get-nodes-error-unable-to-connect-to-the-server-dial-tcp-i-o-timeout"
 title = "Kubectl get nodes error! Unable to connect to the server: dial tcp i/o timeout"
+layout = "post"
 
 +++
 

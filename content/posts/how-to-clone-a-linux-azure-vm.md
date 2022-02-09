@@ -5,6 +5,7 @@ description = ""
 draft = false
 slug = "how-to-clone-a-linux-azure-vm"
 title = "How to: Clone a Linux Azure VM"
+layout = "post"
 
 +++
 

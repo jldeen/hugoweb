@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2018-03-08-at-19.57.01_mxv56u.png"
 slug = "how-to-deploy-to-kubernetes-using-helm-and-vsts"
 tags = ["aks", "ci/cd", "devops", "helm", "k8s", "pipeline", "vsts"]
 title = "How to Deploy to Kubernetes using Helm and VSTS"
+layout = "post"
 
 +++
 

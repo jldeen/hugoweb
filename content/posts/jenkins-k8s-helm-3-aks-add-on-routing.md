@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "jenkins-k8s-helm-3-aks-add-on-routing"
 title = "Jenkins K8s Helm 3 AKS add on routing"
+layout = "post"
 
 +++
 

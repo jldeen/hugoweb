@@ -6,6 +6,7 @@ draft = false
 image = "../../images/static_c9a6jl.png"
 slug = "assign-static-ip-ubuntu-14-04"
 title = "How to assign a static IP in Ubuntu 14.04"
+layout = "post"
 
 +++
 

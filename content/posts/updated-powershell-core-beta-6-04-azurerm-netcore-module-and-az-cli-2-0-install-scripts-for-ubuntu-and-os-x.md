@@ -6,6 +6,7 @@ draft = false
 image = "../../images/basic-powershell-commands-intro-840x420_hfqmhu.png"
 slug = "updated-powershell-core-beta-6-04-azurerm-netcore-module-and-az-cli-2-0-install-scripts-for-ubuntu-and-os-x"
 title = "Updated! PowerShell Core [Beta] 6.04, AzureRM.NetCore Module, and Az CLI 2.0 Install Scripts for Ubuntu and OS X"
+layout = "post"
 
 +++
 

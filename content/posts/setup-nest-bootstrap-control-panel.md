@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2015-07-20-at-20.04.26_zgmdf1.png"
 slug = "setup-nest-bootstrap-control-panel"
 title = "How to setup: Nest Bootstrap Control Panel"
+layout = "post"
 
 +++
 

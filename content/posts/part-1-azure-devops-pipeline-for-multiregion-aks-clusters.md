@@ -5,6 +5,7 @@ description = ""
 draft = true
 slug = "part-1-azure-devops-pipeline-for-multiregion-aks-clusters"
 title = "Part 1: Azure DevOps Pipeline for multiregion AKS clusters"
+layout = "post"
 
 +++
 

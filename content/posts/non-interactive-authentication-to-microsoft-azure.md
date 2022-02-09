@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-03-10-at-09.41.06_stranh.png"
 slug = "non-interactive-authentication-to-microsoft-azure"
 title = "Non-interactive authentication to Microsoft Azure"
+layout = "post"
 
 +++
 

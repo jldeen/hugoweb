@@ -8,6 +8,7 @@ image = "../../images/nest_taonw3.jpg"
 slug = "nest-thermostat-offline-mode-intermittently"
 tags = ["Nest", "Offfline", "Thermostat"]
 title = "Nest Thermostat and Offline Mode Intermittently?"
+layout = "post"
 
 +++
 

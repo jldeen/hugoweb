@@ -6,6 +6,7 @@ draft = false
 image = "../../images/download_dqtonj.png"
 slug = "updated-azure-container-service-how-to-communicate-between-two-docker-swarm-containers"
 title = "Updated! Azure Container Service: How to communicate between two Docker Swarm containers"
+layout = "post"
 
 +++
 
