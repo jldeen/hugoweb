@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Menca – Modern Personal Blogging Theme for HUGO</title>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-header" role="banner">
+      <h1 class="site-title">Menca</h1>
+      <p class="site-description">Theme Documentation</p>
+    </header><!-- .site-header -->
+
+    <div id="main">
+
+      <div id="content" role="main">
+        <hr />
+
+        <section>
+          <h2>Theme Information</h2>
+          <ul>
+            <li>Name: <strong>Menca</strong> – Modern Personal Blogging Theme for HUGO</li>
+            <li>Menca is a super fast and clean blogging theme for Hugo. One of the main features of this theme is video post support. You can easily add your favorite video from services like Youtube or Vimeo. This theme has a light and dark mode for easy reading. If you want to start a creative personal blog and you create video content this theme is perfect for you.</li>
+            <li>Current Version: 1.0.1</li>
+            <li>Released: 17/11/2021</li>
+            <li>Creator: <a href="https://themeforest.net/user/anvodstudio">Anvod Studio</a></li>
+          </ul>
+          <hr />
+        </section>
+
+        <section>
+          <h2 id="top">Table of Contents</h2>
+          <ul>
+            <li><a href="#configurations">Configurations</a></li>
+            <li><a href="#install">Install</a></li>
+            <li><a href="#deployment">Deployment</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#DisqusComments">Disqus Comments</a></li>
+            <li><a href="#GoogleAnalytics">Google Analytics</a></li>
+            <li><a href="#UpdateFavicon">Update favicon</a></li>
+            <li><a href="#Credits">Credits</a></li>
+            <li><a href="#Support">Support</a></li>
+          </ul>
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="configurations">Configurations</h3>
+
+          <p>Menca theme comes with different customizations in the <code>_config.toml</code> file:</p>
+
+          <img src="assets/img/config.png" alt="config">
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="install">Install</h3>
+
+          <p>First step is to install HUGO on your specific OS. If you are new to HUGO you can read the <a href="https://gohugo.io/getting-started/installing/" target="_blank">HUGO Docs</a>. These docs are great and updated to start with HUGO installation.</p>
+
+          <strong>Important:</strong> Since we are using <code>SCSS</code> make sure you have the extended version of HUGO installed on your system.
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="deployment">Deployment</h3>
+
+          <p>There is no need to add the theme we have added theme to the hugo structure itself. Once you extract the <code>zip</code> in desired location just run: <code>hugo server</code> or <code>hugo server --disableFastRender</code> to start the HUGO server.</p>
+
+          <p>I would recommend checking the <a href="https://gohugo.io/hosting-and-deployment/" target="_blank">Deployment Methods</a> page on HUGO website.</p>
+
+          <p><strong>*</strong> We highly recommend using the <a href="https://www.netlify.com">Netlify</a> service for deployment. All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check <a href="https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-victor-hugo-on-netlify/#getting-started-on-netlify" target="_blank">this link</a> with the step by step guidelines.</p>
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="posts">Posts</h3>
+
+          <p>To create a new post, you can create a new markdown file inside the <code>content/posts</code> directory.</p>
+
+          <img src="assets/img/post.png" alt="post">
+
+          <p>You can set the <code>title</code>, <code>tags</code>, and the post <code>image</code>.</p>
+
+          <p>Add post images to <strong>static/images</strong> directory.</p>
+
+          <strong>Full Width Image</strong>
+
+          <p>To have wide images in posts or pages simply add #wide word with the hashtag at the end of image path like in the example below:</p>
+
+          <p><code>![River](/images/15-1.jpg#wide)</code></p>
+
+          <strong>Video Post</strong>
+
+          <p>To create a video post, specify the url/link to the video in the <code>video_embed:</code> field like in the example below:</p>
+
+          <p><code>video_embed: https://www.youtube.com/embed/gghgYaYeG_M</code></p>
+
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="pages">Pages</h3>
+
+          <p>To create a new page, just create a new markdown file inside the <code>content</code> directory.</p>
+          <p>The following is the <code>about.md</code> file that you can find as an example included in the theme with the configurations you can set.</p>
+
+          <img src="assets/img/page.png" alt="page">
+
+          <p>Things you can change are: <code>title</code> and <code>image</code> name.</p>
+
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="gallery">Gallery</h3>
+
+          <p>Use <code>HTML</code> markup to use gallery on pages. For example:</p>
+
+          <img src="assets/img/gallery.png" alt="gallery">
+
+          <p>Don't forget to provide the correct path for your images.</p>
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="navigation">Navigation</h3>
+
+          <p>This allows you to set the links inside your menu. Add each one as a list item with a <code>name</code>,<code>url</code> and <code>weight</code>.</p>
+
+          <img src="assets/img/navigation.png" alt="navigation">
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="DisqusComments">Disqus Comments</h3>
+
+          <p>Menca Theme comes with Disqus comments enabled.</p>
+
+          <p>Open <code>config.toml</code> file, and change the <code>anvodstudio-demo</code> value on line 151 with your <a href="https://help.disqus.com/customer/portal/articles/466208">Disqus account shortname</a>.</p>
+
+          <img src="assets/img/disqus.png" alt="disqus">
+
+          <p>That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have <a href="https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide">registered your website with Disqus (Step 1)</a>.</p>
+
+          <p>And also check <a href="https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22">Disqus troubleshooting guide</a> if you still have issues.</p>
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="GoogleAnalytics">Google Analytics</h3>
+          <p>To integrate Google Analytics, open <code>config.toml</code>, and add your Google Analytics identifier.</p>
+
+          <img src="assets/img/analytics.png" alt="analytics">
+
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="UpdateFavicon">Update favicon</h3>
+          <p>You can find the current favicon (favicon.ico) inside <code>static</code> directory, just replace it with your new favicon.</p>
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="Credits">Credits</h3>
+          <p>I have used the following scripts, fonts or other files as listed.</p>
+          <ul>
+            <li><a href="https://fonts.google.com/specimen/Jost">Google Fonts</a> (Jost).</li>
+            <li><a href="https://github.com/verlok/vanilla-lazyload">Vanilla Lazyload</a></li>
+            <li><a href="https://ionicons.com/v4/">Ionicons</a></li>
+            <li><a href="https://github.com/sparanoid/lightense-images">Lightense Images</a></li>
+            <li><a href="github.com/yowainwright/reframe.js">Reframe.js</a></li>
+            <li><a href="https://retifrav.github.io/blog/2020/01/05/hugo-search/">Instant Search (with modifications)</a></li>
+            <li><a href="https://github.com/iamdustan/smoothscroll">Smooth Scroll Polyfill</a></li>
+            <li>Preview Images form <a href="https://unsplash.com/">unsplash.com</a>, <a href="https://www.pexels.com/">pexels.com</a></li>
+          </ul>
+          <hr />
+        </section>
+
+        <section>
+          <h3 id="Support">Support</h3>
+          <div class="support">
+            <p>If you have any questions that are not answered here, please feel free to contact me by mail.</p>
+            <a href="mailto:anvodstudio@gmail.com" class="support-btn">Contact Anvod Studio</a>
+          </div><!-- .support -->
+
+          <hr />
+        </section>
+
+        <p><a href="#top">Go To Table of Contents</a></p>
+      </div><!-- #content -->
+    </div><!-- #main -->
+    <footer class="site-info" role="contentinfo">
+      <p>© 2021 Anvod Studio</p>
+    </footer><!-- .site-info -->
+  </div><!-- .wrap -->
+</body>
+</html>

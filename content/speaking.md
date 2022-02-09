@@ -21,9 +21,11 @@ When she's not doing something geeky, you can find her doing something active, m
 
 Click for full resolution, or right click and save to grab the thumnail.
 
-[![jessica-deen](https://cdn.jessicadeen.com/content/images/jessica-deen.png)](https://cdn.jessicadeen.com/content/images/jessica-deen.png)
-[![jessica-deen-2](https://cdn.jessicadeen.com/content/images/JessicaDeen2_2017.jpg)](https://cdn.jessicadeen.com/content/images/JessicaDeen2_2017.jpg)
-[![jessica-deen-3](https://cdn.jessicadeen.com/content/images/JessicaDeen1_2017.jpg)](https://cdn.jessicadeen.com/content/images/JessicaDeen1_2017.jpg)
+[![jessica-deen](https://cdn.jessicadeen.com/content/images/jessica-deen.png)](../images/jessica-deen.png)
+
+[![jessica-deen-2](https://cdn.jessicadeen.com/content/images/JessicaDeen2_2017.jpg)](../images/JessicaDeen2_2017.jpg)
+
+[![jessica-deen-3](https://cdn.jessicadeen.com/content/images/JessicaDeen1_2017.jpg)](../images/JessicaDeen1_2017.jpg)
 
 
 

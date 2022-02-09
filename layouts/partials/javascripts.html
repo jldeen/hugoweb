@@ -1,0 +1,10 @@
+{{ $script := resources.Get "js/scripts.js" }}
+{{ $commonJs := resources.Get "js/common.js" }}
+
+{{ if .Site.IsServer }}
+<script src="{{ $script.Permalink }}"></script>
+<script src="{{ $commonJs.Permalink }}"></script>
+{{ else }}
+<script src="{{ ($script | minify | fingerprint).RelPermalink }}"></script>
+<script src="{{ ($commonJs | minify | fingerprint).RelPermalink }}"></script>
+{{ end }}
