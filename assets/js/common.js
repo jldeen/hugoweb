@@ -58,21 +58,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // html.dataset.theme = `light`;
-
   // listen to OS preference
   const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-  
+
+
+  // override logic
+  const userOverride = localStorage.setItem("override", true);
+  const getOverrideResult = localStorage.getItem("override")
+
   // change color scheme based on OS preference
   const setColorScheme = e => {
+    
     if (e.matches) {
       html.dataset.theme = `dark`;
+      html.classList.remove('dark-mode')
       console.log('Dark mode')
     } else {
       html.dataset.theme = `light`;
+      html.classList.add('dark-mode')
       console.log('Light mode')
     }
-  }
+  };
   
   // set color scheme based on query
   setColorScheme(colorSchemeQueryList);
@@ -83,10 +89,12 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleTheme.addEventListener("click", () => {
     if (html.dataset.theme === "dark") {
       html.dataset.theme = "light"
+      html.classList.remove('dark-mode')
     } else if (html.dataset.theme === "light") {
       html.dataset.theme = "dark"
+      html.classList.add('dark-mode')
     }
-  })
+  });
 
   
 

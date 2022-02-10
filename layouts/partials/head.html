@@ -41,12 +41,12 @@
     }
   </script> -->
 
-  <script>
+  <!-- <script>
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       document.documentElement.setAttribute("dark", "");
       document.documentElement.classList.add('dark-mode');
     };
-  </script>
+  </script> -->
 
   <!-- CSS -->
   {{ with resources.Get "sass/main.scss" | toCSS | minify }}
