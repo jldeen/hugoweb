@@ -4,7 +4,7 @@ categories = ["Apple", "big sur", "automation", "applescript", "script editor", 
 date = 2020-10-15T22:04:00Z
 description = ""
 draft = false
-image =  "../../images/Screen%20Shot%202020-10-15%20at%2012.42.47.png"
+image =  "images/Screen%20Shot%202020-10-15%20at%2012.42.47.png"
 slug = "show-hide-menubar-big-sur"
 tags = ["Apple", "big sur", "automation", "applescript", "script editor", "menu bar"]
 title = "How to show/hide the menu bar in macOS 11 Big Sur using AppleScript"
@@ -37,9 +37,12 @@ As an added bonus, I found [this blog post](http://apetronix.com/find-pane-id-fo
 
 Now, you may wonder, how do I use this with something like StreamDeck? Easy! I use [this Keyboard Maestro Integration](https://github.com/Corcules/KMlink), create the macro in Keyboard Maestro and reference it in Stream Deck. 
 
-![Screen%20Shot%202020-10-15%20at%2012.34.08](../../images/Screen%20Shot%202020-10-15%20at%2012.34.08.png)
+<center>
 
-![Screen%20Shot%202020-10-15%20at%2012.33.01](../../images/Screen%20Shot%202020-10-15%20at%2012.33.01.png)
+![keyboard-maestro](/images/Screen%20Shot%202020-10-15%20at%2012.34.08.png)
+
+![streamdeck](/images/Screen%20Shot%202020-10-15%20at%2012.33.01.png)
+</center>
 
 Of course, if you didn't want to use Stream Deck or Keyboard Maestro, you could just save the script, and create a function, and call said function from command line, examples of this are below.
 
