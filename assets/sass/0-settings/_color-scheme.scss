@@ -1,6 +1,6 @@
 /* Color Scheme */
 
-:root {
+:root[data-theme="light"] {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;
@@ -34,7 +34,7 @@
   --syntax-highlighting-background: #f3f3f3;
 }
 
-:root[dark] {
+:root[data-theme="dark"] {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;

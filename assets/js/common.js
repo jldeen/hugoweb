@@ -58,25 +58,57 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
+  // html.dataset.theme = `light`;
 
-
-  // Theme Switcher
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
-      document.documentElement.removeAttribute("dark");
+  // listen to OS preference
+  const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  
+  // change color scheme based on OS preference
+  const setColorScheme = e => {
+    if (e.matches) {
+      html.dataset.theme = `dark`;
+      console.log('Dark mode')
     } else {
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("dark", "");
+      html.dataset.theme = `light`;
+      console.log('Light mode')
     }
   }
+  
+  // set color scheme based on query
+  setColorScheme(colorSchemeQueryList);
+
+  // listen for preference changes
+  colorSchemeQueryList.addEventListener('change', setColorScheme);
+
+  toggleTheme.addEventListener("click", () => {
+    if (html.dataset.theme === "dark") {
+      html.dataset.theme = "light"
+    } else if (html.dataset.theme === "light") {
+      html.dataset.theme = "dark"
+    }
+  })
+
+  
+
+  // if (toggleTheme) {
+  //   toggleTheme.addEventListener("click", () => {
+  //     darkMode();
+  //   });
+  // };
+
+
+  // // Theme Switcher
+  // function darkMode() {
+  //   if (html.classList.contains('dark-mode')) {
+  //     html.classList.remove('dark-mode');
+  //     localStorage.removeItem("theme");
+  //     document.documentElement.removeAttribute("dark");
+  //   } else {
+  //     html.classList.add('dark-mode');
+  //     localStorage.setItem("theme", "dark");
+  //     document.documentElement.setAttribute("dark", "");
+  //   }
+  // }
 
 
   /* =======================
