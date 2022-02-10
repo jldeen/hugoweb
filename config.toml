@@ -74,20 +74,20 @@ paginate = 9
   # Hero Settings
   [params.hero]
     hero__title = "Hey, I’m Jessica Deen"
-    hero__description = "I like to write, code, speak, teach, and learn - not typically in that order. Let's learn together."
+    hero__description = "I like to write, code, speak, teach, and learn - not necessarily in that order. Let's learn together."
     hero__image = "../../images/jessica-deen.png"
 
   # Newsletter
   [params.mailchimp]
-    mailchimp__identifier = "jessicadeen.us14.list-manage.com/subscribe/post?u=4071e8d8be0228abf4b25c28c&amp;id=061c2b75b7" # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-    mailchimp__input__text = "Subscribe here"
-    mailchimp__button__text = "Join the mailing list!"
+    #mailchimp__identifier = "jessicadeen.us14.list-manage.com/subscribe/post?u=4071e8d8be0228abf4b25c28c&amp;id=061c2b75b7" # Add your MailChimp form identifier. 
+    #mailchimp__input__text = "Subscribe here"
+    #mailchimp__button__text = "Join the mailing list!"
 
 
   #-------------------------------
   # Contact Settings
   [params.contact]
-    email = "jessica@jessicadeen.com" # Add your email for contant form
+    email = "mwkyljqr" # Add your email for contant form
 
     # NOTE
     # Menca comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.

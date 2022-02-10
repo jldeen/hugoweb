@@ -34,11 +34,18 @@
 
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <script>
+  <!-- <script>
     if (localStorage.getItem("theme") === "dark") {
       document.documentElement.setAttribute("dark", "");
       document.documentElement.classList.add('dark-mode');
     }
+  </script> -->
+
+  <script>
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    };
   </script>
 
   <!-- CSS -->
