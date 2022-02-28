@@ -1,6 +1,6 @@
 /* Color Scheme */
 
-:root[data-theme="light"] {
+:root {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;
@@ -12,6 +12,8 @@
 
   --background-color: var(--white);
   --background-alt-color: var(--light-blue);
+
+  --toggle-background-color: var(--dark-blue);
   
   --text-color: var(--dark-blue);
   --text-alt-color: var(--blue-gray);
@@ -34,7 +36,7 @@
   --syntax-highlighting-background: #f3f3f3;
 }
 
-:root[data-theme="dark"] {
+[data-theme="dark"] {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;

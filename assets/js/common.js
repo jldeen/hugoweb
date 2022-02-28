@@ -58,65 +58,101 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // listen to OS preference
-  const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  (function(){
+    // Then set the 'data-theme' attribute to whatever is in localstorage
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));    
+  })();
 
+  const checkbox = document.getElementById('checkbox');
 
-  // override logic
-  const userOverride = localStorage.setItem("override", true);
-  const getOverrideResult = localStorage.getItem("override")
+  checkbox.addEventListener('change', () => {
+    // This function will execute itself when the script is loaded
+    var targetTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
 
-  // change color scheme based on OS preference
-  const setColorScheme = e => {
-    
-    if (e.matches) {
-      html.dataset.theme = `dark`;
-      html.classList.remove('dark-mode')
-      console.log('Dark mode')
-    } else {
-      html.dataset.theme = `light`;
-      html.classList.add('dark-mode')
-      console.log('Light mode')
+    document.documentElement.setAttribute('data-theme', targetTheme);
+
+    localStorage.setItem('theme', targetTheme)
+    console.log('theme changed to: ' + localStorage.getItem('theme'))
+  })
+
+  //determines if the user has a set theme
+  function detectColorScheme(){
+    var theme="light";    //default to light
+
+    //local storage is used to override OS theme settings
+    if(localStorage.getItem("theme")){
+        if(localStorage.getItem("theme") == "dark"){
+            var theme = "dark";
+        }
+    } else if(!window.matchMedia) {
+        //matchMedia method not supported
+        return false;
+    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        //OS theme setting detected as dark
+        var theme = "dark";
     }
-  };
-  
-  // set color scheme based on query
-  setColorScheme(colorSchemeQueryList);
 
-  // listen for preference changes
-  colorSchemeQueryList.addEventListener('change', setColorScheme);
-
-  toggleTheme.addEventListener("click", () => {
-    if (html.dataset.theme === "dark") {
-      html.dataset.theme = "light"
-      html.classList.remove('dark-mode')
-    } else if (html.dataset.theme === "light") {
-      html.dataset.theme = "dark"
-      html.classList.add('dark-mode')
+    //dark theme preferred, set document with a `data-theme` attribute
+    if (theme=="dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
     }
-  });
+  }
+  detectColorScheme();
 
-  
+  //identify the toggle switch HTML element
+  const toggleSwitch = document.querySelector('#label input[type="checkbox"]');
 
-  // if (toggleTheme) {
-  //   toggleTheme.addEventListener("click", () => {
-  //     darkMode();
-  //   });
-  // };
+  //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+  function switchTheme(e) {
+      if (e.target.checked) {
+          localStorage.setItem('theme', 'dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+          toggleSwitch.checked = true;
+      } else {
+          localStorage.setItem('theme', 'light');
+          document.documentElement.setAttribute('data-theme', 'light');
+          toggleSwitch.checked = false;
+      }    
+  }
 
+  //listener for changing themes
+  // toggleSwitch.addEventListener('change', switchTheme, false);
 
-  // // Theme Switcher
-  // function darkMode() {
-  //   if (html.classList.contains('dark-mode')) {
-  //     html.classList.remove('dark-mode');
-  //     localStorage.removeItem("theme");
-  //     document.documentElement.removeAttribute("dark");
-  //   } else {
-  //     html.classList.add('dark-mode');
-  //     localStorage.setItem("theme", "dark");
-  //     document.documentElement.setAttribute("dark", "");
-  //   }
+  //pre-check the dark-theme checkbox if dark-theme is set
+  // if (document.documentElement.getAttribute("data-theme") == "dark"){
+  //     toggleSwitch.checked = true;
   // }
+
+  // // listen to OS preference
+  // const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // // change color scheme based on OS preference
+  // const setColorScheme = e => {
+    
+  //   console.log(e.matches)
+  //   if (e.matches) {
+  //     html.dataset.theme = `dark`;
+  //     console.log('Dark mode')
+  //   } else if (e.matches != true) {
+  //     html.dataset.theme = `light`;
+  //     console.log('Light mode')
+  //   }
+  // };
+  
+  // // set color scheme based on query
+  // setColorScheme(colorSchemeQueryList);
+
+  // // listen for preference changes
+  // colorSchemeQueryList.addEventListener('change', setColorScheme);
+
+  // const checkbox = document.getElementById("checkbox");
+
+  // checkbox.addEventListener('change', setColorScheme);
+
+  // checkbox.addEventListener("changed", () => {
+  //   // change the theme of the website
+  //   theme_switch()
+  // });
 
 
   /* =======================

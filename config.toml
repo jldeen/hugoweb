@@ -6,6 +6,15 @@ title = "Jessica Deen | Deen of DevOps"
 #googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 paginate = 9
 
+[permalinks]
+  '/2015' = '/:slug'
+  '/2016' = '/:slug'
+  '/2017' = '/:slug'
+  '/2018' = '/:slug'
+  '/2019' = '/:slug'
+  '/2020' = '/:slug'
+  '/2021' = '/:slug'
+  '/2022' = '/:slug'
 
 #-------------------------------
 # Main Menu
@@ -69,6 +78,7 @@ paginate = 9
 
   # Other icons can be found at https://ionicons.com/v4/
 
+  mainSections = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 
   #-------------------------------
   # Hero Settings
