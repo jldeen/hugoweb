@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-baseURL = "https://lively-flower-06433c20f.1.azurestaticapps.net/"
+baseURL = "https://devtest.jessicadeen.com/"
 languageCode = "en-us"
 title = "Jessica Deen | Deen of DevOps"
 #googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
