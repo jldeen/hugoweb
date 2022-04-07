@@ -11,7 +11,7 @@ layout = "post"
 +++
 
 
-[![SVCC](https://cdn.jessicadeen.com/content/images/silicon-valley-code-camp_aklito.png)](https:/jessicadeen.com/wp-content/uploads/2015/10/silicon-valley-code-camp.png)
+[![SVCC](/images/silicon-valley-code-camp_aklito.png)](https:/jessicadeen.com/wp-content/uploads/2015/10/silicon-valley-code-camp.png)
 
 For those of you who couldn’t make it out to my session at this year’s Silicon Valley Code Camp, I have uploaded my deck and notes to this post. Alternatively, if you did make it out my session and wanted a hard (digital) copy of my presentation and my notes, this post is also for you! I know it was hard to see the commands on the projector, but hopefully the notes will assist in your own setup at home.
 

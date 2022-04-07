@@ -13,7 +13,7 @@ layout = "post"
 
 **Note: This post is now old. Please use [my latest installer from this blog post](https:/jessicadeen.com/linux/powershell-core-master/). **
 
-![](https://cdn.jessicadeen.com/content/images/basic-powershell-commands-intro-840x420_hfqmhu.png)Quick update today – I previously wrote new install scripts for PowerShell Core 6.11 with the AzureRM.NetCore.Preview module and optional install of Azure CLI. You can access the scripts using the below links. Today, I updated the scripts for 6.14. Each script will install:
+![](/images/basic-powershell-commands-intro-840x420_hfqmhu.png)Quick update today – I previously wrote new install scripts for PowerShell Core 6.11 with the AzureRM.NetCore.Preview module and optional install of Azure CLI. You can access the scripts using the below links. Today, I updated the scripts for 6.14. Each script will install:
 
 - NET Core 1.1
 - PowerShell Core Alpha 14

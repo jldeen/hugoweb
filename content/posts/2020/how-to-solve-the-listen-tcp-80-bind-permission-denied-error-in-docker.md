@@ -70,13 +70,13 @@ CMD ["/app/croc-hunter"]
 
 Once you rebuild your Dockefile with the updated setcap command, retry your `docker run` command you should see success:
 
-![Screen%20Shot%202020-04-30%20at%201.47.34%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-04-30%20at%201.47.34%20PM.png)
+![Screen%20Shot%202020-04-30%20at%201.47.34%20PM](/images/Screen%20Shot%202020-04-30%20at%201.47.34%20PM.png)
 
 You can see this in action in my latest YouTube Video (TS 6:35), just click the image below!
 
 [![YouTube Video][1]][2]
 
-[1]:  https://cdn.jessicadeen.com/content/images/DockerENV-Social.png
+[1]:  /images/DockerENV-Social.png
 [2]:  https://jldeen.dev/from-app-to-cloud
 
 

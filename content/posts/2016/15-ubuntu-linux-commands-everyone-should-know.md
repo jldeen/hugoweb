@@ -13,7 +13,7 @@ layout = "post"
 
 As I mentioned in my [Windows 10 Anniversary Update post](https:/jessicadeen.com/tech/10-things-you-should-know-about-the-windows-10-anniversary-update-now-available/), [Bash is on now on Windows](https:/jessicadeen.com/tech/microsoft/bash-windows/), and I thought it would be beneficial to share 15 Ubuntu Linux commands every user should know. Below is my complied list, but if I missed any, please feel free to add a comment and help the readers out!
 
-![](https://cdn.jessicadeen.com/content/images/windows-10-ubutnu_axyqj4.png)
+![](/images/windows-10-ubutnu_axyqj4.png)
 
 1. **sudo  
 **This command will elevate your command so it executes with “superuser” privileges. Example: sudo apt-get install [package-name-here] You can also use this command to ‘switch user’ to the root user by typing: sudo su. When typed, you will be prompted for your current user password, and once entered, the user will change from the current user to root.

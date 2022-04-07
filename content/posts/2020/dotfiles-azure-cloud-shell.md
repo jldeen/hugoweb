@@ -22,7 +22,7 @@ Turns out the whole setup is suprisingly easy and fast. Here's what I did:
 
 To start, I discovered Cloud Shell just runs on top of Ubuntu 16.04. 
 
-![Screen%20Shot%202020-01-15%20at%2019.45.38](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-01-15%20at%2019.45.38.png)
+![Screen%20Shot%202020-01-15%20at%2019.45.38](/images/Screen%20Shot%202020-01-15%20at%2019.45.38.png)
 
 This means I can simply use the same dotfiles config/bootstrap script I use for wsl and standard ubuntu by running the following command in my existing (or new) cloud shell environment: 
 
@@ -41,7 +41,7 @@ In order to truly get my standard dotfiles for Ubuntu (and WSL/WSL2) working in 
 
 First, we have to install a [powerline font](https://github.com/powerline/fonts) and then select it in our browser since my dotfiles use [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k) config stylization. If you're using Chrome, navigate to `chrome://settings/fonts` and change `Fixed-width font` to the powerline font of your choice. I use [SourceCodePro Nerd Font](https://github.com/jldeen/dotfiles/blob/wsl/Source%20Code%20Pro%20Nerd%20Font%20Complete%20Mono.ttf). 
 
-![Screen%20Shot%202020-01-15%20at%2020.28.02](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-01-15%20at%2020.28.02.png)
+![Screen%20Shot%202020-01-15%20at%2020.28.02](/images/Screen%20Shot%202020-01-15%20at%2020.28.02.png)
 
 Second, we need to fix the text colors for visibility with the black background of Azure Cloud Shell. I'm just going to make the text white so we can read our directory and kubecontext info more clearly. We can do that with 2 simple lines of code:
 
@@ -63,7 +63,7 @@ gem install colorls -v 1.2.0
 
 Now when you run ls, you'll see pretty folder and file icons instead of boring simple text.
 
-![Screen%20Shot%202020-01-15%20at%2019.58.57](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-01-15%20at%2019.58.57.png)
+![Screen%20Shot%202020-01-15%20at%2019.58.57](/images/Screen%20Shot%202020-01-15%20at%2019.58.57.png)
 
 This is cool, but I noticed after my first run of the above command, the install of the colorls gem was not persistent in the cloud shell environment . This meant I would get an error telling me colorls couldn't be found on any brand new cloud shell sessions. I made the following work around by adding the below text to the top of the .bashrc file (use `code ~/.bashrc` to open your cloud shell editor:
 
@@ -76,7 +76,7 @@ echo ''
 You'll notice the above code snippet also tells bash to immediately go into zsh - this is a perfect little work around for the change shell problem mentioned earlier. Since we can't run `chsh -s /usr/bin/zsh` in cloud shell due to our inability to elevate permissions, we can tell bash to invoke zsh directly.
 
 Save the file and restart cloud shell - you should now see a loading screen like this:
-![Screen%20Shot%202020-01-15%20at%2019.18.39](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-01-15%20at%2019.18.39.png)
+![Screen%20Shot%202020-01-15%20at%2019.18.39](/images/Screen%20Shot%202020-01-15%20at%2019.18.39.png)
 
 You can always remove the `echo 'Loading custom...'` if it's not your style, especially since you will see it on every session/window if you use tmux. Personally though, I dig it.
 
@@ -147,7 +147,7 @@ One thing I found really neat in all this is you can use this customized cloud s
 
 Simply ensure you have the Azure Account extension installed and then open your command pallette (cmd + shift + p on macOS; ctl + shift + p on Windows). Type: `Azure:Open Bash in Cloud Shell` and hit enter. You will be prompted to login if you aren't already. Once you login, you'll now have access to your freshly minted cloud shell environment.
 
-![Screen%20Shot%202020-01-15%20at%2022.11.42](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-01-15%20at%2022.11.42.png)
+![Screen%20Shot%202020-01-15%20at%2022.11.42](/images/Screen%20Shot%202020-01-15%20at%2022.11.42.png)
 
 ---
 ### Reset Cloud Shell

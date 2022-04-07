@@ -1,6 +1,6 @@
 /* Color Scheme */
 
-:root {
+:root[color-mode="light"] {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;
@@ -34,17 +34,21 @@
   --tr-color: var(--light-gray);
 
   --syntax-highlighting-background: #f3f3f3;
+  // --transition: transform 0.2s linear;
 }
 
-[data-theme="dark"] {
+:root[color-mode="dark"] {
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;
   --gray: #9e9e9e;
   --dark: #111016;
+  --dark-blue: #1e2740;
 
   --background-color: var(--dark);
   --background-alt-color: #1a1a1f;
+
+  --toggle-background-color: var(--dark-blue);
   
   --text-color: var(--gray);
   --text-alt-color: var(--gray);

@@ -97,7 +97,7 @@ azd-clean:
 ```
 You can see the script in action, makefile and all, in the featured image for this post, but I also included it below.
 
-![AzDAPI](https://cdn.jessicadeen.com/content/images/AzDAPI.gif)
+![AzDAPI](/images/AzDAPI.gif)
 
 The best part is, since I am calling the Build and Release service via the open AzD REST API I could, in theory, do the same thing from a build/release bash task from within AzD in the event the functionality I'm looking for is not available by default. Even if the functionality *does* exist from the UI, I could still execute a REST API call to to the respective service, which gives me a lot of potential power in my scripting or application code. With this revelation, I truly realized just how limitless Azure DevOps is.
 

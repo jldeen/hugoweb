@@ -23,7 +23,7 @@ layout = "post"
 
 <span style="font-family: Helvetica; font-size: medium;">This option uses a Linux virtual machine, which has a LAMP stack and WordPress already installed.</span><span style="font-family: Helvetica; font-size: medium;"> I ran two performance tests with the above specified parameters and concluded the average response times were around 10.33 secs, the average requests failed less than 0.11% of the time, and there were an average of 21.41 requests per second.</span>
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2016-04-25-at-16.22.41_ikm8fp.png)![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2016-04-25-at-16.23.16_pgdnsp.png)
+![](/images/Screen-Shot-2016-04-25-at-16.22.41_ikm8fp.png)![](/images/Screen-Shot-2016-04-25-at-16.23.16_pgdnsp.png)
 
 <span style="font-family: Helvetica; font-size: medium;"><u>Resource Costs Breakdown</u></span>
 
@@ -31,7 +31,7 @@ layout = "post"
 
 <span style="font-family: Helvetica; font-size: medium;">This option is still a relatively new concept, but I wanted to see a cost and performance breakdown anyway. From a security standpoint, using a Docker container is nice simply because if hackers gain root access via a web app with a vulnerability, they only have access to the single Docker container and not your entire host system. This option also uses a Linux virtual machine, just like option 1, and performed similarly. After running the same two performance tests mentioned above, the average response time was 10.29 seconds, but the average requests failed slightly higher at 2.40% of the time with an average of 35.53 requests per second.</span>
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2016-04-25-at-16.27.14_ztzxxc.png)![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2016-04-25-at-16.27.31_ratcfl.png)
+![](/images/Screen-Shot-2016-04-25-at-16.27.14_ztzxxc.png)![](/images/Screen-Shot-2016-04-25-at-16.27.31_ratcfl.png)
 
 <span style="font-family: Helvetica; font-size: medium;"><u>Resource Costs Breakdown</u></span>
 

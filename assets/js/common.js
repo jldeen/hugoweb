@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput = document.querySelector(".search__text"),
     search = document.querySelector(".search"),
     searchBox = document.querySelector(".search__box"),
-    toggleTheme = document.querySelector(".toggle-theme"),
     btnScrollToTop = document.querySelector(".top");
 
 
@@ -58,27 +57,38 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  document.documentElement.setAttribute('color-mode', 'dark');
+
   (function(){
-    // Then set the 'data-theme' attribute to whatever is in localstorage
-    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));    
+    // Then set the 'color-mode' attribute to whatever is in localstorage
+    document.documentElement.setAttribute('color-mode', localStorage.getItem('theme'));
+    console.log("Theme is set to:", localStorage.getItem('theme'));
+
+    document.getElementById("checkbox").checked = JSON.parse(localStorage.getItem("checkbox"));
+    console.log("Checkbox is set to:", localStorage.getItem("checkbox"));
   })();
 
   const checkbox = document.getElementById('checkbox');
 
   checkbox.addEventListener('change', () => {
     // This function will execute itself when the script is loaded
-    var targetTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-
-    document.documentElement.setAttribute('data-theme', targetTheme);
+    var targetTheme = document.documentElement.getAttribute('color-mode') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('color-mode', targetTheme);
 
     localStorage.setItem('theme', targetTheme)
     console.log('theme changed to: ' + localStorage.getItem('theme'))
+
+    if (checkbox.checked == true) {
+      localStorage.setItem("checkbox", JSON.stringify(true))
+      console.log(localStorage.getItem("checkbox"))
+    } else {
+      localStorage.setItem("checkbox", JSON.stringify(false))
+      console.log(localStorage.getItem("checkbox"))
+    }
   })
 
   //determines if the user has a set theme
   function detectColorScheme(){
-    var theme="light";    //default to light
-
     //local storage is used to override OS theme settings
     if(localStorage.getItem("theme")){
         if(localStorage.getItem("theme") == "dark"){
@@ -92,68 +102,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var theme = "dark";
     }
 
-    //dark theme preferred, set document with a `data-theme` attribute
+    //dark theme preferred, set document with a `color-mode` attribute
     if (theme=="dark") {
-        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.setAttribute("color-mode", "dark");
     }
   }
   detectColorScheme();
-
-  //identify the toggle switch HTML element
-  const toggleSwitch = document.querySelector('#label input[type="checkbox"]');
-
-  //function that changes the theme, and sets a localStorage variable to track the theme between page loads
-  function switchTheme(e) {
-      if (e.target.checked) {
-          localStorage.setItem('theme', 'dark');
-          document.documentElement.setAttribute('data-theme', 'dark');
-          toggleSwitch.checked = true;
-      } else {
-          localStorage.setItem('theme', 'light');
-          document.documentElement.setAttribute('data-theme', 'light');
-          toggleSwitch.checked = false;
-      }    
-  }
-
-  //listener for changing themes
-  // toggleSwitch.addEventListener('change', switchTheme, false);
-
-  //pre-check the dark-theme checkbox if dark-theme is set
-  // if (document.documentElement.getAttribute("data-theme") == "dark"){
-  //     toggleSwitch.checked = true;
-  // }
-
-  // // listen to OS preference
-  // const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-
-  // // change color scheme based on OS preference
-  // const setColorScheme = e => {
-    
-  //   console.log(e.matches)
-  //   if (e.matches) {
-  //     html.dataset.theme = `dark`;
-  //     console.log('Dark mode')
-  //   } else if (e.matches != true) {
-  //     html.dataset.theme = `light`;
-  //     console.log('Light mode')
-  //   }
-  // };
-  
-  // // set color scheme based on query
-  // setColorScheme(colorSchemeQueryList);
-
-  // // listen for preference changes
-  // colorSchemeQueryList.addEventListener('change', setColorScheme);
-
-  // const checkbox = document.getElementById("checkbox");
-
-  // checkbox.addEventListener('change', setColorScheme);
-
-  // checkbox.addEventListener("changed", () => {
-  //   // change the theme of the website
-  //   theme_switch()
-  // });
-
 
   /* =======================
   // Responsive Videos

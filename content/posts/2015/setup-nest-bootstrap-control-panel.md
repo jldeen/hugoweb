@@ -56,7 +56,7 @@ You should be prompted for a password. This is the root password you created for
 
 After you’re in, you should see something like the following:
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2015-07-20-at-19.52.46_vvkxft.png)If so, you will want to type:
+![](/images/Screen-Shot-2015-07-20-at-19.52.46_vvkxft.png)If so, you will want to type:
 
 create database nest_stats; grant all privileges on nest_stats.* to nest_stats@localhost identified by 'some-password';
 
@@ -80,11 +80,11 @@ Finally, you can copy and paste the following, but be sure to update the paths t
 
 After the above is all done, the remainder of your configuration will be done by accessing the web GUI interface. If everything was setup correctly, you should see the following:
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2015-07-20-at-20.01.29_lwsbt7.png)Go ahead and register a new user account. This can be whatever you want. The ultimate final step you will want to do is click on Settings at the top and enter your Nest.com login information, as well as your zip code. Click submit and run your cronjob by pasting the following (be sure to update the links to your environment) in to your shell:
+![](/images/Screen-Shot-2015-07-20-at-20.01.29_lwsbt7.png)Go ahead and register a new user account. This can be whatever you want. The ultimate final step you will want to do is click on Settings at the top and enter your Nest.com login information, as well as your zip code. Click submit and run your cronjob by pasting the following (be sure to update the links to your environment) in to your shell:
 
 /bin/rm -f /tmp/nest_php_* ; cd /var/www/Nest_Admin/includes/scripts/; /usr/bin/php /var/www/Nest_Admin/includes/scripts/collect-nest-data.php > /dev/null
 
 Assuming everything completed successfully, you should see data under the graphs tab like this:
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2015-07-20-at-20.04.26_zgmdf1.png)
+![](/images/Screen-Shot-2015-07-20-at-20.04.26_zgmdf1.png)
 

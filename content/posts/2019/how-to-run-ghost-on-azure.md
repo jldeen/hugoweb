@@ -91,11 +91,11 @@ This section uses Azure CLI since I find it simpler than clicking in the Azure P
 
 You can then verify your app settings in the portal if you want a visual confirmation. In the portal, find the created resource group, find your app service or dev web app and select one of them, and find `Application Settings` on the left hand side. About half way down the right blade page you should see an Application Settings table with the configured settings.
 
-![Screen%20Shot%202019-03-18%20at%2012.33.06-1](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.33.06-1.png)
+![Screen%20Shot%202019-03-18%20at%2012.33.06-1](/images/Screen%20Shot%202019-03-18%20at%2012.33.06-1.png)
 
-![Screen%20Shot%202019-03-18%20at%2012.34.04-1](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.34.04-1.png)
+![Screen%20Shot%202019-03-18%20at%2012.34.04-1](/images/Screen%20Shot%202019-03-18%20at%2012.34.04-1.png)
 
-![Screen%20Shot%202019-03-18%20at%2012.34.46](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.34.46.png)
+![Screen%20Shot%202019-03-18%20at%2012.34.46](/images/Screen%20Shot%202019-03-18%20at%2012.34.46.png)
 
 ### DevOps
 
@@ -105,22 +105,22 @@ Once you have your App Service in place, you can setup your DevOps pipeline to a
 
 For my CI/CD I'm using Azure Pipelines with 2 simple steps for build: `Docker Build` and `Docker Push`. My `build` step has `mode=development` or `mode=production` set for build argument depending on my branch. My `push` step will push the image to my private registry in Azure, which my release pipeline will then use.
 
-![Screen%20Shot%202019-03-18%20at%2012.49.55](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.49.55.png)
+![Screen%20Shot%202019-03-18%20at%2012.49.55](/images/Screen%20Shot%202019-03-18%20at%2012.49.55.png)
 
 
 ####Release
 
 I have two stages for release: `dev` and `prod` and each stage has 1 step: Deploy to Azure App Service. My dev stage will deploy to my dev slot in my app service and my `prod` step does a slot swap where dev is the source and "Swap with Production" is checked.
 
-![Screen%20Shot%202019-03-18%20at%2012.51.25](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.51.25.png)
+![Screen%20Shot%202019-03-18%20at%2012.51.25](/images/Screen%20Shot%202019-03-18%20at%2012.51.25.png)
 
-![Screen%20Shot%202019-03-18%20at%2012.53.49](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.53.49.png)
+![Screen%20Shot%202019-03-18%20at%2012.53.49](/images/Screen%20Shot%202019-03-18%20at%2012.53.49.png)
 
-![Screen%20Shot%202019-03-18%20at%2012.54.28](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.54.28.png)
+![Screen%20Shot%202019-03-18%20at%2012.54.28](/images/Screen%20Shot%202019-03-18%20at%2012.54.28.png)
 
 For my image source settings I chose `container registry` an entered my ACR details. For tag I use `$(BUILD.BUILDID)` so it will pull the tag pushed during build based on build number.
 
-![Screen%20Shot%202019-03-18%20at%2012.54.11](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202019-03-18%20at%2012.54.11.png)
+![Screen%20Shot%202019-03-18%20at%2012.54.11](/images/Screen%20Shot%202019-03-18%20at%2012.54.11.png)
 
 That's it - using the above settings, commands, and instructions, you should be able to run Ghost in a Docker container on Azure. In future posts I'll review how I utilized CloudFlare, Azure Storage and Azure CDN in lieu of Cloudinary.
 

@@ -32,5 +32,5 @@ After you have enabled 2FA for your devices, you will need to update the authent
 
 From there, you will want to navigate to the “Security” section, ensure Two Factor Authentication is on, and then find “Generate Password…” under “App Specific Password.” Once you click that link, another small window will pop up with your app-specific password. Simply copy the password and paste that into your application requesting your iCloud password; in my case, I pasted the provided password into my Outlook 2016 for Mac pop-up window.
 
-![](https://cdn.jessicadeen.com/content/images/2fa_tpijlj.png)
+![](/images/2fa_tpijlj.png)
 

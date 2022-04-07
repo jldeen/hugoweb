@@ -31,7 +31,7 @@ When using my dotfiles with WSL you still need to use the wsl-terminal emulator 
 
 Previously, I had an unmanaged repo where I just pushed dotfiles, but there was no configure script like I had for WSL/Ubuntu. There is now a formal branch for macOS [here](https://github.com/jldeen/dotfiles/tree/mac). This formal branch uses a brewfile to install a suite of tools I find necessary for my environment, as well as all the standard configuration options I have in the wsl branch. I even exported my iterm2 configuration and added that to the repo. When using my dotfiles, you will have to manually select the symlinked .itermcfg from the iTerm2 preferences and enter the path: **~/.itermcfg. **Restart iTerm2 for changes to take effect.
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-03-02-at-11.12.23_zcwwgq.png)
+![](/images/Screen-Shot-2018-03-02-at-11.12.23_zcwwgq.png)
 
 <span style="text-decoration: underline;">Formal support for Ubuntu (16.04 and 17.10)</span>
 
@@ -40,7 +40,7 @@ While others would use the WSL branch on full Ubuntu 16.04 and 17.10 installatio
 - Copies gnome.profile colors and configures terminal (if selected to use my dotfiles)
 - Creates a symlink to the settings.json file in the dotfiles repo for VS Code (Solarized dark color scheme in VS Code on Ubuntu!)
 
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-03-02-at-09.30.22_d1zyft.png)
+![](/images/Screen-Shot-2018-03-02-at-09.30.22_d1zyft.png)
 
 <span style="text-decoration: underline;">Other general updates (WSL/Ubuntu/macOS):</span>
 
@@ -54,9 +54,9 @@ While others would use the WSL branch on full Ubuntu 16.04 and 17.10 installatio
 
 Here are pics of all 3 environments using my current dotfiles published today:
 
-![](https://cdn.jessicadeen.com/content/images/2018-03-02_pnqvgj.png)
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-03-02-at-09.34.47_z1vj2o.png)
-![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-03-02-at-10.03.17_jyxppw.png)
+![](/images/2018-03-02_pnqvgj.png)
+![](/images/Screen-Shot-2018-03-02-at-09.34.47_z1vj2o.png)
+![](/images/Screen-Shot-2018-03-02-at-10.03.17_jyxppw.png)
 
 **Things to note:**
 

@@ -21,8 +21,8 @@ First, you can find out about how to setup both charts in my [previous blog post
 
 The way I’ve configured my nginx/kube-lego setup is as follows:
 
-1. Pointed Google DNS Namespace record to Azure DNS az.jessicadeen.com![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-05-07-at-09.55.23_whitdn.png)
-2. From Azure DNS, created an A record pointing to my nginx ingress within my K8s cluster 1. For this, I used a wildcard *.k8s![](https://cdn.jessicadeen.com/content/images/Screen-Shot-2018-05-07-at-09.58.08_xqgcbs.png)
+1. Pointed Google DNS Namespace record to Azure DNS az.jessicadeen.com![](/images/Screen-Shot-2018-05-07-at-09.55.23_whitdn.png)
+2. From Azure DNS, created an A record pointing to my nginx ingress within my K8s cluster 1. For this, I used a wildcard *.k8s![](/images/Screen-Shot-2018-05-07-at-09.58.08_xqgcbs.png)
 
 What this means is anytime I register anything with .k8s.az.jessicadeen as the suffix (I.E bob.k8s.az.jessicadeen.com) between Google DNS and Azure DNS, traffic is routed to my nginx ingress controller in my Kubernetes cluster.
 

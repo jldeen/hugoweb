@@ -38,7 +38,7 @@ Using certbot, which you just installed, you can now create your Let's Encrypt c
 
 `certbot certonly --manual --preferred-challenges=dns --email contact@domain.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos --domain "website.com" --work-dir /path/to/work-dir --config-dir /path/to/config-dir --logs-dir /path/to/logs-dir`
 
-![certbot-example](https://cdn.jessicadeen.com/content/images/certbot-example.png)
+![certbot-example](/images/certbot-example.png)
 
 If you get the above error you will need to add the following flags just as I did in my example command:
 
@@ -72,9 +72,9 @@ or via apt-get:
 
 Then simply upload via portal by selecting your app service > ssl settings (under settings on the left) > Private Certificates (.pfx)
 
-![Screen-Shot-2019-01-06-at-14.28.36-modified](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-06-at-14.28.36-modified.png)
+![Screen-Shot-2019-01-06-at-14.28.36-modified](/images/Screen-Shot-2019-01-06-at-14.28.36-modified.png)
 
-![Screen-Shot-2019-01-07-at-10.48.27](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-07-at-10.48.27.png)
+![Screen-Shot-2019-01-07-at-10.48.27](/images/Screen-Shot-2019-01-07-at-10.48.27.png)
 
 #### CLI Method
 
@@ -110,11 +110,11 @@ Again, select your app service > ssl settings (under settings on the left) > Bin
 
 Add SSL Binding
 
-![Screen-Shot-2019-01-07-at-10.46.35](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-07-at-10.46.35.png)
+![Screen-Shot-2019-01-07-at-10.46.35](/images/Screen-Shot-2019-01-07-at-10.46.35.png)
 
 Select hostname, Private Certificate Thumbprint, SSL Type (SNI SSL)
 
-![Screen-Shot-2019-01-07-at-10.57.53](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-07-at-10.57.53.png)
+![Screen-Shot-2019-01-07-at-10.57.53](/images/Screen-Shot-2019-01-07-at-10.57.53.png)
 
 #### CLI Method
 

@@ -27,22 +27,22 @@ There are 3 main configurations you need for x64 Windows App Service support:
 
 1. Configure 64-bit platform support (in General Settings)
 
-![Screen%20Shot%202020-03-30%20at%202.12.41%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-30%20at%202.12.41%20PM.png)
+![Screen%20Shot%202020-03-30%20at%202.12.41%20PM](/images/Screen%20Shot%202020-03-30%20at%202.12.41%20PM.png)
 
 2. Application Setting (environment variable) for `WEBSITE_NODE_DEFAULT_VERSION` == `~10`. 
 **Note:** The tilde is not a typo and needs to be there.
 
-![Screen%20Shot%202020-03-30%20at%202.21.32%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-30%20at%202.21.32%20PM.png)
+![Screen%20Shot%202020-03-30%20at%202.21.32%20PM](/images/Screen%20Shot%202020-03-30%20at%202.21.32%20PM.png)
 
 3. Ensure you are using a "Basic" or higher SKU for your app service plan. 64-bit isn't supported for "Free" or "Shared" SKUs. Also, be sure to remove any other settings/workarounds - you do not need any other environment variables or settings (this includes any manual overrides you may have added to your deploy.cmd or iisnode.yml).
 
 Once you have these configurations applied, you should be able to support x64 bit architecture. In fact, you can test your settings by using Kudu. Try this - log into your Azure Portal, navigating to your web app, scrolling down to Console (under Development Tools) on the left hand side. Within console type, `node -p "process.arch"`. Assuming you performed the 2.5 steps above, you should now see `x64` returned. 
 
-![Screen%20Shot%202020-04-03%20at%201.13.05%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-04-03%20at%201.13.05%20PM.png)
+![Screen%20Shot%202020-04-03%20at%201.13.05%20PM](/images/Screen%20Shot%202020-04-03%20at%201.13.05%20PM.png)
 
 You could even do an additional check and type `where node` to see both Program Files (x86) and (Program Files) ((for x64)) listed.
 
-![Screen%20Shot%202020-04-03%20at%201.13.24%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-04-03%20at%201.13.24%20PM.png)
+![Screen%20Shot%202020-04-03%20at%201.13.24%20PM](/images/Screen%20Shot%202020-04-03%20at%201.13.24%20PM.png)
 
 **Note:** If you had an app that was previously configured with some workarounds, clear them up, and __redeploy__ using the new settings - any 500 errors should be resolved.
 
@@ -102,7 +102,7 @@ You can see how this is then referenced, in full context, on GitHub [here](https
 
 To test all this out, I forked the repo Chris used in the blog post I mentioned above and updated the one click deployment to stand up a Windows App Service Plan, Windows Web Site (with x64 support), Application Insights, and a storage account. I added my Ghost Azure Storage adapter to the repo and ran a one-click-deploy - it worked! I could tell for sure I was installing x64 node packages by looking at the logs - previously I would see node modules referenceing `ia32` support and now I see the expected `win32-x64` package architecture.
 
-![Screen%20Shot%202020-04-03%20at%202.26.14%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-04-03%20at%202.26.14%20PM.png)
+![Screen%20Shot%202020-04-03%20at%202.26.14%20PM](/images/Screen%20Shot%202020-04-03%20at%202.26.14%20PM.png)
 
 Or, if you're like me and you enjoy playing with the command line, you could go back over to your Kudu console and type one of the following commands:
 
@@ -118,7 +118,7 @@ npm list | grep sharp
 
 At the time of this blog post the latest version of Sharp is 0.25.2, which is exactly what Kudu reports. Excellent.
 
-![Screen%20Shot%202020-04-03%20at%202.37.09%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-04-03%20at%202.37.09%20PM.png)
+![Screen%20Shot%202020-04-03%20at%202.37.09%20PM](/images/Screen%20Shot%202020-04-03%20at%202.37.09%20PM.png)
 
 If you want to give it a try yourself, [head on over to my repo and hit the one-click-deploy to Azure button](https://github.com/jldeen/Ghost-Azure#one-click-deploy)!
 

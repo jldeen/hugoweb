@@ -27,15 +27,15 @@ I then tried every single Calendar service I could find before finally settling 
 
 Their platform is pretty simple - you sign up, you get a 14 day trial of premium (and you don't have to enter a credit card), then you enter your calendar inforamtion and you're off! 
 
-![Screen-Shot-2019-01-10-at-17.17.35](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-10-at-17.17.35.png)
+![Screen-Shot-2019-01-10-at-17.17.35](/images/Screen-Shot-2019-01-10-at-17.17.35.png)
 
 You can then custom tailor your calendar - colors, fonts, style (agenda, pinboard, monthly), etc., acorrding to your needs.
 
-![Screen-Shot-2019-01-10-at-17.33.05](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-10-at-17.33.05.png)
+![Screen-Shot-2019-01-10-at-17.33.05](/images/Screen-Shot-2019-01-10-at-17.33.05.png)
 
 After you're done designing how you want your calendar to look, you can grab the universal embed code by clicking, "Add to your site." From there, if you're using Ghost like I am, you just use the HTML object to paste in the Tockify embed code.
 
-![Screen-Shot-2019-01-10-at-17.21.43-edit](https://cdn.jessicadeen.com/content/images/Screen-Shot-2019-01-10-at-17.21.43-edit.png)
+![Screen-Shot-2019-01-10-at-17.21.43-edit](/images/Screen-Shot-2019-01-10-at-17.21.43-edit.png)
 
 When I first pasted the code over into a new page using the HTML option I couldn't see my calendar. As I said, I use the open source blogging software, [Ghost](https://github.com/TryGhost/Ghost), and the widely popular Casper theme with a few tweaks (disqus for comments, DeenOfDevOps branding, etc), which will all come into play here shortly...
 

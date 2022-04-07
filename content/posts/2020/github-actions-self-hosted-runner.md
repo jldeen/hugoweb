@@ -40,19 +40,19 @@ Let's begin.
 
 From within your desired build repo, navigate to "Settings"
 
-![Screen%20Shot%202020-03-04%20at%203.58.09%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-04%20at%203.58.09%20PM.png)
+![Screen%20Shot%202020-03-04%20at%203.58.09%20PM](/images/Screen%20Shot%202020-03-04%20at%203.58.09%20PM.png)
 
 Once in Settings, you should see "Actions" on the left hand side.
 
-![Screen%20Shot%202020-03-04%20at%204.01.37%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-04%20at%204.01.37%20PM.png)
+![Screen%20Shot%202020-03-04%20at%204.01.37%20PM](/images/Screen%20Shot%202020-03-04%20at%204.01.37%20PM.png)
 
 And once in Actions, you should see "Add runner" under "Self Hosted Runners."
 
-![Screen%20Shot%202020-03-04%20at%204.03.26%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-04%20at%204.03.26%20PM.png)
+![Screen%20Shot%202020-03-04%20at%204.03.26%20PM](/images/Screen%20Shot%202020-03-04%20at%204.03.26%20PM.png)
 
 Now, this will bring up a window with instructions, based on operating system, to help configure your runner. I have included the Linux instructions below. However, what is _not_ on this pop up is how to configure it as a service (if you just want the "as a service" instructions, scroll down to the "Configuring as a Service" section. It also fails to explicitly make note of how you will have to follow these instructions _each_ and _every_ time you want to add a runner to a repo. Here's an example of this window:
 
-![Screen%20Shot%202020-03-04%20at%204.04.10%20PM](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202020-03-04%20at%204.04.10%20PM.png)
+![Screen%20Shot%202020-03-04%20at%204.04.10%20PM](/images/Screen%20Shot%202020-03-04%20at%204.04.10%20PM.png)
 
 ### Download
 

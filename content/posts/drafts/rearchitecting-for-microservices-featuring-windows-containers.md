@@ -57,7 +57,7 @@ This Dockerfile assumes the msbuild of our .sln file has already happened and th
 
 2. The image this Dockerfile builds is just under 10GB, coming in at 8.13GB. That's quite large, and while it certainly reduces our VM footprint, it's still too large to suggest we have gained much in terms of performance enhancements.
 
-![Screen%20Shot%202021-04-22%20at%2016.57.04](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202021-04-22%20at%2016.57.04.png)
+![Screen%20Shot%202021-04-22%20at%2016.57.04](/images/Screen%20Shot%202021-04-22%20at%2016.57.04.png)
 
 3. We haven't solved the "it works on my machine" issue since the build is still contingent on the host machine having both Visual Studio installed, and running msbuild prior to building your Docker image.
 
@@ -67,7 +67,7 @@ In multistage Dockerfiles, only the final stage is what ends up becoming a part 
 
 These intentional changes and considerations have helped us to cut our existing Docker image almost in half. We are now at 4.9GB in size!
 
-![Screen%20Shot%202021-04-22%20at%2017.04.06](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202021-04-22%20at%2017.04.06.png)
+![Screen%20Shot%202021-04-22%20at%2017.04.06](/images/Screen%20Shot%202021-04-22%20at%2017.04.06.png)
 
 Again, this is great improvement with very little rearchitecting needed on our part, or our developers parts, BUT this is not sustainable. A nearly 5GB image is still too large to offer any true performance benefits, especially when, as we saw in our video, it takes almost 10 minutes to pull our image, and star our container in Azure (whether that be in Azure App Service with Windows Containers, or Azure Container Instances - not recommended for long running applications).
 
@@ -110,13 +110,13 @@ Similar to our last Dockerfile within Windows, this, too, is a multistage Docker
 
 Right off the bat, since our base image for all tasks focus on the SDK, our final image will come in at 1.77GB (this was the "large" image we talked about in our show). 
 
-![Screen%20Shot%202021-04-23%20at%2014.21.53](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202021-04-23%20at%2014.21.53.png)
+![Screen%20Shot%202021-04-23%20at%2014.21.53](/images/Screen%20Shot%202021-04-23%20at%2014.21.53.png)
 
 Now, this is a tremendous improvement over the 8.13GB we initially started with from Visual Studio 2019. However, we can do better in terms of size and performance.
 
 Just as I walked Damian through in our video, we can be very intentional about the processes needed for our application to run. There isn't anything specific a Debian image offers us, which means we can reduce our footprint by first switching to an Alpine based image, and then separating our build and runtime processes (I.E SDK for build, and runtime for final). When we made these small changes to our Dockerfile, or our application "instructions", we were able to reduce our image size to 192MB! 
 
-![Screen%20Shot%202021-04-23%20at%2014.22.30](https://cdn.jessicadeen.com/content/images/Screen%20Shot%202021-04-23%20at%2014.22.30.png)
+![Screen%20Shot%202021-04-23%20at%2014.22.30](/images/Screen%20Shot%202021-04-23%20at%2014.22.30.png)
 
 That's a 2200%+ DECREASE in total image size from where we first started with the Windows and Visual Studio 2019 Dockerfile, and an even larger footprint decrease if we consider we previously needed and entire virtual machine to run this app!
 

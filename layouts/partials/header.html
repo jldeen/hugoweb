@@ -1,3 +1,8 @@
+<script>
+// Render blocking JS:
+if (localStorage.theme) document.documentElement.setAttribute("color-mode", localStorage.theme);
+</script>
+
 <!-- begin header -->
 <header class="header" id="top">
   <div class="container">
@@ -35,8 +40,8 @@
                 <div>
                   <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="label">
-                      <i class="ion ion-ios-moon"></i>
-                      <i class="ion ion-ios-sunny"></i>
+                      <i class="ion ion-ios-moon" title="Enable dark mode"></i>
+                      <i class="ion ion-ios-sunny" title="Enable light mode"></i>
                       <div class="ball"></div>
                     </label>
                 </div>
