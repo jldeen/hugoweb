@@ -33,18 +33,20 @@ Since my demo uses a Maven Springboot project, I really wanted to use the smalle
 
 3. When using Selenium Hub, especially in a container format, as [the documentation referenced in point 2](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Docker-Compose#step-4-running-tests) indicates, you have to use a `RemoteWebDriver` to connect to your browser as opposed to the more standard ChromeDriver used in our `local` and `pipeline` environments. Now, when using the `RemoteWebDriver` call as suggested by Selenium's docs (using DesiredCapabilities), you might get an error similar to the following:
 
-```
+```java
 Message: org.openqa.selenium.remote.DesiredCapabilities chrome
 
 INFO: Using new ChromeOptions() is preferred to DesiredCapabilities.chrome() Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 33954 Only local connections are allowed.
 ```
 
 To resolve that error/info message, I simply consolidated their example code to the following (which does not use DesiredCapabilities):
-```
+
+```java
 chromeOptions = new ChromeOptions();
 String Selenium = "http://selenium_hub:4444/wd/hub";
 driver = new RemoteWebDriver(new URL(Selenium), chromeOptions);
 ```
+
 If you read the first post, you can find how I used the above in the getEnvironment() class under the `else if (runWhere.equals("container"))` statement.
 
 Now that we understand the _why_ we wrote our `container` condition in our getEnvironment() class, let's put it to use and have some fun with our pipeline steps!
@@ -61,7 +63,7 @@ If you don't have a Codefresh account, and want to play around with it, you can 
 
 You can take a look at [my codefresh.yaml here](https://github.com/jldeen/spring-boot-websocket-chat-demo/blob/applitools/codefresh.yml), but for now let's just start with our services section. At the very top of our yaml, we'll use the following:
 
-```
+```yaml
 version: "1.0"
 services:
   name: selenium_hub
@@ -107,7 +109,7 @@ See how similar it looks to a docker-compose.yaml file? Sweet, huh? Once we defi
 
 First, however, let's do our http check and then define our Applitools environment variables.
 
-```
+```yaml
 http_check:
   image = jldeen/docker-jfrog-cli-java:1.0.4
   title: "Http Check"
@@ -144,7 +146,7 @@ You might also notice the second task has both `export` and `cf_export`. The fir
 
 The first 2 tasks are self explanatory as far as their function, so now let's show the code for our final and most important task: visual tests using maven.
 
-```
+```yaml
 visual_testing:
   image = maven:3.6.3-jdk-13
   title: "Running Visual Tests"
@@ -157,7 +159,8 @@ visual_testing:
     - selenium_hub
 ```
 Notice the the first export command: `export RUNWHERE=container` as well as the last 2 lines:
-```
+
+```yaml
   services:
     - selenium_hub
 ```
@@ -175,7 +178,7 @@ To give you an idea and some practice, you can play with docker-compose on your 
 - [this docker-compose.yaml](https://gist.github.com/jldeen/7f2b69b57fdb28d0240d5389bc1d6047) 
 - To change line 69 in `visual_tests/src/test/java/base/BaseTests.java`.
 
-```
+```yaml
 # line 69 for Codefresh
 String Selenium = "http://selenium_hub:4444/wd/hub";
 
@@ -189,6 +192,3 @@ As a reminder, after making the temporary code change, you will still need to ex
 
 Congrats! You just ran visual tests utilizing containers! You're cloud native ready now. Time to update that resume.
 ![wink](https://media.giphy.com/media/ui1hpJSyBDWlG/giphy.gif)
-
-
-

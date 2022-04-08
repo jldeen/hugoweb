@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["devops", "bash", "linux", "scripting", "rest", "microsoft", "powerlevel9k"]
+categories = ["devops", "bash", "linux", "scripting", "powerlevel9k"]
 date = 2019-03-02T00:10:19Z
 description = ""
 draft = false
 image = "../../images/Screen-Shot-2019-03-13-at-14.00.05.png"
 slug = "azure-devops-rest-api"
-tags = ["devops", "bash", "linux", "scripting", "rest", "microsoft", "powerlevel9k"]
+tags = ["devops", "bash", "linux", "scripting", "powerlevel9k"]
 title = "How to use Azure DevOps open REST API with Curl"
 layout = "post"
 
@@ -19,11 +19,9 @@ That's not all Azure DevOps can do though, and even as I write this, I think bac
 
 Every person and company's need is different, we know that, so what I'm writing about is _my_ need as a professional speaker who's sole desire is to educate others on what's possible, no matter how elaborate the configuration or pipeline needs to be; no matter how many 3rd party tools one requires. In order to be effective, I need to easily reset and start fresh when I showcase certain functionality, especially when I am working "from scratch." Recently I wondered how I could quickly and easily delete build and release pipelines within a project from the command line since my favorite hashtag is #noclickyclicky. I had heard Azure DevOps had an open [REST API](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.0), but I wasn't aware of just how useful it would be for me.
 
-
-
 In just 7 lines of code, I was able to create a shell script, `azd-cleanup.sh`, that would delete any build and/or release pipeline I wanted by simply entering the number of either.
 
-```
+```bash
 #!/bin/bash
 set -eou pipefail
 source ./scripts/variables.sh
@@ -39,7 +37,7 @@ Now, I obviously can't just make those calls without some kind of authentication
 
 The variables.sh script has 6 functions, leverages Azure CLI to capture my username for Azure DevOps, and includes a prompt to securely capture my Azure DevOps Personal Access Token.
 
-```
+```bash
 PRESENTER=`az account show | jq -r .user.name`
 ORGANIZATION=organization-goes-here
 PROJECT=project-name-goes-here
@@ -91,7 +89,7 @@ function releaseDef()
 ```
 I can then automate this even further by making a call to it in my makefile. So my make azd-clean command would look like this:
 
-```
+```bash
 azd-clean:
 	@scripts/azdo-cleanup.sh
 ```
@@ -100,6 +98,3 @@ You can see the script in action, makefile and all, in the featured image for th
 ![AzDAPI](/images/AzDAPI.gif)
 
 The best part is, since I am calling the Build and Release service via the open AzD REST API I could, in theory, do the same thing from a build/release bash task from within AzD in the event the functionality I'm looking for is not available by default. Even if the functionality *does* exist from the UI, I could still execute a REST API call to to the respective service, which gives me a lot of potential power in my scripting or application code. With this revelation, I truly realized just how limitless Azure DevOps is.
-
-
-

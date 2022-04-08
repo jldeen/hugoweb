@@ -40,7 +40,7 @@ This doesn't look very good so I came up with a second, less than ideal, but muc
 
 2. You can use the following script as an inline bash task with an Ubuntu hosted (or private) agent:
 
-```
+```bash
 set -eou pipefail
  
 #set helm version
@@ -68,6 +68,3 @@ Another reminder about changes in Helm 3 - releases are now per namespace. You c
 There are quite a bit more changes, updates, and new functionality in Helm 3 that are out of scope for this blog post. If you're curious and you haven't seen Helm 3 in action yet, I did a [webinar with Codefresh](https://codefresh.io/events/helm-3-navigating-distant-shores/), a Kubernetes native and dedicated CI/CD platform (also container based), about a month ago. I promise it's not pitchy.
 
 Comment below if this helps you and I'll be sure to update it once the PR is merged.
-
-
-

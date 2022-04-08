@@ -21,4 +21,3 @@ If you're using macOS 10.14 Mojave and are having trouble with the hotspot redir
 "A problem occurred. The webpage couldn't be loaded." This doesn't give me a lot to go on, but thanks to some digging, I discovered the captive redirect wasn't working right. For now, the temporary work around I have found is to click "OK" and then close that window. Next, launch a browser window and navigate to: [http://captive.apple.com/hotspot-detect.html](http://captive.apple.com/hotspot-detect.html)
 
 After, you should be redirected to the wifi hotspot connection portal so you can proceed with your usual authentication. Hope this helps someone else!
-

@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["devops", "github", "actions", "linux"]
+categories = ["devops", "github actions", "linux"]
 date = 2020-03-05T11:00:00Z
 description = ""
 draft = false
 image = "../../images/Screen%20Shot%202020-03-04%20at%202.59.35%20PM.png"
 slug = "github-actions-self-hosted-runner"
-tags = ["devops", "github", "actions", "linux"]
+tags = ["devops", "github actions", "linux"]
 title = "How to use GitHub Actions with your own self-hosted runner (aka build agent)"
 layout = "post"
 
@@ -58,7 +58,7 @@ Now, this will bring up a window with instructions, based on operating system, t
 
 Let's say my project name is `itt-40`, here are the commands I would run on the build server (runner) I wish to use:
 
-```
+```bash
 // Create a folder
 mkdir itt-40 && cd itt-40
 
@@ -81,7 +81,8 @@ tar xzf ./actions-runner-linux-x64-2.165.2.tar.gz
 When I first figured out the below instructions, I honestly took a guess and ran the same commands I would run if I were setting up a build agent within Azure DevOps.
 
 To configure your repo runner as a service, run the following commands:
-```
+
+```bash
 // From the ~/itt-40 [cd && cd ~/itt-40]
 sudo ./svc.sh install
 sudo ./svc.sh start
@@ -99,7 +100,7 @@ Let's show you a full example:
 
 Basic example:
 
-```
+```YAML
 on: [push]
 
 name: self-hosted-example
@@ -117,6 +118,3 @@ On a final note, it should be mentioned after I wrote this post, I did some digg
 ![smart](https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif)
 
 Happy DevOps'ing!
-
-
-

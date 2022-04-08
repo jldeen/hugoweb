@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["azure devops", "Azure", "devops"]
+categories = ["Azure", "devops"]
 date = 2019-09-07T19:30:00Z
 description = ""
 draft = false
 image = "../../images/Screen%20Shot%202019-09-04%20at%2011.50.47%20PM.png"
 slug = "how-to-setup-an-end-to-end-azure-devops-pipeline-from-the-azure-portal"
-tags = ["azure devops", "Azure", "devops"]
+tags = ["Azure", "devops"]
 title = "How to setup an end-to-end Azure DevOps pipeline from an Azure Web App"
 layout = "post"
 
@@ -55,7 +55,7 @@ Click on Deployment Center and you'll notice this is no "Right click, publish" (
 
 ![Screen%20Shot%202019-09-04%20at%2011.50.47%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.50.47%20PM.png)
 
- I chose GitHub since that's where _all_ my code lives and then I hit "Continue."
+I chose GitHub since that's where _all_ my code lives and then I hit "Continue."
 
 Note: You may have to authorize a connection to GitHub if you have not done so previously.
 
@@ -94,7 +94,6 @@ And when I clicked edit, I saw the tasks that were preselected and preconfigured
 My first build was successful (whew) and here's an example of what that looks like:
 
 ![buildExample](/images/size/600/buildExample.png)
-
 
 My release pipeline looks the same - configured with tasks (one task) that made sense for my scenario.
 

@@ -32,11 +32,11 @@ The steps are as follows:
 
 Finally, navigate to the following location:
 
-HKEY_USERS RepairHive Microsoft Windows NT CurrentVersion Winlogon
+`HKEY_USERS RepairHive Microsoft Windows NT CurrentVersion Winlogon`
 
-Double click Userinit to change its key to the following:
+Double click `Userinit` to change its key to the following:
 
-C:WindowsSystem32Userinit.exe,
+`C:WindowsSystem32Userinit.exe,`
 
 NOTE: You MUST, MUST, MUST include the comma. That is NOT NOT NOT a typo!
 
@@ -45,4 +45,3 @@ After entering this string, you MUST MUST MUST unload the Hive. Select the hive 
 Restart the computer manually, Windows should be able to successfully log in now and you can proceed with rest of your removal / repair.
 
 <span style="font-family: Wingdings;">J</span>
-

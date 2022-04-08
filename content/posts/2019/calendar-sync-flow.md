@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["Google", "calendars", "flow", "automation"]
+categories = ["calendars", "flow", "automation"]
 date = 2019-01-08T23:17:00Z
 description = ""
 draft = false
 image = "../../images/Screen-Shot-2019-01-08-at-14.45.51.png"
 slug = "calendar-sync-flow"
-tags = ["Google", "calendars", "flow", "automation"]
+tags = ["calendars", "flow", "automation"]
 title = "How I set up a public Google Calendar and enabled auto-sync to an Office365 calendar in 3 steps"
 layout = "post"
 
@@ -66,6 +66,3 @@ Also, since Google Calendar has an app for iPhone I can easily see my Travel Ava
 ![IMG_3560](/images/IMG_3560_o.jpg)
 
 All that said, I now have a publicly available (and website embedded calendar) that is auto-synced to my work calendar. You can access my public calendar [here](https://jessicadeen.com/availability/).
-
-
-

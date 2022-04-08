@@ -22,4 +22,3 @@ Nest released a few updates, but none seemed to resolve my issue, despite the up
 The 4.0.6 update has been installed on my thermostat now for about 3 weeks and in that time I have had ZERO offline issues and my voltage is consistently hovering around 3.89 and 3.9.
 
 If you have experienced intermittently offline problems and low voltage with your Nest, call them up and ask to try the 4.0.6 update to see if it resolves your problem and let me know in the comments!
-

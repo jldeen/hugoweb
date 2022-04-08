@@ -23,7 +23,7 @@ One of the benefits I like and Ghost offers is all the blogging/writing is done 
 
 For those who don't want to read a long blog post, the tl;dr, or the Dockerfile I use is below:
 
-```
+```Dockerfile
 FROM ghost:2.18.1-alpine
 
 # set url-hostname for Ghost with build arg
@@ -54,10 +54,14 @@ Now, with the above Dockerfile, I can keep my updated theme in my working conten
 ### Local testing
 
 To build this image locally, I run the following command:
-`docker build --build-arg mode=development -f Dockerfile -t jldeen/deen-of-devops .`
+```bash
+docker build --build-arg mode=development -f Dockerfile -t jldeen/deen-of-devops .
+```
 
 Then, to run this image locally, I run the following command:
-`docker run -it --name ghost-test -e url=http://localhost:2368 -p 2368:2368 jldeen/deen-of-devops:latest`
+```bash
+docker run -it --name ghost-test -e url=http://localhost:2368 -p 2368:2368 jldeen/deen-of-devops:latest
+```
 
 You'll notice my `build` command uses a build-argument `development` which I'm capturing on line 4 of my Dockerfile `ARG mode`; line 5 will then set it appropriately for later use on line 9. I do this intentionally because I have 2 different config.json files that are labeled `config.development.json` and `config.production.json`. Both have different database connection strings so I can safely test out new features, especially since I occasionally have to touch database schemas. Using two different config files also helped me test out different storage adapters - more on that in a later blog post.
 
@@ -123,8 +127,3 @@ For my image source settings I chose `container registry` an entered my ACR deta
 ![Screen%20Shot%202019-03-18%20at%2012.54.11](/images/Screen%20Shot%202019-03-18%20at%2012.54.11.png)
 
 That's it - using the above settings, commands, and instructions, you should be able to run Ghost in a Docker container on Azure. In future posts I'll review how I utilized CloudFlare, Azure Storage and Azure CDN in lieu of Cloudinary.
-
-
-
-
-

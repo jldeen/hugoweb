@@ -52,7 +52,7 @@ Now, because I'm a huge fan of #noclickyclicky I setup an ARM template to create
 
 1. `siteProperties` - specifically the `"use32BitWorkerProcess": false,` property, which will tell your App Service Config to use x64 instead. If you're curious, Azure Docs does have a good template reference I used to get the following settings [here](https://docs.microsoft.com/azure/templates/microsoft.web/2018-11-01/sites?WT.mc_id=docs-blog-jessde).
 
-```
+```json
 "siteProperties": {
     "netFrameworkVersion": "v4.7",  
     "use32BitWorkerProcess": false,
@@ -68,7 +68,7 @@ Now, because I'm a huge fan of #noclickyclicky I setup an ARM template to create
 ```
 You can then call this property by using the [web config resource](https://docs.microsoft.com/azure/templates/microsoft.web/2018-11-01/sites/config?WT.mc_id=docs-blog-jessde) for your `Microsoft.web/sites` resource. Here's the relevant snippet:
 
-```
+```json
 {
     "apiVersion": "2018-11-01",
     "name": "web",
@@ -83,7 +83,7 @@ An example of how you would declare a Microsoft.Web/sites resource with the web 
 
 2. appSettings - specifically the `WEBSITE_NODE_DEFAULT_VERSION` property. The app settings template reference doc is [here](https://docs.microsoft.com/azure/templates/microsoft.web/2018-11-01/sites/config-appsettings?WT.mc_id=docs-blog-jessde).
 
-```
+```json
 {
     "name": "appsettings",
     "type": "config",
@@ -106,7 +106,7 @@ To test all this out, I forked the repo Chris used in the blog post I mentioned 
 
 Or, if you're like me and you enjoy playing with the command line, you could go back over to your Kudu console and type one of the following commands:
 
-```
+```bash
 # faster command
 cat node_modules/sharp/package.json | grep version
 
@@ -121,6 +121,3 @@ At the time of this blog post the latest version of Sharp is 0.25.2, which is ex
 ![Screen%20Shot%202020-04-03%20at%202.37.09%20PM](/images/Screen%20Shot%202020-04-03%20at%202.37.09%20PM.png)
 
 If you want to give it a try yourself, [head on over to my repo and hit the one-click-deploy to Azure button](https://github.com/jldeen/Ghost-Azure#one-click-deploy)!
-
-
-

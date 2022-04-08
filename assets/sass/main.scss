@@ -53,7 +53,12 @@
 /* >>>>>>>>>>>>>> :: 1.3-Shared <<<<<<<<<<<<<<< */
 @import '1-tools/shared';
 /* >>>>>>>>>>>>>> :: 1.4-Syntax Highlighting <<<<<<<<<<<<<<< */
-@import '1-tools/syntax-highlighting';
+@media (prefers-color-scheme: dark) {
+    @import '1-tools/syntax-highlighting-dark';
+}
+@media (prefers-color-scheme: light) {
+    @import '1-tools/syntax-highlighting-light';
+}
 /* >>>>>>>>>>>>>> :: 1.5-Grid <<<<<<<<<<<<<<< */
 @import '1-tools/grid';
 /* >>>>>>>>>>>>>> :: 1.6-Animate <<<<<<<<<<<<<<< */

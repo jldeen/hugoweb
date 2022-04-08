@@ -8,8 +8,7 @@ title = "About"
 
 +++
 
-
-<center><img src="../images/jessica-deen.png" alt="profile" width="250"></center>
+<img src="../images/jessica-deen.png" alt="profile" width="250">
 </br>
 Jessica is a Principal Cloud Developer Advocate for Microsoft focusing on Azure, Infrastructure, DevOps, and OSS. Prior to joining Microsoft, she spent over a decade as an IT Consultant / Systems Administrator for various corporate and enterprise environments, catering to end users and IT professionals in the San Francisco Bay Area. Jessica holds three Microsoft Certifications (MCP, MSTS, Azure Infrastructure), 3 CompTIA certifications (A+, Network+, and Security+), 4 Apple Certifications, and is a former 4-year Microsoft Most Valuable Professional for Windows and Devices for IT. In 2013, she also achieved her [FEMA Professional Development Series (PDS)](https://training.fema.gov/is/searchis.aspx?search=PDS) certification from the U.S Department of Homeland Security, which recognizes her communication, leadership, influence, problem solving, and decision making abilities during times of crisis and emergency.
 

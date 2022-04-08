@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["Canon", "Technology", "Cameras", "macos"]
+categories = ["Canon", "Cameras", "macos"]
 date = 2018-12-05T18:41:34Z
 description = ""
 draft = false
 image = "../../images/canon.jpg"
 slug = "canon-t6i-and-eos-utility-macos-mojave-or-any-platform"
-tags = ["Canon", "Technology", "Cameras", "macos"]
+tags = ["Canon", "Cameras", "macos"]
 title = "Canon Rebel T6i and EOS Utility macOS Mojave (or any platform)"
 layout = "post"
 
@@ -18,6 +18,3 @@ First, if you have a T6i and you go to the [Canon Support Website](https://www.u
 After installing the above software so I could utilize the remote shooting feature, I spent over an hour fighting with the camera and my macOS currently running Mojave (I even tried with Windows 10 on my Surface and the same problem persisted). Hence the inspiration behind this blog post - I learned something SUPER SIMPLE and wanted to share: it's a WiFi problem. Sorta.
 
 If you are having trouble connecting your Canon T6i (or any WiFi enabled Canon camera I would imagine) to your macOS or Windows 10 system via the provided AV USB cable try disabling WiFi from within the Camera, turn the camera off, and then back on. The computer should detect the camera from there.
-
-
-

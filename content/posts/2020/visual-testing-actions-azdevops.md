@@ -41,7 +41,7 @@ In order to run the below code, you will need to install the [Applitools Extensi
 
 You will notice there are 3 tasks; each task performs the task we outlined above.
 
-```
+```yaml
 - bash: |
     # Run check to see when $(hostname) is available
     attempt_counter=0
@@ -93,7 +93,7 @@ The below code is a little different than the Azure DevOps snippet above, partic
 
 You also might notice there is an _extra_ step for java - this is just so GitHub Actions uses the proper version of java for your project; in my case and my code, I require Java 13. The below snippet is an actual action, not just bash code, and it even creates a settings.xml file for us with our github information securely passsed.
 
-```
+```yaml
  - name: http check
    run: |
     attempt_counter=0
@@ -153,8 +153,3 @@ Notice again, at the very bottom in the last task, I still have my required envi
 Once you have your tasks added and environment variables set, you're ready to run your pipeline!
 
 ![Screen%20Shot%202020-03-11%20at%202.21.02%20PM](/images/Screen%20Shot%202020-03-11%20at%202.21.02%20PM.png)
-
-
-
-
-

@@ -26,7 +26,9 @@ To start, I discovered Cloud Shell just runs on top of Ubuntu 16.04.
 
 This means I can simply use the same dotfiles config/bootstrap script I use for wsl and standard ubuntu by running the following command in my existing (or new) cloud shell environment: 
 
-`bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/configure.sh)"`
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/configure.sh)"
+```
 
 If you're familiar with my dotfiles already, you know how to run through the oh-my-zsh prompts and the option to use my custom dotfiles. If you're not, check out [this blog post](https://jessicadeen.com/badass-terminal-wsl-macos-and-ubuntu-dotfiles-update/). 
 
@@ -47,7 +49,7 @@ Second, we need to fix the text colors for visibility with the black background 
 
 Run `code .p9kgt` to open the PowerLevel9k customizations file and comment out line 31. Then add the below text immediately beneath line 31:
 
-```
+```bash
 # Cloud Shell Colors
 POWERLEVEL9K_DIR_FOREGROUND='FFF'
 POWERLEVEL9K_KUBECONTEXT_FOREGROUND='FFF'
@@ -57,7 +59,7 @@ Save the file and resource your zshrc file using `. ~/.zshrc`.
 
 Second, I use [colorls](https://github.com/athityakumar/colorls) for my ls commands. Colorls is installed via ruby typically using the `gem install colorls` command - only, the version of ruby we have access to in cloud shell is a little outdated (v2.3.0) so instead, we need to specify a version by running the following:
 
-```
+```ruby
 gem install colorls -v 1.2.0
 ```
 
@@ -67,7 +69,7 @@ Now when you run ls, you'll see pretty folder and file icons instead of boring s
 
 This is cool, but I noticed after my first run of the above command, the install of the colorls gem was not persistent in the cloud shell environment . This meant I would get an error telling me colorls couldn't be found on any brand new cloud shell sessions. I made the following work around by adding the below text to the top of the .bashrc file (use `code ~/.bashrc` to open your cloud shell editor:
 
-```
+```bash
 echo 'Loading custom ZSH badass environment...'
 gem install colorls -v 1.2.0 > /dev/null && bash -c zsh
 echo ''
@@ -82,7 +84,7 @@ You can always remove the `echo 'Loading custom...'` if it's not your style, esp
 
 One last thing we need to do is edit our tmux.conf. Tmux in cloud shell is old - it's v2.1, which saddens me, but we can deal with it. My config file is setup to support v3.0+ versions of tmux so we have to change line 54 of our `.tmux.conf` file. To do that, let's load it in our editor (`code ~/.tmux.conf`) and then make the following change:
 
-```
+```bash
 # old line
 54 bind \\ split-window -h -c '#{pane_current_path}' # vertical pane
 
@@ -97,7 +99,7 @@ Save the file and start a tmux session by typing `tmux.`
 
 If using my dotfiles, my tmux prefix is `ctl+a` so you might find the following helpful:
 
-```
+```bash
 prefix + x kill the current pane
 prefix + k kill the current window
 prefix + K kill the current server
@@ -116,7 +118,7 @@ Copy and Paste within a tmux session works only with the tmux buffer at this tim
 
 In the meantime, here are my commands for copy/paste to tmux buffer.
 
-```
+```bash
 prefix + [ enter copy mode
     once in copy mode, use vi bindings:
     v - enter visual mode to select desired text
@@ -128,7 +130,7 @@ prefix + P paste copied text
 
 You will need to uncomment lines 24-26 in ~/.tmux.conf for this to work:
 
-```
+```bash
 23 ### --- tmux 2.1 or azure cloud shell
 24 # bind-key -t vi-copy 'v' begin-selection
 25 # bind-key -t vi-copy 'y' copy-selection
@@ -138,7 +140,7 @@ You will need to uncomment lines 24-26 in ~/.tmux.conf for this to work:
 
 And comment lines 29 and 30:
 
-```
+```bash
 29 bind-key -T copy-mode-vi 'v' send-keys -X begin-selection
 30 bind-key -T copy-mode-vi 'y' send-keys -X copy-selection
 ```
@@ -157,6 +159,3 @@ One last question I had is if I could blow my cloud shell environment away (or e
 To unmount current clouddrive: `clouddrive unmount`
 
 To mount existing clouddrive: `clouddrive mount`
-
-
-

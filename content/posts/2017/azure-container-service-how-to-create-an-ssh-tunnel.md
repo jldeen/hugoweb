@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["ACS", "Azure", "Azure Container Service", "Docker", "linux", "ssh"]
+categories = ["Azure", "Azure Container Service"]
 date = 2017-03-17T08:00:08Z
 description = ""
 draft = false
 image = "../../images/15603_Microsoft-Azure-Container-Service_m6s48o.jpg"
 slug = "azure-container-service-how-to-create-an-ssh-tunnel"
-tags = ["ACS", "Azure", "Azure Container Service", "Docker", "linux", "ssh"]
+tags = ["Azure", "Azure Container Service", "Docker", "linux"]
 title = "Azure Container Service: How to create an SSH Tunnel"
 layout = "post"
 
@@ -25,9 +25,10 @@ In this video we review the following:
 
 **Primary ssh tunnel code (Linux and Mac) used in this video is:**
 
+```bash
 ssh -fNL 2375:localhost:2375 -p 2200 azureuser@[dnsprefix]mgmt.[location].cloudapp.azure.com
+```
 
 **ACS resource links mentioned in the video:**
 
 – [Make a remote connection to a Kuburnetes, DC/OS, or Docker Swarm cluster](https://docs.microsoft.com/en-us/azure/container-service/container-service-connect "Make a remote connection to a Kuburnetes, DC/OS, or Docker Swarm cluster")
-

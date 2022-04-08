@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["devops", "Azure", "linux", "ubuntu", "ci/cd", "selenium"]
+categories = ["devops", "Azure", "linux", "ci/cd", "selenium"]
 date = 2020-03-12T21:43:00Z
 description = ""
 draft = false
 image = "../../images/Screen%20Shot%202020-03-11%20at%201.11.44%20PM.png"
 slug = "getting-started-visual-tests-cd"
-tags = ["devops", "Azure", "linux", "ubuntu", "ci/cd", "selenium"]
+tags = ["devops", "Azure", "linux", "ci/cd", "selenium"]
 title = "Things to consider when running visual tests in CI/CD pipelines: Getting Started (Part 1)"
 layout = "post"
 
@@ -33,20 +33,20 @@ Running an automated pipeline/workflow means I am typically running my pipeline 
 
 I deployed the following on Ubuntu 18.04 in Azure. You can create a VM in the portal by following the instructions [here](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?WT.mc_id=docs-blog-jessde), or you can use the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=docs-blog-jessde) by following the guidance [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli). If you don't have an Azure account, you can create one for free [here](https://azure.microsoft.com/free/?WT.mc_id=docs-blog-jessde).
 
-```
+```bash
 # Install Chromium
 sudo apt install chromium-browser -y
 ```
 If you don't install Chromium, or have access to Chrome on your system, you will get an error similar to the follwing if you try and run the test configuration below:
 
-```
+```bash
 org.openqa.selenium.WebDriverException:
 unknown error: cannot find Chrome binary
 ```
 
 If you have not already setup your build server with Java 13 and Maven, and plan to run the test configuration code below, you will want to install both using the following commands (tested on Ubuntu 16.04 and 18.04):
 
-```
+```bash
 # Optional: Java 13 and Maven
 sudo add-apt-repository ppa:linuxuprising/java
 sudo apt-get update
@@ -63,7 +63,7 @@ Now, if you would like to test your new configuration and headless Chrome browse
 
 Simply run the following:
 
-```
+```bash
 # Test Configuration
 git clone https://github.com/jldeen/spring-boot-web-socket-chat-demo
 cd spring-boot-web-socket-chat-demo && git checkout applitools
@@ -77,6 +77,8 @@ export APPLITOOLS_API_KEY=[Applitools-Api-Key-Here]
 # From the newly cloned repo working directory run:
 mvn -f visual_tests/pom.xml clean test
 ```
+</br>
+
 ## Setting up your code (Java Example)
 
 ##### Step 1: Consider your environments
@@ -93,7 +95,7 @@ Examples of all code snippets below can be found in full context on GitHub [here
 
 First, all 3 environments require the following:
 
-```
+```java
 ### packages needed:
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -108,8 +110,11 @@ import java.net.URL;
 chromeOptions = new ChromeOptions();
 WebDriverManager.chromedriver().setup();
 ```
+
 `getEnvironment()` class snippet:
-```
+
+```java
+ 
  private static void getEnvironment() throws MalformedURLException {
     runWhere = System.getenv("RUNWHERE");
 
@@ -149,7 +154,7 @@ We need to tell our code to capture system environment variables we will set as 
 
 Our `batchId` and `batchName` can be whatever we configure them to be, but I tend to assign my `batchId` to my git commit-sha (shortend) or the build run id and my batch name to the name of the pipeline or repo/project. (You'll learn more about that in the adventure posts below.)
 
-```
+```java
 // obtain the batch name and ID from the environment variables
 String batchName = System.getenv("APPLITOOLS_BATCH_NAME");
 String batchId   = System.getenv("APPLITOOLS_BATCH_ID");
@@ -174,6 +179,3 @@ If you plan to use your linux server as a self-hosted runner for GitHub Actions,
 
 #### Container Based Pipeline (Codefresh)
 If you are considering container based pipelines, or already have an investment in container based pipelines, check out [this blog post](https://jessicadeen.com/visual-test-consider-container/) where we walk through considerations with Visual Tests, Selenium, and CI/CD.
-
-
-

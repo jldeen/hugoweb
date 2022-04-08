@@ -31,9 +31,6 @@
 
   --th-color: var(--light-gray);
   --tr-color: var(--light-gray);
-
-  --syntax-highlighting-background: #f3f3f3;
-  // --transition: transform 0.2s linear;
 }
 
 :root[color-mode="dark"] {
@@ -66,6 +63,4 @@
 
   --th-color: #18181d;;
   --tr-color: #080b12;
-
-  --syntax-highlighting-background: #080b12;
 }

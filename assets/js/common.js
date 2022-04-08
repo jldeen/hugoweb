@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  document.documentElement.setAttribute('color-mode', 'dark');
+  // document.documentElement.setAttribute('color-mode', 'dark');
 
   (function(){
     // Then set the 'color-mode' attribute to whatever is in localstorage

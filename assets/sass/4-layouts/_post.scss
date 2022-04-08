@@ -228,6 +228,9 @@
   img, .js-reframe {
     border-radius: 8px;
     overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     &.lightense-open {
       border-radius: 0;

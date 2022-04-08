@@ -23,6 +23,3 @@ I have gone through a written walk through of [Ingresses and Helm Charts](https:
 [![download](/images/download.png)](https://www.youtube.com/watch?v=aN9nVa8yeBo&feature=youtu.be)
 
 Sound off in the comments if you enjoyed the video and what content y'all would like to see next! Take care!
-
-
-

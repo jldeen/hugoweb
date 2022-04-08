@@ -19,15 +19,9 @@ When she's not doing something geeky, you can find her doing something active, m
 
 ## Headshots:
 
-Click for full resolution, or right click and save to grab the thumnail.
-
-<center>
-
 ![jessica-deen](/images/jessica-deen.png)
 
 ![jessica-deen-2](/images/JessicaDeen2_2017.jpg)
 
 ![jessica-deen-3](/images/JessicaDeen1_2017.jpg)
-
-</center>
 

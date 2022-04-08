@@ -13,7 +13,11 @@ layout = "post"
 +++
 
 
-We've all been there. You do everything correct - you set your container to run as non root, you configure your application port as a dynamic port that can be changed at runtime, and then, when runtime comes, you run something like the following command: `docker run -e PORT=80 -p 80:80 --name my-app registry/image:tag` and you see this `listen tcp :80: bind: permission denied`.
+We've all been there. You do everything correct - you set your container to run as non root, you configure your application port as a dynamic port that can be changed at runtime, and then, when runtime comes, you run something like the following command: 
+
+```bash
+docker run -e PORT=80 -p 80:80 --name my-app registry/image:tag` and you see this `listen tcp :80: bind: permission denied
+```
 
 The problem is simple, and so is the solution.
 
@@ -24,7 +28,11 @@ Second, the solution is to grant the necessary root capabilities to the process 
 This will vary depending on how you have your Dockerfile setup. 
 
 ## Debian
-If you are using a Debian based image, I believe the libcap package (libcap2-bin) is already installed so you just need to run `setcap 'cap_net_bind_service=+ep' /path-to-app-here`. 
+If you are using a Debian based image, I believe the libcap package (libcap2-bin) is already installed so you just need to run 
+
+```bash
+setcap 'cap_net_bind_service=+ep' /path-to-app-here
+``` 
 
 **Note:** If you are uisng a Go application with Debian and you receive an error like: `standard_init_linux.go:211: exec user process caused "no such file or directory"` try adding `ENV CGO_ENABLED=0` to your build stage. If you're new to go, Cgo let's Go packages call C code; setting CGO_ENABLED to "0" turns this functionality off, which fixes the above error. A full example of how this would look in your Dockerfile can be found [here](https://gist.github.com/jldeen/951306499dd43617f2da52f34db019c7). Though, honestly, you should use Alpine for runtime in a multistage Dockerfile and leave your debian base image to your build stage. Alpine won't need this extra build ENV since Alpine images are [musl libc based](https://alpinelinux.org/posts/Alpine-Linux-has-switched-to-musl-libc.html).
 
@@ -34,7 +42,7 @@ If you are uisng Alpine, which you probably should be, you will need to install 
 
 Once added in the order that makes sense, your Dockerfile might look some what like mine:
 
-```
+```Dockerfile
 FROM golang:1.14.2-alpine3.11 as builder
 
 RUN apk update && apk add --no-cache git
@@ -78,6 +86,3 @@ You can see this in action in my latest YouTube Video (TS 6:35), just click the 
 
 [1]:  /images/DockerENV-Social.png
 [2]:  https://jldeen.dev/from-app-to-cloud
-
-
-

@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["ACS", "devops", "Docker", "linux", "swarm"]
+categories = ["ACS", "devops", "Docker", "linux"]
 date = 2017-05-06T13:26:08Z
 description = ""
 draft = false
 image = "../../images/Screen-Shot-2017-05-06-at-13.24.13_mldg0t.png"
 slug = "linuxfest-northwest-deck-devops-cicd-to-azure-through-codeship"
-tags = ["ACS", "devops", "Docker", "linux", "swarm"]
+tags = ["ACS", "devops", "Docker", "linux"]
 title = "Linuxfest Northwest Deck: DevOps: CI/CD to Azure through Codeship"
 layout = "post"
 

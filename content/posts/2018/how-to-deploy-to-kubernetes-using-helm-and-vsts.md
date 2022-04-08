@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["aks", "ci/cd", "devops", "helm", "k8s", "pipeline", "vsts"]
+categories = ["aks", "ci/cd", "devops", "helm", "k8s"]
 date = 2018-03-13T06:52:54Z
 description = ""
 draft = false
 image = "../../images/Screen-Shot-2018-03-08-at-19.57.01_mxv56u.png"
 slug = "how-to-deploy-to-kubernetes-using-helm-and-vsts"
-tags = ["aks", "ci/cd", "devops", "helm", "k8s", "pipeline", "vsts"]
+tags = ["aks", "ci/cd", "devops", "helm", "k8s"]
 title = "How to Deploy to Kubernetes using Helm and VSTS"
 layout = "post"
 
@@ -125,9 +125,13 @@ namespace $(namespace)
 
 Create Secret Arguments – update the bold and underlined text with your own info; you may leave the email as is unless you wish to update it with your own address.
 
-`secret docker-registry vsts-secret --docker-server=<span style="text-decoration: underline;"><strong>server-address-here</strong></span> --docker-username=<span style="text-decoration: underline;"><strong>username-here</strong></span> --docker-password=$(regPass) --docker-email=ServicePrincipal@AzureRM`Example:
+`secret docker-registry vsts-secret --docker-server=<span style="text-decoration: underline;"><strong>server-address-here</strong></span> --docker-username=<span style="text-decoration: underline;"><strong>username-here</strong></span> --docker-password=$(regPass) --docker-email=ServicePrincipal@AzureRM`
 
+Example:
+
+```bash
 secret docker-registry vsts-secret --docker-server=acrjdtest.azurecr.io --docker-username=acrjdtest --docker-password=$(regPass) --docker-email=ServicePrincipal@AzureRM
+```
 
 Under Create Secret, also fill in the Namespace field with:
 
@@ -145,7 +149,9 @@ Next, the command I want to use for my helm task is the “upgrade” command. *
 
 The arguments you will want to use are as follows:
 
+```bash
 $(releaseNameDev) . --install --force --reset-values --namespace $(namespace) --wait --set image=$(image) --set imageTag=$(Build.BuildID) --set imagePullSecrets=$(imageSecret) --set ingress.hostname=$(hostnameDev)
+```
 
 I am using an Nginx ingress controller for my DNS/hostname – that’s a blog post for another time. You’ll notice I’m using the –set flag to override settings in my values. yaml. I’m only choosing to do this for two reasons:
 
@@ -160,7 +166,7 @@ Note the “.” (period) in between $(releaseNameDev) and the –install flag. 
 
 Now, you will notice I’m using a lot of variables – this is so I can quickly update fields and use vars in multiple environments in the future. To access the variables part of our release, simply click the “Variables” button at the top in between “Tasks” and “Retention.” You will want the following variables when following this demo. Fill them in with the appropriate values.
 
-```
+```bash
 hostnameDev
 image
 imageTag
@@ -200,4 +206,3 @@ Ideally, I would like the namespace and secret creation options to be individual
 Still, this blog post details a workaround allowing for successful helm deployment to Kubernetes via VSTS.
 
 Final note, I *strongly* recommend creating your own build/release agents (the same agent can handle both tasks), as I found myself waiting as much as 10 minutes for a hosted agent to become available.
-

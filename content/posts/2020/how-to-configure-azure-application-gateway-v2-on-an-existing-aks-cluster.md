@@ -44,7 +44,7 @@ Second you will need the following resources for your new app gateway to work (s
 ### Getting Started
 To run the commands listed in this blog post, which will create the resources just mentioned, I always recommend pre-configuring our default environment variables we will need. Here's an example of mine:
 
-```
+```bash
 resourceGroup=jdk8s
 k8sVnet=jdk8sVnet
 appgwName=jdk8sappgw
@@ -58,7 +58,7 @@ appgwPublicIpName=appgwjdIP
 
 Diving right in, to create a new dedicated subnet, run the following command:
 
-```
+```bash
 az network vnet subnet create \
   --name appgwsubnet \
   --resource-group $resourceGroup \
@@ -70,7 +70,7 @@ You can choose your own address prefix, the one I use is just inline with other 
 
 Once we have a subnet, which is named appgwsubnet (very creative, I know), we are ready to create a public IP address. To do so, run the following commands:
 
-```
+```bash
 az network public-ip create \
   --resource-group $resourceGroup \
   --name $appgwPublicIpName \
@@ -83,7 +83,7 @@ This command will create our public IP address with a name `appgwjdIP`. Unless y
 
 Great, we have a subnet and a public IP address for our app gateway. To create an application gateway resource, run:
 
-```
+```bash
 az network application-gateway create \
   --name $appgwName \
   --location eastus \
@@ -103,7 +103,7 @@ This will create an application gateway resource with the `WAF_v2` SKU. You can 
 
 Now, if you plan to use the same `WAF_v2` SKU, you will want to enable firewall mode detection. You can do so using the following command:
 
-```
+```bash
 az network application-gateway waf-config set \
     -g $resourceGroup \
     --gateway-name $appgwName \
@@ -115,7 +115,7 @@ az network application-gateway waf-config set \
 
 Great! We now have our gateway created and we are ready to create our HTTP and HTTPS probes. Probes help ensure healthy HTTP responses from our applications. You can learn more about Application Gateway Health Monitoring [here](https://docs.microsoft.com/azure/application-gateway/application-gateway-probe-overview?WT.mc_id=docs-blog-jessde). To create our probes, we will need to run the same command twice; once to create our HTTP probe and a second time for our HTTPS probe.
 
-```
+```bash
 # Create http probe
 az network application-gateway probe create \
     -g $resourceGroup \
@@ -142,7 +142,7 @@ After running the above commands, you will now have two newly created HTTP probe
 
 The final configuration step we need to do for our app gateway is link our newly created HTTP probe to our backend HTTP settings within our gateway. To create this link, just run the following command:
 
-```
+```bash
 # Link http probe to application gateway
 az network application-gateway http-settings update \
     -g $resourceGroup \
@@ -155,14 +155,14 @@ Splendid. We now have our gateway configured. We are ready to move on to our man
 
 First, if you have RBAC enabled on your Kubernetes cluster, run the following command to install the necessary CRDs for AzureIdentity, AzureAssignedIdentity, and AzureIdentityBinding:
 
-```
+```bash
 kubectl create -f https://raw.githubusercontent.com/Azure/aad-pod-identity/master/deploy/infra/deployment-rbac.yaml
 ```
 **Note:** Be sure to run the above command _against_ the Kubernetes cluster in question. I speak from experience (LOL) since I have several clusters available from my terminal.
 
 To create a managed identity, run the following command:
 
-```
+```bash
 az identity create \
     -g $resourceGroup \
     -n aadappGW
@@ -170,7 +170,7 @@ az identity create \
 
 Now, we need to capture a few important data points from our identity in variables we can reuse. Run the following command to capture our `clientId`, our `appgwId` and our `appgwrgId`:
 
-```
+```bash
 # capture clientId in variable
 clientId=$(az identity show \
     -g $resourceGroup \
@@ -189,7 +189,7 @@ Perfect. Now we need to grant some permissions to our app gateway using this new
 
 First, we will give contributor access to our gateway itself:
 
-```
+```bash
 # Give identity Contributor access to your Application Gateway
 az role assignment create \
     --role Contributor \
@@ -199,7 +199,7 @@ az role assignment create \
 
 Second, we will give reader access to our gateway's resource group:
 
-```
+```bash
 # Give identity Reader access to the Application Gateway resource group
 az role assignment create \
     --role Reader \
@@ -209,7 +209,7 @@ az role assignment create \
 
 Excellente! The final configuration piece is actually deploying our app gateway ingress _inside_ our Kubernetes cluster. To start, we will need some environment variables again. Run the following commands to capture the data we need:
 
-```
+```bash
 applicationGatewayName=$(az network application-gateway list --resource-group $resourceGroup --query '[].name' -o tsv)
 subscriptionId=$(az account show --query 'id' -o tsv)
 identityClientId=$(az identity show -g $resourceGroup -n aadappGW --query 'clientId' -o tsv)
@@ -220,7 +220,7 @@ As you may be able to tell, we are grabbing our applicationGatewayName, Azure su
 
 Once we have those, I like to do a simple checks and balances by echoing the commands back:
 
-```
+```bash
 echo $applicationGatewayName
 echo $subscriptionId
 echo $identityClientId
@@ -235,7 +235,7 @@ Assuming those values come back with data, we can now download helm-config.yaml 
 
 The yaml downloaded is just a template; we need to fill it with actual information. To do so, we will use `sed` to replace the <> values in the yaml with our newly captured variables:
 
-```
+```bash
 # use said to replace <> field values with captured data
 sed -i "" "s|<subscriptionId>|${subscriptionId}|g" helm-config.yaml
 sed -i "" "s|<resourceGroupName>|${resourceGroup}|g" helm-config.yaml
@@ -254,7 +254,7 @@ Now let's start playing with helm. The following steps assume the use of Helm3 a
 
 Let's add our application-gatewaay-kubernetes-ingress chart repo and then run a repo update:
 
-```
+```bash
 # add app gateway ingress helm chart repo and update repo
 helm repo add application-gateway-kubernetes-ingress https://appgwingress.blob.core.windows.net/ingress-azure-helm-package/
 helm repo update
@@ -262,7 +262,7 @@ helm repo update
 
 Now let's install our ingress!
 
-```
+```bash
 # install appgw ingress using helm chart and helm-config.yaml
 helm upgrade --install appgw-ingress-azure -f helm-config.yaml application-gateway-kubernetes-ingress/ingress-azure
 ```
@@ -270,7 +270,7 @@ helm upgrade --install appgw-ingress-azure -f helm-config.yaml application-gatew
 
 I like to verify everything looks good so once you install the chart, you can run the usual `kubectl get pods` to see if your appgw-ingress pod is running:
 
-```
+```bash
 appgw-ingress-azure-5f57885dc4-zhn5j   1/1     Running   0          6m
 ```
 
@@ -282,7 +282,7 @@ One of my go to ways to test out ingress is to simply deploy a Jenkins release u
 
 I ran the following command against 2 different namespaces and changed the hostname in my values file both times.
 
-```
+```bash
 # hostname appgateway.ap.az.jessicadeen.com
 helm upgrade jenkins --install --namespace default2 -f ./jenkins-values.yaml stable/jenkins
 
@@ -305,6 +305,3 @@ Finally, if you prefer to use your own shell script to create all of the resourc
 **Note:** You will still need to manually edit line 47 of your helm-config.yaml if using an RBAC-enabled cluster. You will also need to edit the Jenkins Values file, if used, with the desired hostnames.
 
 <script src="https://gist.github.com/jldeen/2aa48f34ad7c29e81510acaeae87fee6.js"></script>
-
-
-

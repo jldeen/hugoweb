@@ -37,4 +37,3 @@ I am expecting a call back from Latrice by tomorrow with at least an update. If 
 I will continue to post updates as this case progresses.
 
 For anyone who needs Ford’s RAV number, you may find it here: 1-800-367-3050 (Ford Reacquired Vehicle Headquarters)
-

@@ -17,7 +17,7 @@ layout = "post"
 
 As of now, the below code no longer works. However, thanks to a few comments from readers, there is a VERY SIMPLE FIX. Huge shoutout to [this Stack Overflow post](https://stackoverflow.com/questions/14433602/hide-menu-bar-and-dock-globally-with-applescript/65366308#65366308), and specifically, Sam Treadway, for the find.
 
-```
+```applescript
 tell application "System Events"
     tell dock preferences to set autohide menu bar to not autohide menu bar
 end tell
@@ -37,16 +37,10 @@ As an added bonus, I found [this blog post](http://apetronix.com/find-pane-id-fo
 
 Now, you may wonder, how do I use this with something like StreamDeck? Easy! I use [this Keyboard Maestro Integration](https://github.com/Corcules/KMlink), create the macro in Keyboard Maestro and reference it in Stream Deck. 
 
-<center>
-
 ![keyboard-maestro](/images/Screen%20Shot%202020-10-15%20at%2012.34.08.png)
 
 ![streamdeck](/images/Screen%20Shot%202020-10-15%20at%2012.33.01.png)
-</center>
 
 Of course, if you didn't want to use Stream Deck or Keyboard Maestro, you could just save the script, and create a function, and call said function from command line, examples of this are below.
 
 <script src="https://gist.github.com/jldeen/5f070004d1f02825900aa0bb7aa5e6e6.js"></script>
-
-
-

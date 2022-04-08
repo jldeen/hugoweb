@@ -44,4 +44,3 @@ The upcoming blog posts will go so much more in depth about my current projects,
 * [mmornati/ghost-cloudinary-store](https://github.com/mmornati/ghost-cloudinary-store)
 
 I'm so proud to share with you: The Deen of DevOps. One of my coworkers, [Jeremy Likness](https://twitter.com/jeremylikness), coined that phrase at TechBash (now 2 weeks ago). It reminded me of the Dean of a school, though with obviously different spelling. So, with this new launch - welcome to school. It's okay if you're not __________ (fill in the blank). Let's learn together.
-

@@ -1,12 +1,12 @@
 +++
 author = "jldeen"
-categories = ["aks", "slack", "devops", "azure devops", "JFrog", "Pipelines", "YAML"]
+categories = ["aks", "slack", "devops", "JFrog", "YAML"]
 date = 2019-06-26T22:21:16Z
 description = ""
 draft = false
 image = "../../images/Screen%20Shot%202019-06-26%20at%203.06.55%20PM.png"
 slug = "slack-notifications-azure-pipelines-jfrog-artifactory-and-jfrog-xray"
-tags = ["aks", "slack", "devops", "azure devops", "JFrog", "Pipelines", "YAML"]
+tags = ["aks", "slack", "devops", "JFrog", "YAML"]
 title = "Azure Pipelines: Featuring Bash, YAML, JFrog and a custom Slack app!"
 layout = "post"
 
@@ -309,6 +309,3 @@ The neat thing is since you now "own" your custom notification app, you can reus
 In fact, I paired my JFrog Notification "app" and two Slack tasks with the [pre-built Azure Pipelines Slack App](https://jldeen.slack.com/apps/AFH4Y66N9-azure-pipelines) and had all relative information go into one single Slack channel. In the future, I'd like to further aggregate this data and parse it into a single dashboard within Azure DevOps. 
 
 This post will be updated with a link to the session and demo that shows the above live for those of us who are visual learners (I sure am).
-
-
-
