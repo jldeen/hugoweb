@@ -17,6 +17,10 @@ body {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  @import '../0-settings/gist-color-scheme-dark';
+}
+
 *::selection {
   color: var(--white);
   background-color: var(--brand-color);
