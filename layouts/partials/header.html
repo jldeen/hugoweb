@@ -7,7 +7,7 @@
         <div class="logo">
           <a class="logo__link" href="{{ .Site.BaseURL }}">
             {{ if .Site.Params.logo }}
-            <img class="logo__image" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+            <img class="logo__image" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" width="100%" height="100%">
             {{ else }}
               {{ .Site.Title }}
             {{ end }}
