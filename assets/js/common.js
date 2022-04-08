@@ -106,6 +106,24 @@ document.addEventListener("DOMContentLoaded", function() {
     if (theme=="dark") {
         document.documentElement.setAttribute("color-mode", "dark");
     }
+
+    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+      console.log('🎉 Dark mode is supported');
+    }
+
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    darkModeMediaQuery.addListener((e) => {
+      const darkModeOn = e.matches;
+      console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
+
+      if (darkModeOn == true) {
+        document.documentElement.setAttribute("color-mode", "dark");
+        document.getElementById("checkbox").checked = true
+      } else if (darkModeOn == false) {
+        document.documentElement.setAttribute("color-mode", "light")
+        document.getElementById("checkbox").checked = false
+      }
+    });
   }
   detectColorScheme();
 
