@@ -1,10 +1,13 @@
 {{ $script := resources.Get "js/scripts.js" }}
 {{ $commonJs := resources.Get "js/common.js" }}
+{{ $darkModeJs := resources.Get "js/darkmode.js" }}
 
 {{ if .Site.IsServer }}
 <script src="{{ $script.Permalink }}"></script>
 <script src="{{ $commonJs.Permalink }}"></script>
+<script src="{{ $darkModeJs.Permalink }}"></script>
 {{ else }}
 <script src="{{ ($script | minify | fingerprint).RelPermalink }}"></script>
 <script src="{{ ($commonJs | minify | fingerprint).RelPermalink }}"></script>
+<script src="{{ ($darkModeJs | minify | fingerprint).RelPermalink }}"></script>
 {{ end }}

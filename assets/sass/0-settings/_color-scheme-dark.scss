@@ -1,5 +1,7 @@
 /* Color Scheme */
 :root {
+  @import '../0-settings/gist-color-scheme-dark';
+  
   --brand-color: #0073ec;
   --white: #fff;
   --light-gray: #f0f0f0;
