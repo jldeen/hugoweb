@@ -1,3 +1,6 @@
+// https://www.blogtrack.io/blog/optimize-images-with-hugo-and-npm/
+// https://www.blogtrack.io/blog/powerful-blog-setup-with-hugo-and-npm/
+
 import imagemin from "imagemin";
 import imageminWebp from "imagemin-webp";
 
