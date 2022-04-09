@@ -138,7 +138,7 @@ az network application-gateway probe create \
 ```
 After running the above commands, you will now have two newly created HTTP probes. You can verify this by checking the App Gateway resource in the portal and selecting Health Probes on the left hand side, if you would like a visual confirmation. Here's an example:
 
-![Screen%20Shot%202020-03-02%20at%203.04.31%20PM](/images/Screen%20Shot%202020-03-02%20at%203.04.31%20PM.png)
+![Screen%20Shot%202020-03-02%20at%203.04.31%20PM](/generated/full/Screen%20Shot%202020-03-02%20at%203.04.31%20PM.webp)
 
 The final configuration step we need to do for our app gateway is link our newly created HTTP probe to our backend HTTP settings within our gateway. To create this link, just run the following command:
 
@@ -292,13 +292,13 @@ helm upgrade jenkins --install --namespace default -f ./jenkins-values.yaml stab
 
 Jenkins pods do take about 6 minutes to spin up, but once they do, I was able to navigate to both FQDNs just fine!
 
-![Screen%20Shot%202020-02-28%20at%203.07.02%20PM](/images/Screen%20Shot%202020-02-28%20at%203.07.02%20PM.png)
+![Screen%20Shot%202020-02-28%20at%203.07.02%20PM](/generated/full/Screen%20Shot%202020-02-28%20at%203.07.02%20PM.webp)
 
-![Screen%20Shot%202020-02-28%20at%203.07.13%20PM](/images/Screen%20Shot%202020-02-28%20at%203.07.13%20PM.png)
+![Screen%20Shot%202020-02-28%20at%203.07.13%20PM](/generated/full/Screen%20Shot%202020-02-28%20at%203.07.13%20PM.webp)
 
 You can also verify the backend routing by drilling down into your app gateway resource within the Azure Portal and selecting "Backend pools" on the left hand side. Here's an example of mine:
 
-![Screen%20Shot%202020-03-02%20at%2011.37.21%20AM](/images/Screen%20Shot%202020-03-02%20at%2011.37.21%20AM.png)
+![Screen%20Shot%202020-03-02%20at%2011.37.21%20AM](/generated/full/Screen%20Shot%202020-03-02%20at%2011.37.21%20AM.webp)
 
 Finally, if you prefer to use your own shell script to create all of the resources and configuration settings outlined in this post, I have a **sample** script I wrote available below. 
 

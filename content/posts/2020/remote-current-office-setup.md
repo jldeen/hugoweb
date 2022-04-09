@@ -13,7 +13,7 @@ layout = "post"
 
 This overdue post comes at the request from a few people on Twitter after I tweeted out a picture of my office/desk setup at time of this posting.
 
-![E9360A31-5121-4645-AFB4-D3182350BC2B](/images/E9360A31-5121-4645-AFB4-D3182350BC2B.JPEG)
+![E9360A31-5121-4645-AFB4-D3182350BC2B](/generated/full/E9360A31-5121-4645-AFB4-D3182350BC2B.webp)
 
 This post will break down what I'm currently using in my home office, where I do all my work when _not_ on an airplane.
 
@@ -21,7 +21,7 @@ This post will break down what I'm currently using in my home office, where I do
 
 The desk is built out of (4) 6 x 4 x 8ft solid wood planks (cut to 6 ft each) and 1 1/4" galvanized steel plumbing pipe connected using tee supports and flanges. I purchased all the hardware from my local Home Depot along with a Ryobi Orbital Sander and then I bought a Porter Cable 6-amp hand planer from Amazon. I sized the legs to a height I could stand at and work comfortably, while still using a barstool with back support if I needed to sit for a bit. In the future I do plan to order [these motorized legs](https://amzn.to/38r83NJ) to allow for greater flexibility.
 
-![IMG_3576](/images/IMG_3576.JPG)
+![IMG_3576](/generated/full/IMG_3576.webp)
 
 This was one of my first creations I built back in April of 2017. I planed, sanded, and stained the wood using American Walnut with polyeurethane all-in-one. Looking back on it, if I were to make this again today, I would possibly consider thiner wood for reasons I'll explain below. I also would apply stain and poly separately to allow for greater control of shine. The planks are connected to each other using (3) 1/2" boards screwed into each plank with 2" screws every 2ft or so (I just made it even). 
 
@@ -29,7 +29,7 @@ After the stain and poly, I ordered a 16x16" Rebel Alliance Stencil on Etsy and 
 
 In the 3 years I've been using this desk, it's proven to be a solid (and heavy) piece of furniture. While it's been awhile since I built it, I believe the materials, as well as tools like the orbital sander and electric planer, brought my cost to around $400 or so.
 
-![IMG_3645](/images/IMG_3645.jpg)
+![IMG_3645](/generated/full/IMG_3645.webp)
 
 **Estimated cost: $400**
 
@@ -37,7 +37,7 @@ In the 3 years I've been using this desk, it's proven to be a solid (and heavy) 
 
 I'm using an LG 34” (34UM61-P) Monitor I bought from Costco on sale about a year and a half ago. I don't remember the exact price, but I'd estimate it was less than $200 because I wouldn't have bought it otherwise.
 
-![IMG_8633](/images/IMG_8633.jpg)
+![IMG_8633](/generated/full/IMG_8633.webp)
 
 It works well for my purposes, but I'm also not a fanatic when it comes to desktop screens. I was on the road for much of last year (175,000 miles) so I really only use this monitor when I'm home. Then again, now with the Coronavirus and WFH guidance for Microsoft Seattle and Silicon Valley, I will be using it _much_ more.
 
@@ -53,7 +53,7 @@ Up until the time of this writing I had been using a Pok3r RGB Mechanical 60% ke
 
 I will be selling the Pok3r keyboard to recover some of my upgrade cost. You can pick up your own Logitech G Pro Mechanical keyboard for $129.99 [here](https://www.amazon.com/Logitech-Mechanical-Tenkeyless-Detachable-LIGHTSYNC/dp/B07QQB9VCV/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=jldeen-20&linkId=1fdb6be4310cca6edc834df2b8f535ba&language=en_US).
 
-![IMG_8637](/images/IMG_8637.jpg)
+![IMG_8637](/generated/full/IMG_8637.webp)
 
 There is also an older version with Romer G Switches available for $79.99 [here](https://www.amazon.com/Logitech-Mechanical-Keyboard-Portable-Detachable/dp/B06XMRQ68B/ref=as_li_ss_tl?sa-no-redirect=1&linkCode=ll1&tag=jldeen-20&linkId=971543abee1f5988d3b0d6f5a9007bb0&language=en_US), but I really prefer a clicky and tactile response when using a physical keyboard. You can learn more about the differnces in [this hardware zone article](https://www.hardwarezone.com.sg/tech-news-logitech-s-new-gx-blue-mechanical-keyboard-switch-both-tactile-and-clicky).
 
@@ -65,7 +65,7 @@ I did a lot of research on the best USB microphones and considering I didn't hav
 
 The Rode NT-USB microphone received great reviews and it was very easy to configure and tweak. I purchased this from Amazon as well, along with the Rode SM6 Shock Mount with Integrated Pop Shield for around $200. The shock mount is heavy and I had trouble finding a mic stand that could support the weight. I ended up not using the integrated pop shield, though I do have an alternate lighter one I could attach to a microphone arm if desired. This lighter pop filter was also from Amazon and I picked it up for around $15. For the distance I'm using the microphone at, I don't notice plosives too much so I'm not concerned at the moment about having a filter on it.
 
-![IMG_8635](/images/IMG_8635.jpg)
+![IMG_8635](/generated/full/IMG_8635.webp)
 
 You can purchase the [Rode NT-USB microphone](https://www.amazon.com/gp/product/B00KQPGRRE/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00KQPGRRE&linkCode=as2&tag=jldeen-20&linkId=025170ff1789917b2ba9ab8d1b14894e) today for $169 and the Rode SM6 Shock Mount for $39 without the integrated pop shield [here](https://www.amazon.com/gp/product/B000WA8KYG/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=jldeen-20&creative=9325&linkCode=as2&creativeASIN=B000WA8KYG&linkId=7418c9ff759df3953cbf46069fa49ddc) or $58.85 with the integrated pop shield [here](https://www.amazon.com/gp/product/B004DE1K5S/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=jldeen-20&creative=9325&linkCode=as2&creativeASIN=B004DE1K5S&linkId=33abe7c8db4a16a47afe9a04164f25a1).
 
@@ -87,7 +87,7 @@ After struggling with all the tweaks I had to make to Canon just to get it to re
 
 Since I had previously recorded all my videos at around 16mm and my office is fairly dim, I opted for the Sigma 16mm f/1.4 since it's a highly recommended lens and it does **incredible** in low light. With the low aperature, I'm also able to get a pretty amazing depth of field, which also means my background is less distracting and viewers are more likely to focus on what I'm saying. You can puchase the same Sigma 16mm f/1.4 lens I have for $364.50 [here](https://www.amazon.com/gp/product/B077BWD2BB/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=jldeen-20&creative=9325&linkCode=as2&creativeASIN=B077BWD2BB&linkId=66cc8d792219f9b2d39a2c8ae209d392).
 
-![IMG_8629](/images/IMG_8629.jpg)
+![IMG_8629](/generated/full/IMG_8629.webp)
 
 In time, I would like to save up some pennies and add the Sony 10-18mm f/4 to my collection since I love wide-angle views. Pro-tip - if you also have a Sony alpha series camera, you can buy a used 10-18mm lens for about half the price of a new one.
 
@@ -105,7 +105,7 @@ I sold my Canon for $425, but had to pay 12.9% on that in fees, bringing my net 
 
 Finding the hardware to mount all this was a journey, particularly because of how thick my desk is (and why I said previously I would likely use thinner wood today). I had looked about a year ago and I couldn't find a c-clamp that would accommodate the 3.5" thickness of my desk; most of the clamps tap out at around 2". During my camera research on YouTube, I stumbled across [this video](https://m.youtube.com/watch?v=WedG8LKO6ks&t=89s) and in it Caleb recommended most of the hardware I ended up using. The vesa arm system (main unit) came with a c-clamp that can actually support upto a 4" thick desk - I couldn't believe it. I also bought 2 additional vesa arms, but I have only used one of them since I'm not planning on adding lighting like he did (though I do plan to add better lighting to my office at some point).
 
-![IMG_8632](/images/IMG_8632.jpg)
+![IMG_8632](/generated/full/IMG_8632.webp)
 
 While I am using a lot of what he recommended, I configured it slightly differently. For the main unit, I do have my monitor mounted directly to the stand, using only one part of the 2 piece arm system it comes with. I then took the 2nd piece of that arm system and added it onto the one of the other vesa arms I purchased, thereby making an extra long arm - this is the arm my camera is mounted to. This allowed me to do two things:
 
@@ -116,7 +116,7 @@ While I am using a lot of what he recommended, I configured it slightly differen
 
 The microphone boom arm shares the same arm piece as the monitor, but I didn't go with Caleb's suggestion because it was too flimsy for my heavier mic setup. Instead, I went with a Tisino heavy duty version because it was half the cost of a Rode mic boom arm and still just as heavy duty.
 
-![IMG_8634](/images/IMG_8634.jpg)
+![IMG_8634](/generated/full/IMG_8634.webp)
 
 [Wali Vesa Extra Tall Single LCD Monitor Stand](https://www.amazon.com/gp/product/B01IWOCCOW/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=jldeen-20&creative=9325&linkCode=as2&creativeASIN=B01IWOCCOW&linkId=46c020b30015c4dd145ca32c01d53e6f) - $33.99
 [Wali Vesa Second Unit Arm](https://www.amazon.com/gp/product/B07BHXZBYQ/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=jldeen-20&linkId=aed26ae0be217377f69c928742fe0d71&language=en_US) - $17.99
@@ -157,11 +157,8 @@ Most of my artwork has been collected over the past decade. I have purchased som
 
 One question I will answer now, primarily because I get asked it so frequently, is: Where did I get my Yoda desk lamp? 
 
-![IMG_8638](/images/IMG_8638.jpg)
+![IMG_8638](/generated/full/IMG_8638.webp)
 
 It was actually a gift several years back, but you can pick one up from Bradford Exchange [here](https://www.bradfordexchange.com/products/122348001_star-wars-yoda-tabletop-lamp.html) for $179.95 + shipping and handling. 
 
 **Note:** There is a delay in ordering it so if you were to order today, their website states shipping would begin June 11th, 2020.
-
-
-

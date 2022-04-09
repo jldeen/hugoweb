@@ -23,5 +23,5 @@ Generally speaking, IT consultants across the board are revered for their vast k
 
 I also would like to congratulate the 885 new MVPs and all those who were renewed today. I look forward to continue meeting new people in the community and working with as many as possible.
 
-![](/images/image = -Apr-01-11-31-26_dzjlim.png)
+![](/generated/full/image = -Apr-01-11-31-26_dzjlim.webp)
 

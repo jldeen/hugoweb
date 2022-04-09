@@ -21,8 +21,8 @@ First, you can find out about how to setup both charts in my [previous blog post
 
 The way I’ve configured my nginx/kube-lego setup is as follows:
 
-1. Pointed Google DNS Namespace record to Azure DNS az.jessicadeen.com![](/images/Screen-Shot-2018-05-07-at-09.55.23_whitdn.png)
-2. From Azure DNS, created an A record pointing to my nginx ingress within my K8s cluster 1. For this, I used a wildcard *.k8s![](/images/Screen-Shot-2018-05-07-at-09.58.08_xqgcbs.png)
+1. Pointed Google DNS Namespace record to Azure DNS az.jessicadeen.com![](/generated/full/Screen-Shot-2018-05-07-at-09.55.23_whitdn.webp)
+2. From Azure DNS, created an A record pointing to my nginx ingress within my K8s cluster 1. For this, I used a wildcard *.k8s![](/generated/full/Screen-Shot-2018-05-07-at-09.58.08_xqgcbs.webp)
 
 What this means is anytime I register anything with .k8s.az.jessicadeen as the suffix (I.E bob.k8s.az.jessicadeen.com) between Google DNS and Azure DNS, traffic is routed to my nginx ingress controller in my Kubernetes cluster.
 
@@ -33,14 +33,14 @@ Now, of course, I do have to ensure my helm charts have the ingress enabled and 
 #### Secrets Values Creation
 `imagePullSecrets:`
 #### Deployment Secrets Template Values 
-```
+```yaml
 {{- if .Values.imagePullSecrets }}
       imagePullSecrets:
       - name: "{{ .Values.imagePullSecrets }}"
       {{- end }}
 ```
 #### Ingress Values Creation
-```
+```yaml
 ingress:
   enabled: true
   hostname: build18.k8s.az.jessicadeen.com
@@ -50,7 +50,7 @@ ingress:
   tls: true
 ```
 #### Deployment Ingress Template Values
-```
+```yaml
 {{- if .Values.ingress.enabled }}
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -81,4 +81,3 @@ spec:
 You’ll notice – all this code does is enable the ingress and secret as part of the Kubernetes deployment with Helm and then the ingress.yaml (which is parameterized) says if the value is enabled, then fill out the following data such as rules to route the host (ingress.hostname) to the http path of /.
 
 That’s it!
-

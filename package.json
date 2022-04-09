@@ -1,0 +1,32 @@
+{
+  "name": "hugodotcom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run images:optimize && npm run hugo:build",
+    "serve": "npm run images:optimize && npm run hugo:serve",
+    "clean": "npm run hugo:clean",
+    "hugo:build": "hugo -d build",
+    "hugo:serve": "hugo server",
+    "hugo:clean": "rm -rf build resources public",
+    "images:optimize": "node scripts/optimize-images.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jldeen/hugoweb.git"
+  },
+  "author": "jldeen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jldeen/hugoweb/issues"
+  },
+  
+  "homepage": "https://github.com/jldeen/hugoweb#readme",
+  "type": "module",
+  "devDependencies": {
+    "hugo-bin": "^0.84.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0"
+  }
+}

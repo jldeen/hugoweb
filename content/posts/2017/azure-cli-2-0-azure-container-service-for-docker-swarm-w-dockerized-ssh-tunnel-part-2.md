@@ -84,7 +84,7 @@ Doing all of the above means we can start a container with our specialized image
 
 `docker run -it sshtunnel docker run -d --name docker-nginx -p 80:80 nginx`
 
-![](/images/Screen-Shot-2017-04-05-at-12.52.44_ahilzd.png)
+![](/generated/full/Screen-Shot-2017-04-05-at-12.52.44_ahilzd.webp)
 
 As you can see in the picture, I ran an interactive container using my sshtunnel image and then immediately gave the command I wanted to run against the ACS Docker Swarm cluster: ‘docker run -d –name docker-nginx -p 80:80 nginx’. As part of the output, I’m even told where I can go to view my newly deployed web applications.
 

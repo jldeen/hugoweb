@@ -15,7 +15,7 @@ This blog runs on a self hosted Ghost instance in an Azure App Service via a Lin
 
 This error appears only if the migration process is destroyed while the migrator migrates the database. Database locks are important because they limit the migration to only one user/session rather than multiple processes trying to do the same thing, but if the process gets destroyed, you'll see the above error. Depending on how you're running your blog, you could try to use the Ghost CLI to run `ghost update --rollback` or you can can very easily unlock the database through the database itself. (Make a backup of your database first!)
 
-![Screen%20Shot%202019-08-30%20at%201.04.12%20PM](/images/Screen%20Shot%202019-08-30%20at%201.04.12%20PM.png)
+![Screen%20Shot%202019-08-30%20at%201.04.12%20PM](/generated/full/Screen%20Shot%202019-08-30%20at%201.04.12%20PM.webp)
 
 In my case, I used the second option, as is showcased in the above picture. I unlocked my database through the database itself by using MySQL Workbench and then I ran the following query: `UPDATE migrations_lock setlocked=0where lock_key='km01';` and just like that, I was back up and running and could finish testing my Dev deployment slot before ultimately promoting to production.
 

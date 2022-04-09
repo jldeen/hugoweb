@@ -19,5 +19,5 @@ Prior to running the below command, download the .cab file for Windows 10 from [
 
 Dism.exe /online /enable-feature /featurename:NetFX3 /source:C: /LimitAccess
 
-![](/images/Error-code_uavl9m.png)
+![](/generated/full/Error-code_uavl9m.webp)
 

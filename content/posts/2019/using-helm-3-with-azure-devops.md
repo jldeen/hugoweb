@@ -19,7 +19,7 @@ I decided I'd give Helm 3 + Azure Pipelines a shot and here's what I learned...
 
 As of the writing of this post, Helm 3 is not natively supported __yet__ with Azure DevOps. Right now, if you were to use the HelmInstall task with the latest Helm 3 RC release you would get an error like this:
 
-![Screen%20Shot%202019-11-11%20at%2021.54.28](/images/Screen%20Shot%202019-11-11%20at%2021.54.28.png)
+![Screen%20Shot%202019-11-11%20at%2021.54.28](/generated/full/Screen%20Shot%202019-11-11%20at%2021.54.28.webp)
 
 This is because of how the HelmInstall task is written. In case you didn't know, [Azure Pipelines tasks are open source and available on GitHub](https://github.com/microsoft/azure-pipelines-tasks). With a quick search in the repo, I found [the problem](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/HelmInstallerV1/src/helmtoolinstaller.ts#L25-L26) almost immediately: `init` and `--client-only` are hard coded as arguments in a `verifyHelm` async function.
 
@@ -27,13 +27,13 @@ I have since [opened a PR](https://github.com/microsoft/azure-pipelines-tasks/pu
 
 1. You can simply opt to "continue on error" since the task does install Helm 3, it just also fails its own verification.
 
-![continue-on-error](/images/size/600/continue-on-error.png)
+![continue-on-error](/generated/full/size/600/continue-on-error.webp)
 
 The downside of this is you will not have a pretty green pipeline. Instead, your install task will be yellow with a "Partially Succeed" notification and "1 error" next to the install task.
 
-![Screen%20Shot%202019-11-11%20at%2022.00.29](/images/size/600/Screen%20Shot%202019-11-11%20at%2022.00.29.png)
+![Screen%20Shot%202019-11-11%20at%2022.00.29](/generated/full/size/600/Screen%20Shot%202019-11-11%20at%2022.00.29.webp)
 
-![Screen%20Shot%202019-11-11%20at%2022.00.59](/images/Screen%20Shot%202019-11-11%20at%2022.00.59.png)
+![Screen%20Shot%202019-11-11%20at%2022.00.59](/generated/full/Screen%20Shot%202019-11-11%20at%2022.00.59.webp)
 
 This doesn't look very good so I came up with a second, less than ideal, but much more green alternative.
 
@@ -53,7 +53,7 @@ sudo mv linux-amd64/helm /usr/bin/helm
  
 ```
 Now, this works fine and installs Helm 3 without errors.
-![image002](/images/image002.png)
+![image002](/generated/full/image002.webp)
 
 However, you will need to add an additional task for Helm 3 to actually work; this is because of the removal of tiller. Helm 3 removes the `init` command since there is no more tiller and as such authentication to your Kubernetes cluster also changes; or rather, __how__ you authenticate changes. Helm 3 communicates directly with the Kubernetes API, which is significantly better for security (no more clusterolebindings and tiller serviceaccounts with Godmode flying around). 
 
@@ -61,7 +61,7 @@ From a local client system, this isn't an issue since we all tend to have Kubern
 
 By placing a `kubectl` task right before my helmInstall-bash-inline-script-task, the hosted or private build agent would now have access to my cluster for both Kubernetes and Helm 3. Here's an example of my tested pipeline with this 2nd option.
 
-![image001](/images/image001.png)
+![image001](/generated/full/image001.webp)
 
 Another reminder about changes in Helm 3 - releases are now per namespace. You can view all releases (as you previously would in Helm 2) by adding the `--all-namespaces` flag to the end of your `helm ls` and this will list ALL releases you have on your cluster.
 

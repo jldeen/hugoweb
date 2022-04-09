@@ -168,7 +168,7 @@ That's where we link our `visual_testing` step to the services we created at the
 
 Now, when we run our pipeline and get to our visual tests task, the maven will be able to run our tests using the code we defined in our getEnvironment() class under the condition for `container`.
 
-![Screen%20Shot%202020-03-11%20at%202.13.44%20PM](/images/Screen%20Shot%202020-03-11%20at%202.13.44%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.13.44%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.13.44%20PM.webp)
 
 Now, if you're wanting to do this in something like Jenkins, I will have a future blog post focusing on how to handle container based pipelines, but you will have to consider using a [docker compose plugin](https://plugins.jenkins.io/docker-compose-build-step/) or some other method to spin up services and connect them to running containers. 
 
@@ -188,7 +188,7 @@ String Selenium = "http://127.0.0.1:4444/wd/hub";
 
 As a reminder, after making the temporary code change, you will still need to export the `RUNWHERE` environment variable (equal to `container`), along with the `batchId`, `TEST_START_PAGE`, and `APPLITOOLS_API_KEY` variables, and spin up your docker compose service using the following command: `docker-compose -f docker-compose.yaml up -d`.
 
-![selnium-example](/images/docker-compose-selenium.gif)
+![selnium-example](/generated/full/docker-compose-selenium.gif)
 
 Congrats! You just ran visual tests utilizing containers! You're cloud native ready now. Time to update that resume.
 ![wink](https://media.giphy.com/media/ui1hpJSyBDWlG/giphy.gif)

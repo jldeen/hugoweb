@@ -13,7 +13,7 @@ layout = "post"
 +++
 
 
-![](/images/Screen-Shot-2017-05-06-at-13.24.13_mldg0t.png)
+![](/generated/full/Screen-Shot-2017-05-06-at-13.24.13_mldg0t.webp)
 
 By popular request, this post is quick and simple – it’s just a post with a link to download the deck I used for my talk at Linuxfest Northwest 2017, “DevOps: CI/CD to Azure through Codeship.”
 

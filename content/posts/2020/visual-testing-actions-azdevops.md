@@ -85,7 +85,7 @@ Notice at the very bottom, in the last task, I have 3 required environment varia
 
 In this kind of environment (Azure DevOps, GitHub Actions, or virutally any build server that is not container based), the `RUNWHERE` environment variable will be set to `pipeline`, which is the reference term we reviewed earlier in this post.
 
-![Screen%20Shot%202020-03-11%20at%202.12.48%20PM](/images/Screen%20Shot%202020-03-11%20at%202.12.48%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.12.48%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.12.48%20PM.webp)
 
 ### GitHub Actions Example
 
@@ -152,4 +152,4 @@ Notice again, at the very bottom in the last task, I still have my required envi
 
 Once you have your tasks added and environment variables set, you're ready to run your pipeline!
 
-![Screen%20Shot%202020-03-11%20at%202.21.02%20PM](/images/Screen%20Shot%202020-03-11%20at%202.21.02%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.21.02%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.21.02%20PM.webp)

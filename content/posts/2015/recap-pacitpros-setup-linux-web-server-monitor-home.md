@@ -11,7 +11,7 @@ layout = "post"
 +++
 
 
-![](/images/pacitpros_xnss7k.png)
+![](/generated/full/pacitpros_xnss7k.webp)
 
 For those of you who attended (and those who were unable to) the PacITPros meeting at the new Microsoft office in San Francisco, I have uploaded the deck used, as well as the command notes txt file, to this post. The deck and notes differ slightly from the presentation I did at Silicon Valley Code Camp, but not much – the core data is still the same.
 

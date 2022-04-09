@@ -19,9 +19,9 @@ When she's not doing something geeky, you can find her doing something active, m
 
 ## Headshots:
 
-![jessica-deen](/images/jessica-deen.png)
+![jessica-deen](/generated/full/jessica-deen.webp)
 
-![jessica-deen-2](/images/JessicaDeen2_2017.jpg)
+![jessica-deen-2](/generated/full/JessicaDeen2_2017.webp)
 
-![jessica-deen-3](/images/JessicaDeen1_2017.jpg)
+![jessica-deen-3](/generated/full/JessicaDeen1_2017.webp)
 

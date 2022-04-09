@@ -45,7 +45,7 @@ Next, now that you have your __empty__ Goolge Calendar and your __empty__ Office
 
 When you use the template, it's pretty straight forward. You just authenticate to both accounts (Gmail and Office365 in my case), select the calendars you created in step 1, and click 'Create Flow'. 
 
-![Screen-Shot-2019-01-08-at-14.11.46](/images/Screen-Shot-2019-01-08-at-14.11.46.png)
+![Screen-Shot-2019-01-08-at-14.11.46](/generated/full/Screen-Shot-2019-01-08-at-14.11.46.webp)
 
 That's it. Move on to step 3.
 
@@ -57,12 +57,12 @@ That's it.
 
 One thing I did discover is the copy wasn't always immediate. There was an occasional delay, but within 5-15 minutes the data copied over without issue.
 
-![Screen-Shot-2019-01-08-at-14.27.04](/images/Screen-Shot-2019-01-08-at-14.27.04.png)
+![Screen-Shot-2019-01-08-at-14.27.04](/generated/full/Screen-Shot-2019-01-08-at-14.27.04.webp)
 
 I also want to explicitly point out the flow I setup is a one-way sync from Google > Office365. This is intentional on my end for a variety of reasons, but the most significant is my employer (Microsoft) has a corporate policy in place preventing me from using Flow on my work calendar as a source so it would not be compatible with a two-way sync automation. You are welcome to play around with the various Flow templates as your situation dictates. 
 
 Also, since Google Calendar has an app for iPhone I can easily see my Travel Availability without having to fumble around multiple calendar accounts. 
 
-![IMG_3560](/images/IMG_3560_o.jpg)
+![IMG_3560](/generated/full/IMG_3560_o.webp)
 
 All that said, I now have a publicly available (and website embedded calendar) that is auto-synced to my work calendar. You can access my public calendar [here](https://jessicadeen.com/availability/).

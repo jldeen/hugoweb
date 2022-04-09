@@ -57,11 +57,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/conf
 **A few notes:**
 
 - A clean install from this configuration.sh script (not using my dotfiles) looks like this. (See pic below)  
-![](/images/no-presets_spij0x.png)
+![](/generated/full/no-presets_spij0x.webp)
 - **you will need to enter your password during the oh-my-zsh install**. You will also need to type “exit” after it completes so the remaining parts of the configuration.sh script can continue to install. (See pic below)  
-![](/images/oh-my-zsh_zknclc.png)
+![](/generated/full/oh-my-zsh_zknclc.webp)
 - You will be prompted if you want to use my dotfiles. If you hit yes, this will create symlinks to the usual dotfiles and use the .dotfiles from my repo. To learn more, check out [Zach Holman’s blog post](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/), as I forked his repo and modified it accordingly. Side note: I started keeping a record of my dotfiles awhile back when I read [this blog post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) from [Nicola Paolucci](https://developer.atlassian.com/blog/authors/npaolucci). This allowed me to duplicate my environment seamlessly as I moved from system to system. Zach’s project is one Nicola moved to and I adapted as well. If you choose to use my dotfiles and the [WSL Terminal Emulator](https://github.com/goreliu/wsl-terminal) I suggest below, your terminal will look like this. (See pic below)  
-![](/images/presets-1_dgokpe.png)
+![](/generated/full/presets-1_dgokpe.webp)
 
 Now, my .tmux.conf file runs .sh scripts for the status bar. As of now, those scripts don’t play nicely with Ubuntu WSL so I use a [WSL Terminal Emulator](https://github.com/goreliu/wsl-terminal). Fear not, I wrote you an install script to get that going, too. From an **<span style="text-decoration: underline;">Administrator</span>** PowerShell prompt, run the following:
 
@@ -77,13 +77,13 @@ You will need to install a font to use some of the Unicode characters I have in 
 
 From there, you will need to ensure you select that font in your Ubuntu or WSL Terminal: Right-click on the title bar at top > Properties > Font (or Text). Similarly, you will do the same for Themes in WSL Emulator (Right-click on the title bar at top > Options > Select Theme (under Looks).
 
-![](/images/wsl-term-opt_vks7wv.png)
-![](/images/wsl-ubun-opt_fm2efd.png)
+![](/generated/full/wsl-term-opt_vks7wv.webp)
+![](/generated/full/wsl-ubun-opt_fm2efd.webp)
 
 For quick visual reference, see my MacOS and WSL Terminal Emulated environments next to each other below.
 
-![](/images/nerdtree_wjwalf.png)
-![](/images/Screen-Shot-2017-09-19-at-17.02.51_ypjwrv.png)
+![](/generated/full/nerdtree_wjwalf.webp)
+![](/generated/full/Screen-Shot-2017-09-19-at-17.02.51_ypjwrv.webp)
 
 Overall, I’m thrilled with the improvements WSL has made in the FCU. We are so much further ahead now than we were 18 months ago. I am able to nearly replicate my MacOS terminal entirely on my Window systems, which only allows for more productivity in development and operations… or DevOps!
 

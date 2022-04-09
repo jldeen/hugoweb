@@ -137,16 +137,16 @@ WebDriverManager.chromedriver().setup();
 Let's break down what each environment is doing:
 - `local` - Connects to locally installed Chrome using `ChromeDriver` and launches a GUI instance of Chrome.
 
-![Screen%20Shot%202020-03-11%20at%202.10.17%20PM](/images/Screen%20Shot%202020-03-11%20at%202.10.17%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.10.17%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.10.17%20PM.webp)
 
 - `pipeline` - Connects to locally installed Chrome using `ChromeDriver` and runs Chrome silently (headless) in the background using `--headless` and `--no-sandbox` arguments. Note: According to [Google's Documentation here](https://developers.google.com/web/updates/2017/04/headless-chrome?WT.mc_id=docs-blog-jessde), if running Chrome headless on Windows, you will need to add an additional argument: `--disable-gpu`.
 
-![Screen%20Shot%202020-03-11%20at%202.12.48%20PM](/images/Screen%20Shot%202020-03-11%20at%202.12.48%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.12.48%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.12.48%20PM.webp)
 
 - `container` - Connects to selenium hub using `RemoteWebDriver` and runs tests against Chrome (or whatever broswer node you have configured in selenium_hub).
 
-![Screen%20Shot%202020-03-11%20at%202.13.44%20PM](/images/Screen%20Shot%202020-03-11%20at%202.13.44%20PM.png)
-![Screen%20Shot%202020-03-11%20at%202.14.05%20PM](/images/Screen%20Shot%202020-03-11%20at%202.14.05%20PM.png)
+![Screen%20Shot%202020-03-11%20at%202.13.44%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.13.44%20PM.webp)
+![Screen%20Shot%202020-03-11%20at%202.14.05%20PM](/generated/full/Screen%20Shot%202020-03-11%20at%202.14.05%20PM.webp)
 
 ##### Step 2: Add the code for Applitools environment variable capture 
 

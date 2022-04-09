@@ -20,6 +20,6 @@ I have gone through a written walk through of [Ingresses and Helm Charts](https:
 [cluster-issuer.yaml (prod)](https://github.com/jldeen/croc-hunter/blob/master/cluster-issuer.yaml)
 [Jenkins-values-demo.yaml](https://github.com/jldeen/croc-hunter/blob/master/jenkins-values-demo.yaml)
 
-[![download](/images/download.png)](https://www.youtube.com/watch?v=aN9nVa8yeBo&feature=youtu.be)
+[![download](/generated/full/download.webp)](https://www.youtube.com/watch?v=aN9nVa8yeBo&feature=youtu.be)
 
 Sound off in the comments if you enjoyed the video and what content y'all would like to see next! Take care!

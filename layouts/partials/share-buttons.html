@@ -12,7 +12,7 @@
 
     <li class="share__item">
       <a class="share__link share__pinterest"
-        href="http://pinterest.com/pin/create/button/?url={{ .Permalink | absLangURL }}&amp;media={{ .Params.image | absURL }}&amp;description={{ .Title }}"
+        href="http://pinterest.com/pin/create/button/?url={{ .Permalink | absLangURL }}&amp;media={{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | absURL }}&amp;description={{ .Title }}"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on Pinterest" aria-label="Share on Pinterest"><i class="ion ion-logo-pinterest"></i></a>
     </li>

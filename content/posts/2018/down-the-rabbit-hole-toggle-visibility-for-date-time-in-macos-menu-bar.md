@@ -51,5 +51,5 @@ And the toggleClock.sh is the previously mentioned applescript. Upon first launc
 
 While it’s not 100% automated (and therefore is still in major alpha for public use of badass terminal), it’s MUCH better than me having to open System Preferences, click Date & Time, check a box, and close a Window. That would take 10 seconds each time, which how often I’ve done it (and will continue to have to do it), who knows how much time I just saved by spending 8+ hours going down this rabbit hole! *sarcasm* Hahaha! But I love it, I love these kinds of hacks and learning more and more about backend under-the-hood shit.
 
-![](/images/Screen-Shot-2018-08-29-at-13.55.01_rudoob.png)
+![](/generated/full/Screen-Shot-2018-08-29-at-13.55.01_rudoob.png)
 

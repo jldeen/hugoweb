@@ -25,19 +25,19 @@ Once I have your app ready to be deployed (I just updated the `web.confg` file w
 
 From within the portal, you'll click the "+" sign in the top left corner, typed, `web app`, and hit `enter`. You should see the Azure Web App creation page pop up, and when you do, hit `create`.
 
-![Screen%20Shot%202019-09-04%20at%2011.35.43%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.35.43%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.35.43%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.35.43%20PM.webp)
 
 From there, you'll just need to fill in a few key details - your resource group, app name, runtime stack, location, for your AppServicePlan, you can select the `F1 Free Sku` just as I did in the below example. From there, hit `Review and Create`. 
 
-![Screen%20Shot%202019-09-04%20at%2011.38.36%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.38.36%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.38.36%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.38.36%20PM.webp)
 
 You'll get a brief summary page and then you can confirm your new Web App settings and create your app by clicking the official Create button. Here's an example:
 
-![Screen%20Shot%202019-09-04%20at%2011.41.20%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.41.20%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.41.20%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.41.20%20PM.webp)
 
 Your deployment will take a few minutes (mine took as long as writing this sentence did) and then after, you'll have a shiny new empty Windows Web App. Simply navigate to the resource by clicking the Go to resource button.
 
-![Screen%20Shot%202019-09-04%20at%2011.45.18%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.45.18%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.45.18%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.45.18%20PM.webp)
 
 ## The DevOps Part (in 3 Steps)
 
@@ -49,11 +49,11 @@ Anyway, after you opted to view your newly created resource, you'll see a dashbo
 * Deployment Slots
 * Deployment Center
 
-![Screen%20Shot%202019-09-04%20at%2011.45.59%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.45.59%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.45.59%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.45.59%20PM.webp)
 
 Click on Deployment Center and you'll notice this is no "Right click, publish" (Damian Brady says friends don't let friends do that), nor is this a "Deploy from Git directly to this Web App" (That's the same as right click, publish in my book). The first thing we have to do is select where our code lives and 8 options are available (Azure Repos, GitHub, BitBucket, Local Git, OneDrive, Dropbox, External Git and FTP). 
 
-![Screen%20Shot%202019-09-04%20at%2011.50.47%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.50.47%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.50.47%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.50.47%20PM.webp)
 
 I chose GitHub since that's where _all_ my code lives and then I hit "Continue."
 
@@ -61,17 +61,17 @@ Note: You may have to authorize a connection to GitHub if you have not done so p
 
 The next screen (Step 2) gives you two options for "Build Provider": App Service build service and Azure Pipelines. Select Azure Piplines and hit "Continue."
 
-![Screen%20Shot%202019-09-04%20at%2011.54.09%20PM](/images/Screen%20Shot%202019-09-04%20at%2011.54.09%20PM.png)
+![Screen%20Shot%202019-09-04%20at%2011.54.09%20PM](/generated/full/Screen%20Shot%202019-09-04%20at%2011.54.09%20PM.webp)
 
 Step 3's screen has you select options relevant to your code and Azure Pipelines. You'll have to select your GitHub organization, repository, and branch, as well as your Azure Pipelines organization, project and web application framework. 
 
 Note: If you don't have an Azure Pipelines organization, you can create one from this step, too. 
 
-![Screen%20Shot%202019-09-05%20at%2012.01.19%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.01.19%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.01.19%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.01.19%20AM.webp)
 
 Click "Continue" to see the final summary page where you just have to click "Finish" to create your pipeline.
 
-![Screen%20Shot%202019-09-05%20at%2012.02.20%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.02.20%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.02.20%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.02.20%20AM.webp)
 
 This will take a few minutes (mine took aout 5 minutes with a page refresh thrown in) so now might be a good time to grab coffee/tea/water/whiskey/etc. Stay hydrated, folks! 
 
@@ -79,29 +79,29 @@ This will take a few minutes (mine took aout 5 minutes with a page refresh throw
 
 Once your deployment completes you'll see a summary page with deep links over to your build, release and successful Azure Pipelines and Deployment.
 
-![Screen%20Shot%202019-09-05%20at%2012.15.58%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.15.58%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.15.58%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.15.58%20AM.webp)
 
 When you click those links, you'll see your completed pipeline with tasks that make sense for the runtime stack and deployment location. 
 
 For example, when I clicked the build link, I was able to see my Azure Pipelines CI page with a successful build. 
 
-![Screen%20Shot%202019-09-05%20at%2012.20.25%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.20.25%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.20.25%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.20.25%20AM.webp)
 
 And when I clicked edit, I saw the tasks that were preselected and preconfigured for my app.
 
-![Screen%20Shot%202019-09-05%20at%2012.19.08%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.19.08%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.19.08%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.19.08%20AM.webp)
 
 My first build was successful (whew) and here's an example of what that looks like:
 
-![buildExample](/images/size/600/buildExample.png)
+![buildExample](/generated/full/buildExample.webp)
 
 My release pipeline looks the same - configured with tasks (one task) that made sense for my scenario.
 
-![Screen%20Shot%202019-09-05%20at%2012.22.51%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.22.51%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.22.51%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.22.51%20AM.webp)
 
 And, again "whew", my release pipeline was successful.
 
-![Screen%20Shot%202019-09-05%20at%2012.22.19%20AM](/images/Screen%20Shot%202019-09-05%20at%2012.22.19%20AM.png)
+![Screen%20Shot%202019-09-05%20at%2012.22.19%20AM](/generated/full/Screen%20Shot%202019-09-05%20at%2012.22.19%20AM.webp)
 
 Finally, my image resizer was up and running without any manual work done by me to create the pipeline. Now, off course the pipeline created is just a framework - it's by no means ready for production (even though the release stage is labeled `production`) and it **will** need to be modified... but it's a great start with low barrier to entry. 
 

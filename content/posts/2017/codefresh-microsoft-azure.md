@@ -38,7 +38,7 @@ Luckily, Codefresh has made connecting to and deploying in all three scenarios r
 
 For Legacy Swarm (Pre 1.12), your deployment scenario would look similar to this:
 
-![](/images/Screen-Shot-2017-09-29-at-17.34.55_o3ke5m.png)
+![](/generated/full/Screen-Shot-2017-09-29-at-17.34.55_o3ke5m.webp)
 
 I also created a demo ‘codefreshswarm’ repo with a generic codefresh.yml file you can use [here](https://github.com/jldeen/codefreshswarm/blob/master/codefresh.yml).
 
@@ -48,7 +48,7 @@ Your Codefresh Swarm Mode deployment would look similar, only you will specify a
 
 docker stack deploy --compose-file docker-stack.yml ${{STACK_NAME}}
 
-![](/images/Screen-Shot-2017-10-06-at-22.16.23_bsa0je.png)
+![](/generated/full/Screen-Shot-2017-10-06-at-22.16.23_bsa0je.webp)
 
 A demo codefresh.yml file for a swarm mode deployment can be found [here](https://github.com/jldeen/cfswarmmode).
 

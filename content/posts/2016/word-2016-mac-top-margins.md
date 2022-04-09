@@ -13,15 +13,15 @@ layout = "post"
 
 I’ve been using Microsoft Office 2016 for Mac for quite awhile now and I finally had time to figure out why I couldn’t see the top margins of my Word documents.
 
-![](/images/Screen-Shot-2016-04-05-at-18.57.28_f2buth.png)
+![](/generated/full/Screen-Shot-2016-04-05-at-18.57.28_f2buth.webp)
 
 The solution is surprisingly easy – there is an option for hiding the white space between pages that needs to be disabled. To do so, double click between the grey area and the top ruler to show the white space.
 
-![](/images/Screen-Shot-2016-04-05-at-18.58.47-1_vie8ad.png)
+![](/generated/full/Screen-Shot-2016-04-05-at-18.58.47-1_vie8ad.webp)
 
 Voila!
 
-![](/images/Screen-Shot-2016-04-05-at-18.57.57_nd91mk.png)
+![](/generated/full/Screen-Shot-2016-04-05-at-18.57.57_nd91mk.webp)
 
 Note: This will also work for Microsoft Word 2010, 2013, and 2016 for PC. There is an official Microsoft Office support document [here](https://support.office.com/en-us/article/Show-top-and-bottom-margins-3a339673-2a94-4e4c-8e87-71613437af7b), as well.
 

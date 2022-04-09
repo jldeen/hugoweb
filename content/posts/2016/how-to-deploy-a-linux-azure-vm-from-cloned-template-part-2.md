@@ -21,5 +21,5 @@ layout = "post"
 
 <span style="font-size: small; line-height: 22.4px;">And that’s it, you then should see the command executing, which will then prompt you to type in the vmName, adminUserName, adminPassword, and networkInterfaceID (copied from the azure network nic show command). Once completed successfully, you’ll see a print out like this:</span>
 
-![](/images/azurecli-1_vlmgt9.png)
+![](/generated/full/azurecli-1_vlmgt9.wewbp)
 

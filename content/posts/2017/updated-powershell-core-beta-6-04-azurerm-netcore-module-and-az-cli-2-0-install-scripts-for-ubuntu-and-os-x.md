@@ -11,7 +11,7 @@ layout = "post"
 +++
 
 
-![](/images/basic-powershell-commands-intro-840x420_hfqmhu.png)
+![](/generated/full/basic-powershell-commands-intro-840x420_hfqmhu.webp)
 
 **Note: This post is now old. Please use [my latest installer from this blog post](https:/jessicadeen.com/linux/powershell-core-master/). **
 

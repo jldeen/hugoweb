@@ -18,7 +18,7 @@
       {{ if .Params.image }}
       <div class="col col-12">
         <div class="page-image">
-          <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+          <img class="lazy" data-src="{{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | absURL }}" alt="{{ .Title }}">
         </div>
       </div>
       {{ end }}
