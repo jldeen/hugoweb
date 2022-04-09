@@ -37,9 +37,9 @@ As an added bonus, I found [this blog post](http://apetronix.com/find-pane-id-fo
 
 Now, you may wonder, how do I use this with something like StreamDeck? Easy! I use [this Keyboard Maestro Integration](https://github.com/Corcules/KMlink), create the macro in Keyboard Maestro and reference it in Stream Deck. 
 
-![keyboard-maestro](/images/Screen%20Shot%202020-10-15%20at%2012.34.08.png)
+![keyboard-maestro](/generated/full/Screen%20Shot%202020-10-15%20at%2012.34.08.webp)
 
-![streamdeck](/images/Screen%20Shot%202020-10-15%20at%2012.33.01.png)
+![streamdeck](/generated/full/Screen%20Shot%202020-10-15%20at%2012.33.01.webp)
 
 Of course, if you didn't want to use Stream Deck or Keyboard Maestro, you could just save the script, and create a function, and call said function from command line, examples of this are below.
 

@@ -59,73 +59,73 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // document.documentElement.setAttribute('color-mode', 'dark');
 
-  (function(){
-    // Then set the 'color-mode' attribute to whatever is in localstorage
-    document.documentElement.setAttribute('color-mode', localStorage.getItem('theme'));
-    console.log("Theme is set to:", localStorage.getItem('theme'));
+  // (function(){
+  //   // Then set the 'color-mode' attribute to whatever is in localstorage
+  //   document.documentElement.setAttribute('color-mode', localStorage.getItem('theme'));
+  //   console.log("Theme is set to:", localStorage.getItem('theme'));
 
-    document.getElementById("checkbox").checked = JSON.parse(localStorage.getItem("checkbox"));
-    console.log("Checkbox is set to:", localStorage.getItem("checkbox"));
-  })();
+  //   document.getElementById("checkbox").checked = JSON.parse(localStorage.getItem("checkbox"));
+  //   console.log("Checkbox is set to:", localStorage.getItem("checkbox"));
+  // })();
 
-  const checkbox = document.getElementById('checkbox');
+  // const checkbox = document.getElementById('checkbox');
 
-  checkbox.addEventListener('change', () => {
-    // This function will execute itself when the script is loaded
-    var targetTheme = document.documentElement.getAttribute('color-mode') === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('color-mode', targetTheme);
+  // checkbox.addEventListener('change', () => {
+  //   // This function will execute itself when the script is loaded
+  //   var targetTheme = document.documentElement.getAttribute('color-mode') === 'dark' ? 'light' : 'dark';
+  //   document.documentElement.setAttribute('color-mode', targetTheme);
 
-    localStorage.setItem('theme', targetTheme)
-    console.log('theme changed to: ' + localStorage.getItem('theme'))
+  //   localStorage.setItem('theme', targetTheme)
+  //   console.log('theme changed to: ' + localStorage.getItem('theme'))
 
-    if (checkbox.checked == true) {
-      localStorage.setItem("checkbox", JSON.stringify(true))
-      console.log(localStorage.getItem("checkbox"))
-    } else {
-      localStorage.setItem("checkbox", JSON.stringify(false))
-      console.log(localStorage.getItem("checkbox"))
-    }
-  })
+  //   if (checkbox.checked == true) {
+  //     localStorage.setItem("checkbox", JSON.stringify(true))
+  //     console.log(localStorage.getItem("checkbox"))
+  //   } else {
+  //     localStorage.setItem("checkbox", JSON.stringify(false))
+  //     console.log(localStorage.getItem("checkbox"))
+  //   }
+  // })
 
-  //determines if the user has a set theme
-  function detectColorScheme(){
-    //local storage is used to override OS theme settings
-    if(localStorage.getItem("theme")){
-        if(localStorage.getItem("theme") == "dark"){
-            var theme = "dark";
-        }
-    } else if(!window.matchMedia) {
-        //matchMedia method not supported
-        return false;
-    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        //OS theme setting detected as dark
-        var theme = "dark";
-    }
+  // //determines if the user has a set theme
+  // function detectColorScheme(){
+  //   //local storage is used to override OS theme settings
+  //   if(localStorage.getItem("theme")){
+  //       if(localStorage.getItem("theme") == "dark"){
+  //           var theme = "dark";
+  //       }
+  //   } else if(!window.matchMedia) {
+  //       //matchMedia method not supported
+  //       return false;
+  //   } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //       //OS theme setting detected as dark
+  //       var theme = "dark";
+  //   }
 
-    //dark theme preferred, set document with a `color-mode` attribute
-    if (theme=="dark") {
-        document.documentElement.setAttribute("color-mode", "dark");
-    }
+  //   //dark theme preferred, set document with a `color-mode` attribute
+  //   if (theme=="dark") {
+  //       document.documentElement.setAttribute("color-mode", "dark");
+  //   }
 
-    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-      console.log('🎉 Dark mode is supported');
-    }
+  //   if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+  //     console.log('🎉 Dark mode is supported');
+  //   }
 
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    darkModeMediaQuery.addListener((e) => {
-      const darkModeOn = e.matches;
-      console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
+  //   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  //   darkModeMediaQuery.addListener((e) => {
+  //     const darkModeOn = e.matches;
+  //     console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
 
-      if (darkModeOn == true) {
-        document.documentElement.setAttribute("color-mode", "dark");
-        document.getElementById("checkbox").checked = true
-      } else if (darkModeOn == false) {
-        document.documentElement.setAttribute("color-mode", "light")
-        document.getElementById("checkbox").checked = false
-      }
-    });
-  }
-  detectColorScheme();
+  //     if (darkModeOn == true) {
+  //       document.documentElement.setAttribute("color-mode", "dark");
+  //       document.getElementById("checkbox").checked = true
+  //     } else if (darkModeOn == false) {
+  //       document.documentElement.setAttribute("color-mode", "light")
+  //       document.getElementById("checkbox").checked = false
+  //     }
+  //   });
+  // }
+  // detectColorScheme();
 
   /* =======================
   // Responsive Videos

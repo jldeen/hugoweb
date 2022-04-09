@@ -45,7 +45,7 @@ paginate = 9
 
 
 [params]
-  logo = "logo.png" # You can add own logo. For example "/images/logo.png".
+  logo = "generated/full/logo.webp" # You can add own logo. For example "/images/logo.png".
   description = "Jack of all trades, master of none, but still always better than a master of one."
 
   #-------------------------------
@@ -53,7 +53,7 @@ paginate = 9
   [params.author]
     author__name = "Jessica Deen"
     author__bio = "Jack of all trades, master of none, though often better than a master of one."
-    author__avatar = "/images/hero/jessica-deen.png"
+    author__avatar = "/generated/full/jessica-deen.webp"
 
   [[params.social]]
     icon = "ion-logo-twitter"
@@ -85,7 +85,7 @@ paginate = 9
   [params.hero]
     hero__title = "Hey, I’m Jessica Deen"
     hero__description = "I like to write, code, speak, teach, and learn - not necessarily in that order. Let's learn together."
-    hero__image = "/images/hero/jessica-deen.png"
+    hero__image = "/generated/full/jessica-deen-hero.webp"
 
   # Newsletter
   [params.mailchimp]

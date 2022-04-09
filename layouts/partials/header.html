@@ -3,14 +3,17 @@
   <div class="container">
     <div class="row">
       <div class="header__inner col col-12">
-
         <div class="logo">
           <a class="logo__link" href="{{ .Site.BaseURL }}">
             {{ if .Site.Params.logo }}
-            <img class="logo__image" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
-            {{ else }}
-              {{ .Site.Title }}
-            {{ end }}
+            <img
+              class="logo__image"
+              src="{{ .Site.Params.logo | relURL }}"
+              alt="{{ .Site.Title }}"
+              width="100%"
+              height="100%"
+            />
+            {{ else }} {{ .Site.Title }} {{ end }}
           </a>
         </div>
 
@@ -27,19 +30,14 @@
               </li>
               {{ end }}
               <li class="nav__item nav__item-icon">
-                <!-- <div class="toggle-theme">
-                  <div class="toggle-moon" title="Enable dark mode"><i class="ion ion-ios-moon"></i></div>
-                  <div class="toggle-sun" title="Enable light mode"><i class="ion ion-ios-sunny"></i></div>
-                </div> -->
-                <!-- <div class="toggle-theme" id="toggle-theme"></div> -->
-                <div>
-                  <input type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="label">
+                <!-- <div>
+                  <input type="checkbox" class="dark-mode-toggle" id="dark-mode-toggle">
+                    <label for="dark-mode-toggle" class="label">
                       <i class="ion ion-ios-moon" title="Enable dark mode"></i>
                       <i class="ion ion-ios-sunny" title="Enable light mode"></i>
                       <div class="ball"></div>
                     </label>
-                </div>
+                </div> -->
               </li>
             </ul>
           </div>
@@ -49,7 +47,6 @@
           <i class="nav__icon icon__menu ion ion-md-menu"></i>
           <i class="nav__icon icon__search ion ion-md-search"></i>
         </div>
-
       </div>
     </div>
   </div>

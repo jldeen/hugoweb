@@ -25,7 +25,7 @@ layout = "post"
 
  
 
-![](/images/Screen-Shot-2016-04-25-at-16.15.52_kh8fuz.png)  ![](/images/Screen-Shot-2016-04-25-at-16.16.27_jk8kpj.png)
+![](/generated/full/Screen-Shot-2016-04-25-at-16.15.52_kh8fuz.webp)  ![](/generated/full/Screen-Shot-2016-04-25-at-16.16.27_jk8kpj.webp)
 
 <span style="font-family: Helvetica; font-size: medium;"><u>Resource Costs Breakdown</u></span>
 
@@ -33,7 +33,7 @@ layout = "post"
 
 <span style="font-family: Helvetica; font-size: medium;">This option takes a little bit more resources initially to setup, but I felt it was easier to manage after the fact. I found it to be considerably more reliable than the WebApp and doesn’t use ClearDB, therefore you save on the monthly cost for a separate DB service. This option uses a Linux virtual machine, which has a LAMP stack and WordPress already installed.</span><span style="font-family: Helvetica; font-size: medium;"> Much like option 1, I ran two performance tests with the above specified parameters and concluded the average response times were around 10.33 secs, but the average requests failed less than 0.11% of the time, with 21.41 requests per second.</span>
 
-![](/images/Screen-Shot-2016-04-25-at-16.22.41_ikm8fp.png)![](/images/Screen-Shot-2016-04-25-at-16.23.16_pgdnsp.png)
+![](/generated/full/Screen-Shot-2016-04-25-at-16.22.41_ikm8fp.webp)![](/generated/full/Screen-Shot-2016-04-25-at-16.23.16_pgdnsp.webp)
 
 <span style="font-family: Helvetica; font-size: medium;"><u>Resource Costs Breakdown</u></span>
 
@@ -41,7 +41,7 @@ layout = "post"
 
 <span style="font-family: Helvetica; font-size: medium;">This option is still a relatively new concept, but I wanted to see a cost and performance breakdown anyway. This too was far more reliable than the WebApp and also doesn’t use ClearDB. From a security standpoint, using a Docker container is nice simply because if hackers gain root access via a web app with a vulnerability, they only have access to the single Docker container and not your entire host system. This option also uses a Linux virtual machine and performed much like option 2. After running two performance tests, the average response time was 10.29 seconds, the average requests failed 2.40% of the time, and there were an average of 35.53 requests per second.</span>
 
-![](/images/Screen-Shot-2016-04-25-at-16.27.14_ztzxxc.png)![](/images/Screen-Shot-2016-04-25-at-16.27.31_ratcfl.png)
+![](/generated/full/Screen-Shot-2016-04-25-at-16.27.14_ztzxxc.webp)![](/generated/full/Screen-Shot-2016-04-25-at-16.27.31_ratcfl.webp)
 
 <span style="font-family: Helvetica; font-size: medium;"><u>Resource Costs Breakdown</u></span>
 

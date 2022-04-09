@@ -11,7 +11,7 @@ layout = "post"
 +++
 
 
-![](/images/Codefresh-horizontal-color-trans_dwmqai.png)
+![](/generated/full/Codefresh-horizontal-color-trans_dwmqai.webp)
 
 Hello everyone! Today’s post will recap on our Codefresh+Azure webinar we had earlier today. Mainly, I want to help others who wish to quickly get up and running with the same demo I used during the live stream. Click [here](https://codefresh.io/devops-azure-kubernetes-helm-lp/) to watch the full webinar.
 
@@ -31,7 +31,7 @@ After you have your K8s (Kubernetes) cluster setup in Azure, you can add it into
 
 Next, we need to install Helm on your local system so we can get Tiller (in cluster service for Helm) setup on your cluster. If you’re using a Mac and homebrew, simply run `brew install kubernetes-helm`  from your Terminal and helm should be installed on your CLI. Next, run `helm init` and tiller should deploy out to your K8s cluster.
 
-![](/images/Picture1_rxsf73.png)
+![](/generated/full/Picture1_rxsf73.webp)
 
 **Cool add-ons**
 
@@ -57,7 +57,7 @@ kubectl create namespace codefresh kubectl create secret docker-registry codefre
 
 Finally, you can import your forked version of my croc-hunter repo (which I just forked from Lachie Evenson [shoutout!]) and go from there. From the Codefresh dashboard, starting in Repositories, hit “add new” and then find your forked repo. Select it, hit next, and then hit the option that your repo has a codefresh.yml in it (because I added it). You might have to update things like the image name, kubecontext, custom_image, and  custom_ingress_hostname on both dev and master steps, but my example template should help you get started. You can also update all that information manually in crochunter-repo/charts/croc-hunter/values.yaml. (I use this repo for VSTS, Codefresh and Jenkins simultaneously, which is why I love that Codefresh allows me to override my values.yaml using their build and helm steps.)
 
-```
+```yaml
 version: '1.0'
 steps:
   BuildingDockerImage:
@@ -103,9 +103,9 @@ steps:
 ```
 When your codefresh.yml is setup with the information that’s specific to YOUR environment, you will have a full CI/CD dev/master branch pipeline for Codefresh, Azure (AKS), Kubernetes, and Helm. If you also followed the kube-lego and nginx-ingress controller steps earlier, your croc-hunter helm release should auto release into your pre-determined DNS A record with an SSL certificate to boot!
 
-![](/images/Screen-Shot-2018-03-29-at-16.16.53_invjdt.png)
+![](/generated/full/Screen-Shot-2018-03-29-at-16.16.53_invjdt.webp)
 
-![](/images/Screen-Shot-2018-03-29-at-16.17.55_jwvykp.png)
+![](/generated/full/Screen-Shot-2018-03-29-at-16.17.55_jwvykp.webp)
 
 Finally, you can also schedule a 1:1 with Codefresh by clicking [here](https://codefresh.io/request-a-demo1/?wt.mc_id=codefresh-blogpost-blog-jessde) and you can learn more about Azure AKS on our new docs page [here](https://docs.microsoft.com/azure/aks/?wt.mc_id=codefresh-blogpost-blog-jessde).
 

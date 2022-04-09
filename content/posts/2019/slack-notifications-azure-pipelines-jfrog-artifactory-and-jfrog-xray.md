@@ -18,7 +18,7 @@ I recently spoke at JFrog's swampUP conference and in my session I showcased how
 First we will start with Slack itself. From your web browser, login to your Slack account or click [this link](https://api.slack.com/apps) and sign in.
 
 ## Step 1: Create Slack App and install to your desired workspace
-![Screen%20Shot%202019-06-26%20at%201.59.12%20PM](/images/Screen%20Shot%202019-06-26%20at%201.59.12%20PM.png)
+![Screen%20Shot%202019-06-26%20at%201.59.12%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%201.59.12%20PM.webp)
 
 ## Step 2: Grant the following permissions and get your OAuth Token
 
@@ -26,30 +26,30 @@ First we will start with Slack itself. From your web browser, login to your Slac
 
 Under `Add features and functionality` select `Permissions`
 
-![Screen%20Shot%202019-06-26%20at%202.01.18%20PM](/images/Screen%20Shot%202019-06-26%20at%202.01.18%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.01.18%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.01.18%20PM.webp)
 
 ### Step 2.2 - Scopes > Send messages as JFrog `(chat:write:bot)`
 
 Under `Scopes` Add the `chat:write:bot` permission to your app
 
-![Screen%20Shot%202019-06-26%20at%202.03.09%20PM](/images/Screen%20Shot%202019-06-26%20at%202.03.09%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.03.09%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.03.09%20PM.webp)
 
 ### Step 2.3 - Install App to Workspace (Confirm permissions)
 
 Under `OAuth Tokens & Redirect URLs` click `Install App to Workspace`
 
-![Screen%20Shot%202019-06-26%20at%203.12.00%20PM](/images/Screen%20Shot%202019-06-26%20at%203.12.00%20PM.png)
+![Screen%20Shot%202019-06-26%20at%203.12.00%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%203.12.00%20PM.webp)
 
 And follow it up with an additional confirmation to Install.
 Note: Ensure your app can send messages as the _app-name_
 
-![Screen%20Shot%202019-06-26%20at%202.04.52%20PM](/images/Screen%20Shot%202019-06-26%20at%202.04.52%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.04.52%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.04.52%20PM.webp)
 
 ### Step 2.4 - Copy OAuth Token to clipboard
 
 Again under `OAuth Tokens & Redirect URLs` copy your OAuth token to your clipboard. Keep this in a safe place, do not share it.
 
-![Screen%20Shot%202019-06-26%20at%202.09.35%20PM](/images/Screen%20Shot%202019-06-26%20at%202.09.35%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.09.35%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.09.35%20PM.webp)
 
 ## Step 3: Create test for Slack Notification
 
@@ -108,10 +108,10 @@ Curl works perfectly fine, and we will use it later in our Azure Pipelines. Slac
 1. https://slack.com/api/chat.postMessage
     - Authorization
         - Type: Bearer Token > Paste slack app token from clipboard
-![Screen%20Shot%202019-06-26%20at%2012.06.38%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.06.38%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.06.38%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.06.38%20PM.webp)
     - Headers
         - (Key) Content-Type | (Value) application/json; charset=utf-8
-![Screen%20Shot%202019-06-26%20at%2012.07.18%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.07.18%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.07.18%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.07.18%20PM.webp)
     - Body Artifactory Example
         - ```json
             {"channel": "$(slackChannel)", "text": "Jfrog Artifactory Build $(Build.BuildId) Information", "attachments": [
@@ -163,13 +163,13 @@ Curl works perfectly fine, and we will use it later in our Azure Pipelines. Slac
                 ]
             }
             ```
-![Screen%20Shot%202019-06-26%20at%2012.07.44%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.07.44%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.07.44%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.07.44%20PM.webp)
 
 ## Step 4: Azure Pipelines
 
 You may notice the above examples include undefined variables that simply show up as hardcoded text in the Postman/Curl HTTP POST examples. The reason for this is I actually opted to define them in a simple bash script task within my pipeline; in fact, I use six bash tasks throughout the pipeline.
 
-![Screen%20Shot%202019-06-26%20at%2012.46.38%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.46.38%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.46.38%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.46.38%20PM.webp)
 
 The first thing I did was install the JFrog CLI on my build server.
 
@@ -239,10 +239,10 @@ Since XRay and my `results.json` will tell me the summary of my alerts and I can
 In fact, as you will see, I just used a simple `if/else` statement to query the value of that field and set the `slackStyle` variable to either good(green) or danger(red).
 
 Here's an example of a failure:
-![Screen%20Shot%202019-06-26%20at%2012.49.39%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.49.39%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.49.39%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.49.39%20PM.webp)
 
 And here's an example of a successful scan (once I fixed the vulnerabilities detected)
-![Screen%20Shot%202019-06-26%20at%2012.50.06%20PM](/images/Screen%20Shot%202019-06-26%20at%2012.50.06%20PM.png)
+![Screen%20Shot%202019-06-26%20at%2012.50.06%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%2012.50.06%20PM.webp)
 
 And here's the code:
 
@@ -292,15 +292,15 @@ Now that you have defined your tasks, especially if you use the visual CI as I d
 
 ### Click on `Agent Job 1` or the name of your job. (Step 5.1)
 
-![Screen%20Shot%202019-06-26%20at%202.21.22%20PM](/images/Screen%20Shot%202019-06-26%20at%202.21.22%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.21.22%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.21.22%20PM.webp)
 
 ### Click on `View YAML` with the clipboard. (Step 5.2)
 
-![Screen%20Shot%202019-06-26%20at%202.22.01%20PM](/images/Screen%20Shot%202019-06-26%20at%202.22.01%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.22.01%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.22.01%20PM.webp)
 
 ### Copy the YAML to your clipboard with the button. (Step 5.3)
 
-![Screen%20Shot%202019-06-26%20at%202.26.03%20PM](/images/Screen%20Shot%202019-06-26%20at%202.26.03%20PM.png)
+![Screen%20Shot%202019-06-26%20at%202.26.03%20PM](/generated/full/Screen%20Shot%202019-06-26%20at%202.26.03%20PM.webp)
 
 You can then use those steps in a unified YAML pipeline with Azure Pipelines. I have included an example [here](https://github.com/jldeen/spring-boot-websocket-chat-demo/blob/master/azure-pipelines.yml), complete with a deployment to Azure Kubernetes Service.
 

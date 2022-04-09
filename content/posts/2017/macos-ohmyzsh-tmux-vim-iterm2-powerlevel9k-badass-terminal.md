@@ -15,7 +15,7 @@ layout = "post"
 
 A week or so ago a colleague turned me on to [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and I just went down the rabbit hole. I have always found the built-in Terminal in macOS (formerly OS X) to be bland and boring, but never really sat down to try to change it. I started using iTerm2 awhile ago, but again, never tried to “spice it up” so to speak. Now I did and I came up with this:
 
-![](/images/Screen-Shot-2017-04-14-at-21.28.11_iwtuhb.png)
+![](/generated/full/Screen-Shot-2017-04-14-at-21.28.11_iwtuhb.webp)
 
 First off, make sure you’re using [iTerm2](https://www.iterm2.com/), if you’re not already.
 
@@ -79,7 +79,7 @@ git clone https://github.com/powerline/fonts.git $ sh fonts/install.sh
 
 You will need to set whichever font you want in your iTerm2 preferences. Note the font selected in my preferences:
 
-![](/images/Screen-Shot-2017-04-14-at-21.06.51_svcqgt.png)
+![](/generated/full/Screen-Shot-2017-04-14-at-21.06.51_svcqgt.webp)
 
 Now that you have oh-my-zsh, tmux, and powerlevel9k installed, let’s get to configuring everything.
 
@@ -116,7 +116,7 @@ I also installed the [tmux-current-pane-hostname](https://github.com/soyuka/tmux
 
 **Vim**
 
-![](/images/Screen-Shot-2017-04-14-at-21.51.48_lju1kn.png)
+![](/generated/full/Screen-Shot-2017-04-14-at-21.51.48_lju1kn.webp)
 
 Last, but not least, Vim! I had a hell of a time configuring Vim at first because I was trying to set it up using Powerline. I used [this post](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x) as a guide, but was unable to configure things the way I wanted. Regardless, I am including the link in case it’s helpful to you. I ended up choosing [vim-airline](https://github.com/vim-airline/vim-airline) because it’s lightweight and simple.
 
@@ -168,7 +168,7 @@ Now, to always show the statusline in Vim, you have to add:
 
 I went with the wombat colorscheme for now. Also, I found a bunch of vimthemes [here](https://github.com/flazz/vim-colorschemes). For my vim-airline plugin, I went with the bubblegum theme.
 
-![](/images/Screen-Shot-2017-04-15-at-00.08.12_rmulc2.png)
+![](/generated/full/Screen-Shot-2017-04-15-at-00.08.12_rmulc2.webp)
 
 Next, I wanted to install [Nerdtree](https://github.com/scrooloose/nerdtree), but first I decided to install [Pathogen](https://github.com/tpope/vim-pathogen) to keep present and future installs simple:
 

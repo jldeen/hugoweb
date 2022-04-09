@@ -17,7 +17,7 @@ My previous blog post, [How to access private Azure DevOps repos from a Dockerf
 
 The only problem is when you start to rub a little DevOps on the process. Every single CI/CD tool operates a little differently and as such the formatting of the parsed `SSH_PRIVATE_KEY` can get messed up and produce this error:
 
-![](/images/Screen-Shot-2018-09-20-at-20.08.41_iokeke.png)
+![](/generated/full/Screen-Shot-2018-09-20-at-20.08.41_iokeke.webp)
 
 “Load key “~/.ssh/id_rsa” or “/root/.ssh/id_rsa”: invalid format – permission denied.
 
@@ -39,19 +39,19 @@ I have highlighted the line we have changed so the variable can be properly pars
 
 And then in Azure DevOps (or the CI/CD tool of your choice), under variables, you now paste in the converted private key **WITH** commas:
 
-![](/images/Screen-Shot-2018-09-20-at-20.19.16_zi08qr.png)
+![](/generated/full/Screen-Shot-2018-09-20-at-20.19.16_zi08qr.webp)
 
 Obviously, in a real-world scenario, I would also encrypt that variable, but I wanted to share the screenshot so you could see what was being pasted.
 
 And in tasks, you still use the build argument as I previously stated: `SSH_PRIVATE_KEY=$(SSH_PRIVATE_KEY)`
 
-![](/images/Screen-Shot-2018-09-20-at-20.20.57_fecqpm.png)
+![](/generated/full/Screen-Shot-2018-09-20-at-20.20.57_fecqpm.webp)
 
 So the <span style="text-decoration: underline;">**only**</span> part that changes is the format of the ssh key file contents you paste into use as a variable for your pipeline and the line in your Dockerfile that parses that variable and creates your id_rsa key.
 
 And then you save and queue a new build, and voila!
 
-![](/images/Screen-Shot-2018-09-20-at-20.37.41_meuj73.png)
+![](/generated/full/Screen-Shot-2018-09-20-at-20.37.41_meuj73.webp)
 
 ![](https://media.giphy.com/media/lHQuX9d5DBhug/giphy.gif)
 
