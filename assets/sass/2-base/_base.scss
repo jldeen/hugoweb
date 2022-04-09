@@ -6,6 +6,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  font-display: swap;
   overflow-x: hidden;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -30,6 +31,7 @@ h5,
 h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
+  font-display: swap;
   line-height: $heading-line-height;
   letter-spacing: $heading-letter-spacing;
   color: var(--heading-font-color);
@@ -79,6 +81,7 @@ blockquote {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
     color: var(--heading-font-color);
 
   }
@@ -93,6 +96,7 @@ pre {
   padding: 15px;
   margin-bottom: 0;
   font-size: 14px;
+  font-display: swap;
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-all;
@@ -116,6 +120,7 @@ img,
     line-height: 22px;
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     text-align: center;
     color: var(--heading-font-color);
   
@@ -173,6 +178,7 @@ table {
 table th {
   padding: 10px;
   font-size: 16px;
+  font-display: swap;
   text-align: left;
   border: 1px solid var(--th-color);
   color: var(--heading-font-color);
@@ -191,6 +197,7 @@ table tr {
 table td {
   padding: 10px;
   font-size: 14px;
+  font-display: swap;
   border: 1px solid var(--background-alt-color);
 }
 
@@ -199,6 +206,7 @@ table td {
   padding: 20px 26px;
   font-size: 16px;
   font-weight: 700;
+  font-display: swap;
   text-decoration: none;
   border-radius: 2px;
   border: none;
