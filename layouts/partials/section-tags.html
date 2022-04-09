@@ -20,7 +20,7 @@
               <div class="col col-3 col-d-6 col-m-12">
                 <a href="{{ .RelPermalink }}" class="tag-image" title="{{ .Title }}">
                   <span class="tag-name">{{ .Title }}</span>
-                  <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | absURL }}"{{ end }} alt="{{ .Title }}">
+                  <img class="lazy" {{ range .Data.Pages }}data-src="{{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | relURL }}"{{ end }} alt="{{ .Title }}">
                 </a>
               </div>
               {{ end }}

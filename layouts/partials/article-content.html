@@ -17,7 +17,7 @@
     
         {{ if .Params.Image }}
         <a class="article__image" href="{{ .RelPermalink }}">
-          <img class="lazy" data-src="{{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | absURL }}" alt="{{ .Title }}">
+          <img class="lazy" data-src="{{ .Params.Image | replaceRE "images" "generated/full" | replaceRE ".jpg|.jpeg|.JPG|.JPEG|.png|.PNG" ".webp" | relURL }}" alt="{{ .Title }}">
         </a>
         {{ end }}
     </div>
