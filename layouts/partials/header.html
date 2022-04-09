@@ -8,7 +8,7 @@
             {{ if .Site.Params.logo }}
             <img
               class="logo__image"
-              src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+              src="{{ .Site.Params.logo | relURL }}"
               alt="{{ .Site.Title }}"
               width="100%"
               height="100%"

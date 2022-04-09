@@ -45,7 +45,7 @@ paginate = 9
 
 
 [params]
-  logo = "/generated/full/logo.webp" # You can add own logo. For example "/images/logo.png".
+  logo = "generated/full/logo.webp" # You can add own logo. For example "/images/logo.png".
   description = "Jack of all trades, master of none, but still always better than a master of one."
 
   #-------------------------------
