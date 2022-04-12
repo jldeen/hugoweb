@@ -1,7 +1,6 @@
 /* Color Scheme */
 :root {
   --brand-color: #0073ec;
-  // --primary: #00b7c6;
   --white: #fdfdfa;
   --light-gray: #f0f0f0;
   --light-blue: #f3f7ff;
@@ -13,6 +12,7 @@
 
   --background-color: var(--white);
   --background-alt-color: var(--light-blue);
+  --background-tag-color: var(--light-blue);
 
   --toggle-background-color: var(--dark-blue);
   
@@ -40,15 +40,16 @@
   @import '../0-settings/gist-color-scheme-dark';
 
   --brand-color: #0073ec;
-  // --primary: #ff851b;
   --white: #4d4d4d;
   --light-gray: #f0f0f0;
   --gray: #9e9e9e;
   --dark: #111016;
   --dark-blue: #1e2740;
+  --dracula-grey: #282a36;
 
   --background-color: var(--dark);
   --background-alt-color: #1a1a1f;
+  --background-tag-color: var(--dracula-grey);
 
   --toggle-background-color: var(--dark-blue);
   
