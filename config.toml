@@ -83,7 +83,7 @@ paginate = 9
   #-------------------------------
   # Hero Settings
   [params.hero]
-    hero__title = "Hey, I’m Jessica Deen"
+    hero__title = "Hey, I’m Jessica"
     hero__description = "I like to write, code, speak, teach, and learn - not necessarily in that order. Let's learn together."
     hero__image = "/generated/full/jessica-deen-hero.webp"
 
