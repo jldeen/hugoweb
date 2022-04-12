@@ -5,6 +5,7 @@ languageCode = "en-us"
 title = "Jessica Deen | Deen of DevOps"
 #googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 paginate = 9
+enableGitInfo = true
 
 [permalinks]
   '/2015' = '/:slug'
