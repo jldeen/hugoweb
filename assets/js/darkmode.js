@@ -1,3 +1,5 @@
+// https://tomhazledine.com/dark-mode/
+
 const setDarkMode = (active = false) => {
   const wrapper = document.querySelector(":root");
   const icon = document.getElementById("dark-mode-toggle");
