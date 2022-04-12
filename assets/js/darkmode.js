@@ -1,10 +1,13 @@
 const setDarkMode = (active = false) => {
   const wrapper = document.querySelector(":root");
+  const icon = document.getElementById("dark-mode-toggle");
   if (active) {
     wrapper.setAttribute("data-theme", "dark");
+    icon.className = "ion js__dark-mode-toggle dark-mode-toggle ion-md-moon";
     localStorage.setItem("theme", "dark");
   } else {
     wrapper.setAttribute("data-theme", "light");
+    icon.className = "ion js__dark-mode-toggle dark-mode-toggle ion-md-sunny";
     localStorage.setItem("theme", "light");
   }
 };

@@ -218,13 +218,13 @@
   box-sizing: border-box;
 }
 
-.ion-ios-moon {
+.ion-md-moon {
   width: 30px;
   color: #f1c40f;
   cursor: pointer;
 }
 
-.ion-ios-sunny {
+.ion-md-sunny {
   width: 30px;
   color: #f39c12;
   cursor: pointer;
@@ -233,13 +233,7 @@
 .dark-mode-toggle {
   background: transparent;
   border: transparent;
-}
-
-:root[data-theme="light"] .dark-mode-toggle:before {
-  content: "🌙";
-}
-:root[data-theme="dark"] .dark-mode-toggle:before {
-  content: "☀️";
+  cursor: pointer;
 }
 
 :root[data-theme="light"] .dark-mode-toggle__icon:after {
