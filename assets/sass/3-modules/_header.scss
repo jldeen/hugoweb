@@ -216,6 +216,8 @@
 /* Toggle Theme */
 * {
   box-sizing: border-box;
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 .ion-md-moon {
