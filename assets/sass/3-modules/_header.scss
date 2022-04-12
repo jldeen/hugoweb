@@ -218,58 +218,37 @@
   box-sizing: border-box;
 }
 
-.toggle-theme {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  user-select: none;
+.ion-ios-moon {
+  width: 30px;
+  color: #f1c40f;
   cursor: pointer;
-
-  @media only screen and (max-width: $desktop) {
-    padding: 20px 0;
-  }
 }
 
-// .checkbox {
-//   opacity: 0;
-//   position: absolute;
-// }
+.ion-ios-sunny {
+  width: 30px;
+  color: #f39c12;
+  cursor: pointer;
+}
 
-// .label {
-//   background-color: var(--toggle-background-color);
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   border-radius: 50px;
-//   position: relative;
-//   padding: 5px;
-//   height: 26px;
-//   width: 50px;
-//   // transform: scale(1.5);
-// }
+.dark-mode-toggle {
+  background: transparent;
+  border: transparent;
+}
 
-// .ion-ios-moon {
-//   color: #f1c40f;
-// }
+:root[data-theme="light"] .dark-mode-toggle:before {
+  content: "🌙";
+}
+:root[data-theme="dark"] .dark-mode-toggle:before {
+  content: "☀️";
+}
 
-// .ion-ios-sunny {
-//   color: #f39c12;
-// }
-
-// .ball {
-//   background-color: #fff;
-//   border-radius: 50%;
-//   position: absolute;
-//   top: 2px;
-//   left: 2px;
-//   height: 22px;
-//   width: 22px;
-//   // transition: var(--transition)
-// }
-
-// .checkbox:checked + .label .ball {
-//   transform: translateX(24px);
-// }
+:root[data-theme="light"] .dark-mode-toggle__icon:after {
+  left: 40%;
+}
+:root[data-theme="dark"] .dark-mode-toggle__icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+:root[data-theme="dark"] .dark-mode-toggle__icon:before {
+  opacity: 1;
+}

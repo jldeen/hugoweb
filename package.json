@@ -21,8 +21,10 @@
   "bugs": {
     "url": "https://github.com/jldeen/hugoweb/issues"
   },
-  
   "homepage": "https://github.com/jldeen/hugoweb#readme",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "type": "module",
   "devDependencies": {
     "hugo-bin": "^0.84.0",

@@ -1,424 +1,401 @@
 /* Monokai color Scheme Syntax Highlight Overrides ( REQUIRES 'body' TAGS TO WORK) */
-body .gist .highlight {
-    background: #282a36;
+.gist .highlight {
+  background: #282a36;
 }
-body .gist .blob-num,
-body .gist .blob-code-inner,
-body .gist .pl-s2,
-body .gist .pl-stj {
-    color: #f8f8f2;
+.gist .blob-num,
+.gist .blob-code-inner,
+.gist .pl-s2,
+.gist .pl-stj {
+  color: #f8f8f2;
 }
-body .gist .pl-c1 {
-    color: #8be9fd;
+.gist .pl-c1 {
+  color: #8be9fd;
 }
-body .gist .pl-enti {
-    color: #50fa7b;
-    font-weight: 700;
+.gist .pl-enti {
+  color: #50fa7b;
+  font-weight: 700;
 }
-body .gist .pl-st {
-    color: #8be9fd;
+.gist .pl-st {
+  color: #8be9fd;
 }
-body .gist .pl-mdr {
-    color: #8be9fd;
-    font-weight: 400;
+.gist .pl-mdr {
+  color: #8be9fd;
+  font-weight: 400;
 }
-body .gist .pl-ms1 {
-    background: #ffb86c;
+.gist .pl-ms1 {
+  background: #ffb86c;
 }
-body .gist .pl-c,
-body .gist .pl-c span,
-body .gist .pl-pdc {
-    color: #6272a4;
-    font-style: italic;
+.gist .pl-c,
+.gist .pl-c span,
+.gist .pl-pdc {
+  color: #6272a4;
+  font-style: italic;
 }
-body .gist .pl-cce,
-body .gist .pl-cn,
-body .gist .pl-coc,
-body .gist .pl-enc,
-body .gist .pl-ens,
-body .gist .pl-kos,
-body .gist .pl-kou,
-body .gist .pl-mh .pl-pdh,
-body .gist .pl-mp,
-body .gist .pl-mp1 .pl-sf,
-body .gist .pl-mq,
-body .gist .pl-pde,
-body .gist .pl-pse,
-body .gist .pl-pse .pl-s2,
-body .gist .pl-mp .pl-s3,
-body .gist .pl-smi,
-body .gist .pl-stp,
-body .gist .pl-sv,
-body .gist .pl-v,
-body .gist .pl-vi,
-body .gist .pl-vpf,
-body .gist .pl-mri,
-body .gist .pl-va,
-body .gist .pl-vpu {
-    color: #8be9fd;
+.gist .pl-cce,
+.gist .pl-cn,
+.gist .pl-coc,
+.gist .pl-enc,
+.gist .pl-ens,
+.gist .pl-kos,
+.gist .pl-kou,
+.gist .pl-mh .pl-pdh,
+.gist .pl-mp,
+.gist .pl-mp1 .pl-sf,
+.gist .pl-mq,
+.gist .pl-pde,
+.gist .pl-pse,
+.gist .pl-pse .pl-s2,
+.gist .pl-mp .pl-s3,
+.gist .pl-smi,
+.gist .pl-stp,
+.gist .pl-sv,
+.gist .pl-v,
+.gist .pl-vi,
+.gist .pl-vpf,
+.gist .pl-mri,
+.gist .pl-va,
+.gist .pl-vpu {
+  color: #8be9fd;
 }
-body .gist .pl-cos,
-body .gist .pl-ml,
-body .gist .pl-pds,
-body .gist .pl-s,
-body .gist .pl-s1,
-body .gist .pl-sol {
-    color: #f1fa8c;
+.gist .pl-cos,
+.gist .pl-ml,
+.gist .pl-pds,
+.gist .pl-s,
+.gist .pl-s1,
+.gist .pl-sol {
+  color: #f1fa8c;
 }
-body .gist .pl-e,
-body .gist .pl-ef,
-body .gist .pl-en,
-body .gist .pl-enf,
-body .gist .pl-enm,
-body .gist .pl-entc,
-body .gist .pl-entm,
-body .gist .pl-eoac,
-body .gist .pl-eoac .pl-pde,
-body .gist .pl-eoi,
-body .gist .pl-mai .pl-sf,
-body .gist .pl-mm,
-body .gist .pl-pdv,
-body .gist .pl-som,
-body .gist .pl-sr,
-body .gist .pl-vo {
-    color: #50fa7b;
+.gist .pl-e,
+.gist .pl-ef,
+.gist .pl-en,
+.gist .pl-enf,
+.gist .pl-enm,
+.gist .pl-entc,
+.gist .pl-entm,
+.gist .pl-eoac,
+.gist .pl-eoac .pl-pde,
+.gist .pl-eoi,
+.gist .pl-mai .pl-sf,
+.gist .pl-mm,
+.gist .pl-pdv,
+.gist .pl-som,
+.gist .pl-sr,
+.gist .pl-vo {
+  color: #50fa7b;
 }
-body .gist .pl-ent,
-body .gist .pl-eoa,
-body .gist .pl-eoai,
-body .gist .pl-eoai .pl-pde,
-body .gist .pl-k,
-body .gist .pl-ko,
-body .gist .pl-kolp,
-body .gist .pl-mc,
-body .gist .pl-mr,
-body .gist .pl-ms,
-body .gist .pl-s3,
-body .gist .pl-smc,
-body .gist .pl-smp,
-body .gist .pl-sok,
-body .gist .pl-sra,
-body .gist .pl-src,
-body .gist .pl-sre {
-    color: #ff79c6;
+.gist .pl-ent,
+.gist .pl-eoa,
+.gist .pl-eoai,
+.gist .pl-eoai .pl-pde,
+.gist .pl-k,
+.gist .pl-ko,
+.gist .pl-kolp,
+.gist .pl-mc,
+.gist .pl-mr,
+.gist .pl-ms,
+.gist .pl-s3,
+.gist .pl-smc,
+.gist .pl-smp,
+.gist .pl-sok,
+.gist .pl-sra,
+.gist .pl-src,
+.gist .pl-sre {
+  color: #ff79c6;
 }
-body .gist .pl-mb,
-body .gist .pl-pdb {
-    color: #f1fa8c;
-    font-weight: 700;
+.gist .pl-mb,
+.gist .pl-pdb {
+  color: #f1fa8c;
+  font-weight: 700;
 }
-body .gist .pl-mi,
-body .gist .pl-pdi {
-    color: #ff79c6;
-    font-style: italic;
+.gist .pl-mi,
+.gist .pl-pdi {
+  color: #ff79c6;
+  font-style: italic;
 }
-body .gist .pl-pdc1,
-body .gist .pl-scp {
-    color: #8be9fd;
+.gist .pl-pdc1,
+.gist .pl-scp {
+  color: #8be9fd;
 }
-body .gist .pl-sc,
-body .gist .pl-sf,
-body .gist .pl-mo,
-body .gist .pl-entl {
-    color: #ffb86c;
+.gist .pl-sc,
+.gist .pl-sf,
+.gist .pl-mo,
+.gist .pl-entl {
+  color: #ffb86c;
 }
-body .gist .pl-mi1,
-body .gist .pl-mdht {
-    color: #50fa7b;
-    background: rgba(0, 64, 0, .5);
+.gist .pl-mi1,
+.gist .pl-mdht {
+  color: #50fa7b;
+  background: rgba(0, 64, 0, 0.5);
 }
-body .gist .pl-md,
-body .gist .pl-mdhf {
-    color: #ff79c6;
-    background: rgba(64, 0, 0, .5);
+.gist .pl-md,
+.gist .pl-mdhf {
+  color: #ff79c6;
+  background: rgba(64, 0, 0, 0.5);
 }
-body .gist .pl-mdh,
-body .gist .pl-mdi {
-    color: #50fa7b;
-    font-weight: 400;
+.gist .pl-mdh,
+.gist .pl-mdi {
+  color: #50fa7b;
+  font-weight: 400;
 }
-body .gist .pl-ib,
-body .gist .pl-id,
-body .gist .pl-ii,
-body .gist .pl-iu {
-    background: #50fa7b;
-    color: #282a36;
+.gist .pl-ib,
+.gist .pl-id,
+.gist .pl-ii,
+.gist .pl-iu {
+  background: #50fa7b;
+  color: #282a36;
 }
 
 /* Make powered by github bar match */
 /* Monokai color Scheme Syntax Highlight Overrides ( REQUIRES 'body' TAGS TO WORK) */
-body .gist .highlight {
-background: #282a36;
+.gist .highlight {
+  background: #282a36;
 }
-body .gist .blob-num,
-body .gist .blob-code-inner,
-body .gist .pl-s2,
-body .gist .pl-stj {
-    color: #f8f8f2;
+.gist .blob-num,
+.gist .blob-code-inner,
+.gist .pl-s2,
+.gist .pl-stj {
+  color: #f8f8f2;
 }
-body .gist .pl-c1 {
-    color: #8be9fd;
+.gist .pl-c1 {
+  color: #8be9fd;
 }
-body .gist .pl-enti {
-    color: #50fa7b;
-    font-weight: 700;
+.gist .pl-enti {
+  color: #50fa7b;
+  font-weight: 700;
 }
-body .gist .pl-st {
-    color: #8be9fd;
+.gist .pl-st {
+  color: #8be9fd;
 }
-body .gist .pl-mdr {
-    color: #8be9fd;
-    font-weight: 400;
+.gist .pl-mdr {
+  color: #8be9fd;
+  font-weight: 400;
 }
-body .gist .pl-ms1 {
-    background: #ffb86c;
+.gist .pl-ms1 {
+  background: #ffb86c;
 }
-body .gist .pl-c,
-body .gist .pl-c span,
-body .gist .pl-pdc {
-    color: #6272a4;
-    font-style: italic;
+.gist .pl-c,
+.gist .pl-c span,
+.gist .pl-pdc {
+  color: #6272a4;
+  font-style: italic;
 }
-body .gist .pl-cce,
-body .gist .pl-cn,
-body .gist .pl-coc,
-body .gist .pl-enc,
-body .gist .pl-ens,
-body .gist .pl-kos,
-body .gist .pl-kou,
-body .gist .pl-mh .pl-pdh,
-body .gist .pl-mp,
-body .gist .pl-mp1 .pl-sf,
-body .gist .pl-mq,
-body .gist .pl-pde,
-body .gist .pl-pse,
-body .gist .pl-pse .pl-s2,
-body .gist .pl-mp .pl-s3,
-body .gist .pl-smi,
-body .gist .pl-stp,
-body .gist .pl-sv,
-body .gist .pl-v,
-body .gist .pl-vi,
-body .gist .pl-vpf,
-body .gist .pl-mri,
-body .gist .pl-va,
-body .gist .pl-vpu {
-    color: #8be9fd;
+.gist .pl-cce,
+.gist .pl-cn,
+.gist .pl-coc,
+.gist .pl-enc,
+.gist .pl-ens,
+.gist .pl-kos,
+.gist .pl-kou,
+.gist .pl-mh .pl-pdh,
+.gist .pl-mp,
+.gist .pl-mp1 .pl-sf,
+.gist .pl-mq,
+.gist .pl-pde,
+.gist .pl-pse,
+.gist .pl-pse .pl-s2,
+.gist .pl-mp .pl-s3,
+.gist .pl-smi,
+.gist .pl-stp,
+.gist .pl-sv,
+.gist .pl-v,
+.gist .pl-vi,
+.gist .pl-vpf,
+.gist .pl-mri,
+.gist .pl-va,
+.gist .pl-vpu {
+  color: #8be9fd;
 }
-body .gist .pl-cos,
-body .gist .pl-ml,
-body .gist .pl-pds,
-body .gist .pl-s,
-body .gist .pl-s1,
-body .gist .pl-sol {
-    color: #f1fa8c;
+.gist .pl-cos,
+.gist .pl-ml,
+.gist .pl-pds,
+.gist .pl-s,
+.gist .pl-s1,
+.gist .pl-sol {
+  color: #f1fa8c;
 }
-body .gist .pl-e,
-body .gist .pl-ef,
-body .gist .pl-en,
-body .gist .pl-enf,
-body .gist .pl-enm,
-body .gist .pl-entc,
-body .gist .pl-entm,
-body .gist .pl-eoac,
-body .gist .pl-eoac .pl-pde,
-body .gist .pl-eoi,
-body .gist .pl-mai .pl-sf,
-body .gist .pl-mm,
-body .gist .pl-pdv,
-body .gist .pl-som,
-body .gist .pl-sr,
-body .gist .pl-vo {
-    color: #50fa7b;
+.gist .pl-e,
+.gist .pl-ef,
+.gist .pl-en,
+.gist .pl-enf,
+.gist .pl-enm,
+.gist .pl-entc,
+.gist .pl-entm,
+.gist .pl-eoac,
+.gist .pl-eoac .pl-pde,
+.gist .pl-eoi,
+.gist .pl-mai .pl-sf,
+.gist .pl-mm,
+.gist .pl-pdv,
+.gist .pl-som,
+.gist .pl-sr,
+.gist .pl-vo {
+  color: #50fa7b;
 }
-body .gist .pl-ent,
-body .gist .pl-eoa,
-body .gist .pl-eoai,
-body .gist .pl-eoai .pl-pde,
-body .gist .pl-k,
-body .gist .pl-ko,
-body .gist .pl-kolp,
-body .gist .pl-mc,
-body .gist .pl-mr,
-body .gist .pl-ms,
-body .gist .pl-s3,
-body .gist .pl-smc,
-body .gist .pl-smp,
-body .gist .pl-sok,
-body .gist .pl-sra,
-body .gist .pl-src,
-body .gist .pl-sre {
-    color: #ff79c6;
+.gist .pl-ent,
+.gist .pl-eoa,
+.gist .pl-eoai,
+.gist .pl-eoai .pl-pde,
+.gist .pl-k,
+.gist .pl-ko,
+.gist .pl-kolp,
+.gist .pl-mc,
+.gist .pl-mr,
+.gist .pl-ms,
+.gist .pl-s3,
+.gist .pl-smc,
+.gist .pl-smp,
+.gist .pl-sok,
+.gist .pl-sra,
+.gist .pl-src,
+.gist .pl-sre {
+  color: #ff79c6;
 }
-body .gist .pl-mb,
-body .gist .pl-pdb {
-    color: #f1fa8c;
-    font-weight: 700;
+.gist .pl-mb,
+.gist .pl-pdb {
+  color: #f1fa8c;
+  font-weight: 700;
 }
-body .gist .pl-mi,
-body .gist .pl-pdi {
-    color: #ff79c6;
-    font-style: italic;
+.gist .pl-mi,
+.gist .pl-pdi {
+  color: #ff79c6;
+  font-style: italic;
 }
-body .gist .pl-pdc1,
-body .gist .pl-scp {
-    color: #8be9fd;
+.gist .pl-pdc1,
+.gist .pl-scp {
+  color: #8be9fd;
 }
-body .gist .pl-sc,
-body .gist .pl-sf,
-body .gist .pl-mo,
-body .gist .pl-entl {
-    color: #ffb86c;
+.gist .pl-sc,
+.gist .pl-sf,
+.gist .pl-mo,
+.gist .pl-entl {
+  color: #ffb86c;
 }
-body .gist .pl-mi1,
-body .gist .pl-mdht {
-    color: #50fa7b;
-    background: rgba(0, 64, 0, .5);
+.gist .pl-mi1,
+.gist .pl-mdht {
+  color: #50fa7b;
+  background: rgba(0, 64, 0, 0.5);
 }
-body .gist .pl-md,
-body .gist .pl-mdhf {
-    color: #ff79c6;
-    background: rgba(64, 0, 0, .5);
+.gist .pl-md,
+.gist .pl-mdhf {
+  color: #ff79c6;
+  background: rgba(64, 0, 0, 0.5);
 }
-body .gist .pl-mdh,
-body .gist .pl-mdi {
-    color: #50fa7b;
-    font-weight: 400;
+.gist .pl-mdh,
+.gist .pl-mdi {
+  color: #50fa7b;
+  font-weight: 400;
 }
-body .gist .pl-ib,
-body .gist .pl-id,
-body .gist .pl-ii,
-body .gist .pl-iu {
-    background: #50fa7b;
-    color: #282a36;
+.gist .pl-ib,
+.gist .pl-id,
+.gist .pl-ii,
+.gist .pl-iu {
+  background: #50fa7b;
+  color: #282a36;
 }
-.gist
-{
-color: #000;
+.gist {
+  color: #000;
 }
 .gist .render-container .render-viewer-error,
 .gist .render-container .render-viewer-fatal,
-.gist .render-container .octospinner
-{
-display: none;
+.gist .render-container .octospinner {
+  display: none;
 }
-.gist .gist-render iframe
-{
-width: 100%;
+.gist .gist-render iframe {
+  width: 100%;
 }
-.gist pre
-{
-font: inherit;
-line-height: inherit;
-white-space: pre;
+.gist pre {
+  font: inherit;
+  line-height: inherit;
+  white-space: pre;
 }
-.gist .gist-file
-{
-border: 1px solid #ddd;
-border-bottom: 1px solid #ccc;
-border-radius: 3px;
-font-family: Consolas, "Liberation Mono", Courier, monospace;
-margin-bottom: 1em;
+.gist .gist-file {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  margin-bottom: 1em;
 }
-.gist .gist-file.gist-render
-{
-border: none;
+.gist .gist-file.gist-render {
+  border: none;
 }
-.gist .gist-file .gist-meta
-{
-background-color: #282a36;
-color: #999;
-font: 12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
-overflow: hidden;
-padding: 10px;
+.gist .gist-file .gist-meta {
+  background-color: #282a36;
+  color: #999;
+  font: 12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+  overflow: hidden;
+  padding: 10px;
 }
-.gist .gist-file .gist-meta a
-{
-color: #888;
-font-weight: bold;
-text-decoration: none;
+.gist .gist-file .gist-meta a {
+  color: #888;
+  font-weight: bold;
+  text-decoration: none;
 }
-.gist .gist-file .gist-data
-{
-background-color: #282a36;
-border-bottom: 1px solid #aaa;
-font-size: 100%;
-overflow: auto;
-word-wrap: normal;
+.gist .gist-file .gist-data {
+  background-color: #282a36;
+  border-bottom: 1px solid #aaa;
+  font-size: 100%;
+  overflow: auto;
+  word-wrap: normal;
 }
-.gist .gist-file.scroll .gist-data
-{
-bottom: 30px;
-left: 0px;
-overflow: scroll;
-position: absolute;
-right: 0px;
-top: 0px;
+.gist .gist-file.scroll .gist-data {
+  bottom: 30px;
+  left: 0px;
+  overflow: scroll;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
-.gist .gist-file.scroll .gist-meta
-{
-bottom: 0px;
-left: 0px;
-position: absolute;
-right: 0px;
+.gist .gist-file.scroll .gist-meta {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
 }
-.gist .gist-file .gist-data .line-data
-{
-padding: .5em !important;
+.gist .gist-file .gist-data .line-data {
+  padding: 0.5em !important;
 }
-.gist .gist-file .gist-data .line-pre
-{
-background: transparent !important;
-border: none !important;
-color: #f8f8f2;
-font-family: Consolas, "Liberation Mono", Courier, monospace;
-font-size: 12px;
-margin: 0 !important;
-padding: 0 !important;
+.gist .gist-file .gist-data .line-pre {
+  background: transparent !important;
+  border: none !important;
+  color: #f8f8f2;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.gist .gist-file .gist-data .gist-highlight
-{
-background: transparent !important;
+.gist .gist-file .gist-data .gist-highlight {
+  background: transparent !important;
 }
-.gist .gist-file .gist-data .line-numbers
-{
-color: #aaa;
-padding: .5em;
-text-align: right;
+.gist .gist-file .gist-data .line-numbers {
+  color: #aaa;
+  padding: 0.5em;
+  text-align: right;
 }
-.gist .gist-file .gist-data .line-numbers .line-number
-{
-font-size: 12px;
-clear: right;
-display: block;
+.gist .gist-file .gist-data .line-numbers .line-number {
+  font-size: 12px;
+  clear: right;
+  display: block;
 }
 
-@media only screen and (max-width: 860px)
-{
-.gist
-{
+@media only screen and (max-width: 860px) {
+  .gist {
     font-size: 10px;
-}
-.gist .gist-file .gist-meta
-{
+  }
+  .gist .gist-file .gist-meta {
     font: 10px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
-}
-.gist .gist-file .gist-data
-{
+  }
+  .gist .gist-file .gist-data {
     font-size: 10px;
-}
-.gist .gist-file .gist-data .line-pre
-{
+  }
+  .gist .gist-file .gist-data .line-pre {
     font: 10px "Liberation Mono", Courier, monospace;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
-.gist .gist-file .gist-data .line-numbers .line-number
-{
+  }
+  .gist .gist-file .gist-data .line-numbers .line-number {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-size: 10px;
-}
-.gist pre
-{
+  }
+  .gist pre {
     font-size: 10px;
-}
+  }
 }
