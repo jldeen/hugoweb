@@ -47,9 +47,8 @@
               <p>All Right Reserved. Powered by <a href="https://gohugo.io/">Hugo</a> version.
               </br>
               {{ if $.GitInfo }} 
-              Deployed via <a href="https://github.com/features/actions">GitHub Actions</a> from commit {{ .GitInfo.AbbreviatedHash }} on {{ now.Format "January 2, 2006 at 15:04 MST" }}
+              Deployed via <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> from commit <a href={{ .Site.Params.ghrepo }}commit/{{ .GitInfo.AbbreviatedHash }} target="_blank">{{ .GitInfo.AbbreviatedHash }}</a> on {{ now.Format "January 2, 2006 at 15:04 MST" }}
               {{ end }}
-              {{ .GitInfo | jsonify }}
               </p></div>
             <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
           </div>

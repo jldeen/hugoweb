@@ -48,6 +48,9 @@ enableGitInfo = true
 [params]
   logo = "generated/full/logo.webp" # You can add own logo. For example "/images/logo.png".
   description = "Jack of all trades, master of none, but still always better than a master of one."
+  
+  # used for .GitInfo to get latest commit - currently only works on posts not index page TODO fix
+  ghRepo = "https://github.com/jldeen/hugoweb/"
 
   #-------------------------------
   # Author Settings
