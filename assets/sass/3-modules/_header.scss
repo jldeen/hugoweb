@@ -189,17 +189,39 @@
   
 
   .icon__menu {
-    // display: none;
+    display: none;
     margin-right: 12px;
   }
 
   .icon__menu,
-  .icon__search {
+  .icon__search,
+  .ion-logo-rss,
+  .ion-md-moon,
+  .ion-md-sunny {
     transition: color .25s ease;
+    width: 24px;
+    margin-right: 12px;
 
     &:hover {
       color: var(--brand-color);
     }
+  }
+
+  .ion-logo-rss {
+    color: orange;
+    width: 24px;
+  }
+
+  .ion-md-moon {
+    width: 24px;
+    color: #f1c40f;
+    cursor: pointer;
+  }
+  
+  .ion-md-sunny {
+    width: 24px;
+    color: #f39c12;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: $desktop) {
@@ -222,18 +244,6 @@
   box-sizing: border-box;
   transition: all 750ms !important;
   transition-delay: 0 !important;
-}
-
-.ion-md-moon {
-  width: 30px;
-  color: #f1c40f;
-  cursor: pointer;
-}
-
-.ion-md-sunny {
-  width: 30px;
-  color: #f39c12;
-  cursor: pointer;
 }
 
 .dark-mode-toggle {
