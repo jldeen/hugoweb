@@ -131,6 +131,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media only screen and (max-width: $mobile) {
+      display: block;
+    }
+    @media only screen and (max-width: $tablet) {
+      display: block;
+    }
   }
 
   @media only screen and (max-width: $desktop) {
@@ -140,8 +147,10 @@
 
 .copyright {
   width: 100%;
+  // width: min(100% - 2rem);
+  margin-inline: auto;
   text-align: center;
-  margin-right: 20px;
+  // margin-right: 20px;
   font-size: 14px;
   font-weight: 500;
   color: var(--text-alt-color);
