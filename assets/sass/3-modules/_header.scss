@@ -186,9 +186,10 @@
   font-size: 21px;
   color: var(--link-color);
   cursor: pointer;
+  
 
   .icon__menu {
-    display: none;
+    // display: none;
     margin-right: 12px;
   }
 
@@ -210,6 +211,9 @@
     .icon__menu {
       display: block;
     }
+  }
+  @media only screen and (max-width: $mobile) {
+    padding-top: 1rem;
   }
 }
 
