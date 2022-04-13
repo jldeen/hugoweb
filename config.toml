@@ -5,6 +5,7 @@ languageCode = "en-us"
 title = "Jessica Deen | Deen of DevOps"
 #googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 paginate = 9
+enableGitInfo = true
 
 [permalinks]
   '/2015' = '/:slug'
@@ -47,6 +48,9 @@ paginate = 9
 [params]
   logo = "generated/full/logo.webp" # You can add own logo. For example "/images/logo.png".
   description = "Jack of all trades, master of none, but still always better than a master of one."
+  
+  # used for .GitInfo to get latest commit - currently only works on posts not index page TODO fix
+  ghRepo = "https://github.com/jldeen/hugoweb/"
 
   #-------------------------------
   # Author Settings

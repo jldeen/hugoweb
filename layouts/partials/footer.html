@@ -43,7 +43,13 @@
       <div class="row">
         <div class="col col-12">
           <div class="footer__info-box">
-            <div class="copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. All Right Reserved. Published with <a href="https://gohugo.io/">Hugo</a>.</div>
+            <div class="copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>
+              <p>All Right Reserved. Powered by <a href="https://gohugo.io/">Hugo</a> version {{ hugo.Version }} and commit {{ hugo.CommitHash | truncate 7 "" }}.
+              </br>
+              {{ if $.GitInfo }} 
+              Deployed via <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> from commit <a href={{ .Site.Params.ghrepo }}commit/{{ .GitInfo.AbbreviatedHash }} target="_blank">{{ .GitInfo.AbbreviatedHash }}</a> on {{ .Page.Lastmod.Format "January 2, 2006" }}.
+              {{ end }}
+              </p></div>
             <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
           </div>
         </div>

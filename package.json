@@ -8,7 +8,7 @@
     "serve": "npm run images:optimize && npm run hugo:serve",
     "clean": "npm run hugo:clean",
     "hugo:build": "hugo -d build",
-    "hugo:serve": "hugo server",
+    "hugo:serve": "hugo serve --enableGitInfo",
     "hugo:clean": "rm -rf build resources public",
     "images:optimize": "node scripts/optimize-images.js"
   },
