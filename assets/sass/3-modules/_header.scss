@@ -209,6 +209,7 @@
 
   .ion-md-moon,
   .ion-md-sunny {
+    transition: color .1s ease;
     width: 24px;
     margin-right: 12px;
     cursor: pointer;
