@@ -207,21 +207,27 @@
     }
   }
 
+  .ion-md-moon,
+  .ion-md-sunny {
+    width: 24px;
+    margin-right: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--brand-color);
+    }
+  }
+
   .ion-logo-rss {
     color: orange;
-    width: 24px;
   }
 
   .ion-md-moon {
-    width: 24px;
     color: #f1c40f;
-    cursor: pointer;
   }
   
   .ion-md-sunny {
-    width: 24px;
     color: #f39c12;
-    cursor: pointer;
   }
 
   @media only screen and (max-width: $desktop) {
