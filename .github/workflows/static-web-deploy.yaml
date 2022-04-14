@@ -9,20 +9,69 @@ on:
     branches:
       - main
 
+env:
+  # The name of the resource group and static site to be created.
+  rgName: "hugoweb"
+
+  # The location to store the meta data for the deployment.
+  location: "eastus2"
+
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
+    outputs:
+      static_app_token: ${{ steps.deploy-static-site.outputs.deployment_token }}
     name: Build and Deploy Job
     steps:
+      # checkout branch
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build And Deploy
+      
+      # login to Azure
+      - name: "Login via Azure CLI"
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # detach provider
+      - name: "Detach provider"
+        continue-on-error: true
+        run: |
+          check=$(az group list --query "[].name" --output tsv | grep "hugoweb")
+          if [[ $check ]]; then
+            echo "Resource group exists"
+            az staticwebapp disconnect -n ${{ env.rgName }}
+          else
+            echo "Resource group does not exist. Nothing to detach..."
+          fi
+      
+      # deploy infra
+      - name: "Deploy Hugoweb Infra"
+        id: deploy-static-site
+        uses: azure/arm-deploy@v1
+        with:
+          scope: subscription
+          deploymentName: ${{ env.rgName }}
+          resourceGroupName: ${{ env.rgName }}
+          region: eastus2
+          template: ./main.bicep
+          parameters: location=${{ env.location }} rgName=${{ env.rgName }} repositoryToken=${{ secrets.REPOSITORY_TOKEN }}
+          failOnStdErr: false
+
+      - name: "Santize Outputs"
+        id: sanitize-outputs
+        run: |
+          DEPLOYMENT_TOKEN=$(az staticwebapp secrets list --name ${{ env.rgName }} --query "properties.apiKey" --output tsv)
+          echo "::add-mask::$DEPLOYMENT_TOKEN"
+          echo "::set-output name=DEPLOYMENT_TOKEN::$DEPLOYMENT_TOKEN"
+
+      - name: Build And Deploy HugoWeb
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          azure_static_web_apps_api_token: ${{ steps.sanitize-outputs.outputs.DEPLOYMENT_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
@@ -31,6 +80,15 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      
+      - name: Add secret
+        uses: jldeen/actions-set-secret@releases/v1
+        with:
+          name: DEPLOYMENT_TOKEN
+          value: ${{ steps.sanitize-outputs.outputs.DEPLOYMENT_TOKEN }}
+          owner: jldeen
+          repository: hugoweb
+          token: ${{ secrets.REPOSITORY_TOKEN }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -41,5 +99,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_FLOWER_06433C20F }}
+          azure_static_web_apps_api_token: ${{ secrets.DEPLOYMENT_TOKEN }}
           action: "close"
