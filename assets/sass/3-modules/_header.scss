@@ -194,10 +194,7 @@
   }
 
   .icon__menu,
-  .icon__search,
-  .ion-logo-rss,
-  .ion-md-moon,
-  .ion-md-sunny {
+  .icon__search {
     transition: color .25s ease;
     width: 24px;
     margin-right: 12px;
@@ -208,8 +205,9 @@
   }
 
   .ion-md-moon,
-  .ion-md-sunny {
-    transition: color .10s ease;
+  .ion-md-sunny,
+  .ion-logo-rss {
+    transition: color .1s ease;
     width: 24px;
     margin-right: 12px;
     cursor: pointer;
