@@ -37,6 +37,7 @@ jobs:
 
       # detach provider
       - name: "Detach provider"
+        continue-on-error: true
         run: |
           check=$(az group list --query "[].name" --output tsv | grep "hugoweb")
           if [[ $check ]]; then
