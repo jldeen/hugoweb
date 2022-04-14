@@ -38,7 +38,13 @@ jobs:
       # detach provider
       - name: "Detach provider"
         run: |
-          az staticwebapp disconnect -n ${{ env.rgName }}
+          check=$(az group list --query "[].name" --output tsv | grep "hugoweb")
+          if [[ $check ]]; then
+            echo "Resource group exists"
+            az staticwebapp disconnect -n ${{ env.rgName }}
+          else
+            echo "Resource group does not exist. Nothing to detach..."
+          fi
       
       # deploy infra
       - name: "Deploy Hugoweb Infra"
