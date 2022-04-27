@@ -6,6 +6,7 @@ param repositoryToken string
 
 var customDomains = [
   'jessicadeen.com'
+  'www.jessicadeen.com'
   ]
 
 resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
