@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2015-08-21T10:31:44Z
 description = ""
 draft = false
-image = "../../images/ssh_b7fplb.png"
 slug = "linux-ssh-remote-host-identification-changed"
 title = "Linux: SSH Remote host identification has changed"
 aliases = ["/linux-ssh-remote-host-identification-changed/"]

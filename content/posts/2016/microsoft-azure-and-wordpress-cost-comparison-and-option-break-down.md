@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2016-04-19T13:46:00Z
 description = ""
 draft = false
-image = "../../images/Wordpress_azure_pkymmw.jpg"
 slug = "microsoft-azure-and-wordpress-cost-comparison-and-option-break-down"
 title = "Microsoft Azure and WordPress &ndash; Cost Comparison and Option Break Down"
 aliases = ["/microsoft-azure-and-wordpress-cost-comparison-and-option-break-down/"]

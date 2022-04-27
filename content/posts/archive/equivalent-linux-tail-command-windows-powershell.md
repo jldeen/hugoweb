@@ -4,7 +4,6 @@ categories = ["linux", "powershell", "script", "windows"]
 date = 2014-04-30T16:23:45Z
 description = ""
 draft = false
-image = "../../images/Windows_PowerShell_1.0_PD_jbuhuf.png"
 slug = "equivalent-linux-tail-command-windows-powershell"
 tags = ["linux", "powershell", "script", "windows"]
 title = "Want something equivalent to the Linux Tail command but for Windows? Use PowerShell!"

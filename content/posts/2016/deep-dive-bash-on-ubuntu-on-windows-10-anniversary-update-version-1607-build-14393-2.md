@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2016-08-15T16:54:06Z
 description = ""
 draft = false
-image = "../../images/windows-10-ubutnu_axyqj4.png"
 slug = "deep-dive-bash-on-ubuntu-on-windows-10-anniversary-update-version-1607-build-14393-2"
 title = "Deep Dive: Bash on Ubuntu on Windows 10 Anniversary Update (Version 1607, Build 14393)"
 aliases = ["/deep-dive-bash-on-ubuntu-on-windows-10-anniversary-update-version-1607-build-14393-2/"]
@@ -39,13 +38,13 @@ First, it’s important to note a few things:
 **Guide for configuring Password SSH**
 
 1. Edit /etc/ssh/sshd_config and change the listening port. For this demo I used port 222.  
- 2. Change UsePrivilegeSeparation to ‘no’ (because the implementation of the Windows subsystem for Linux doesn’t provide chroot)  
- 3. Change PasswordAuthentication to ‘yes’  
- 4. Add a firewall rule on the Windows side for SSH to your new listening port  
- 5. *sudo ssh-keygen -A*  
- 6. Restart the ssh service: sudo service ssh restart (Ignore the message: “initctl: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused”)  
- 7. Test ssh connection locally with verbose mode enabled (verbose mode optional): *ssh localhost -p “your-port-here” -v*  
- 8. Test from another system. (All should be working)
+ 1. Change UsePrivilegeSeparation to ‘no’ (because the implementation of the Windows subsystem for Linux doesn’t provide chroot)  
+ 2. Change PasswordAuthentication to ‘yes’  
+ 3. Add a firewall rule on the Windows side for SSH to your new listening port  
+ 4. *sudo ssh-keygen -A*  
+ 5. Restart the ssh service: sudo service ssh restart (Ignore the message: “initctl: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused”)  
+ 6. Test ssh connection locally with verbose mode enabled (verbose mode optional): *ssh localhost -p “your-port-here” -v*  
+ 7. Test from another system. (All should be working)
 
 **Guide for configuring Password-less SSH**
 

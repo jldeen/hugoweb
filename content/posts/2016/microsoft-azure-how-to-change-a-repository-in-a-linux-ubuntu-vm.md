@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2016-07-14T18:27:17Z
 description = ""
 draft = false
-image = "../../images/sources_aseud4.png"
 slug = "microsoft-azure-how-to-change-a-repository-in-a-linux-ubuntu-vm"
 title = "Microsoft Azure: How to change a repository in a Linux Ubuntu VM"
 aliases = ["/microsoft-azure-how-to-change-a-repository-in-a-linux-ubuntu-vm/"]
