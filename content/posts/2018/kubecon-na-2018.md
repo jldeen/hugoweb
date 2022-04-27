@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-12-11-at-10.12.54.png"
 slug = "kubecon-na-2018"
 title = "KubeCon NA 2018: Windows Kubernetes"
+aliases = ["/kubecon-na-2018/"]
 layout = "post"
 
 +++

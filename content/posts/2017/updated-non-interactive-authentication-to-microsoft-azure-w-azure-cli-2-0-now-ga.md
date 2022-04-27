@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2017-03-24-at-15.22.02_svqu4r.png"
 slug = "updated-non-interactive-authentication-to-microsoft-azure-w-azure-cli-2-0-now-ga"
 tags = ["automation", "Azure", "Codeship", "IaC", "linux"]
 title = "Updated! Non-interactive authentication to Microsoft Azure w/ Azure CLI 2.0 - now GA!"
+aliases = ["/updated-non-interactive-authentication-to-microsoft-azure-w-azure-cli-2-0-now-ga/"]
 layout = "post"
 
 +++

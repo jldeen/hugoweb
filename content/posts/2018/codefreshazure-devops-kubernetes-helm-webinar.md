@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-03-29-at-15.28.21_olxsal.png"
 slug = "codefreshazure-devops-kubernetes-helm-webinar"
 title = "Codefresh+Azure: DevOps, Kubernetes, Helm Webinar"
+aliases = ["/codefreshazure-devops-kubernetes-helm-webinar/"]
 layout = "post"
 
 +++

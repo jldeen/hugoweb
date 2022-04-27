@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202019-03-18%20at%2012.58.41.png"
 slug = "how-to-run-ghost-on-azure"
 tags = ["ghost", "Azure", "Docker", "containers", "devops"]
 title = "How to run Ghost blogging software on Azure in a Linux Docker Container"
+aliases = ["/how-to-run-ghost-on-azure/"]
 layout = "post"
 
 +++

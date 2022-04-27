@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202019-06-26%20at%203.06.55%20PM.png"
 slug = "slack-notifications-azure-pipelines-jfrog-artifactory-and-jfrog-xray"
 tags = ["aks", "slack", "devops", "JFrog", "YAML"]
 title = "Azure Pipelines: Featuring Bash, YAML, JFrog and a custom Slack app!"
+aliases = ["/slack-notifications-azure-pipelines-jfrog-artifactory-and-jfrog-xray/"]
 layout = "post"
 
 +++

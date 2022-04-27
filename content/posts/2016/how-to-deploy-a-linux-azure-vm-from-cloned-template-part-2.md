@@ -6,6 +6,7 @@ draft = false
 image = "../../images/azurecli-1_vlmgt9.png"
 slug = "how-to-deploy-a-linux-azure-vm-from-cloned-template-part-2"
 title = "HOW TO: DEPLOY A LINUX AZURE VM FROM CLONED TEMPLATE USING AZURE CLI (PART 2)"
+aliases = ["/how-to-deploy-a-linux-azure-vm-from-cloned-template-part-2/"]
 layout = "post"
 
 +++

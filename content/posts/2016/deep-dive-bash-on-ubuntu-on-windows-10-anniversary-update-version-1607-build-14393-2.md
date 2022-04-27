@@ -6,6 +6,7 @@ draft = false
 image = "../../images/windows-10-ubutnu_axyqj4.png"
 slug = "deep-dive-bash-on-ubuntu-on-windows-10-anniversary-update-version-1607-build-14393-2"
 title = "Deep Dive: Bash on Ubuntu on Windows 10 Anniversary Update (Version 1607, Build 14393)"
+aliases = ["/deep-dive-bash-on-ubuntu-on-windows-10-anniversary-update-version-1607-build-14393-2/"]
 layout = "post"
 
 +++

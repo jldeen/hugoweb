@@ -6,6 +6,7 @@ draft = false
 image = "../../images/basic-powershell-commands-intro-840x420_hfqmhu.png"
 slug = "powershell-core-and-azurerm-netcore-preview-module-install-scripts-for-ubuntu-and-os-x"
 title = "PowerShell Core and AzureRM.NetCore.Preview Module Install Scripts for Ubuntu and OS X"
+aliases = ["/powershell-core-and-azurerm-netcore-preview-module-install-scripts-for-ubuntu-and-os-x/"]
 layout = "post"
 
 +++

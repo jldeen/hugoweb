@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2015-07-20-at-19.52.46_vvkxft.png"
 slug = "to-setup-nest-thermosat-stats-web-server-linux"
 title = "How to: Setup a Nest Thermosat stats web server on Linux "
+aliases = ["/to-setup-nest-thermosat-stats-web-server-linux/"]
 layout = "post"
 
 +++

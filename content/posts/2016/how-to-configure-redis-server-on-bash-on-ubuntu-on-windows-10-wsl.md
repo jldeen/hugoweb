@@ -6,6 +6,7 @@ draft = false
 image = "../../images/redis-example_lb0ii1.png"
 slug = "how-to-configure-redis-server-on-bash-on-ubuntu-on-windows-10-wsl"
 title = "How to configure Redis-Server on Bash on Ubuntu on Windows 10 (WSL)"
+aliases = ["/how-to-configure-redis-server-on-bash-on-ubuntu-on-windows-10-wsl/"]
 layout = "post"
 
 +++

@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-03-11%20at%201.11.44%20PM.png"
 slug = "getting-started-visual-tests-cd"
 tags = ["devops", "Azure", "linux", "ci/cd", "selenium"]
 title = "Things to consider when running visual tests in CI/CD pipelines: Getting Started (Part 1)"
+aliases = ["/getting-started-visual-tests-cd/"]
 layout = "post"
 
 +++

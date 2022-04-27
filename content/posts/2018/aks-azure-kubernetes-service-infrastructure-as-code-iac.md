@@ -6,6 +6,7 @@ draft = false
 image = "../../images/k8s_navkej.png"
 slug = "aks-azure-kubernetes-service-infrastructure-as-code-iac"
 title = "AKS: Azure Kubernetes Service - Infrastructure as Code (IaC)"
+aliases = ["/aks-azure-kubernetes-service-infrastructure-as-code-iac/"]
 layout = "post"
 
 +++

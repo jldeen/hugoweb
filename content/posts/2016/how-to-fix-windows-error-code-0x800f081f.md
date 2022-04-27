@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Error-code_uavl9m.png"
 slug = "how-to-fix-windows-error-code-0x800f081f"
 title = "How to fix Windows Error Code 0x800f081f"
+aliases = ["/how-to-fix-windows-error-code-0x800f081f/"]
 layout = "post"
 
 +++

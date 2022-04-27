@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2017-04-14-at-21.28.11_iwtuhb.png"
 slug = "macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal"
 tags = ["macos", "ohmyzsh", "powerlevel9k", "tmux", "vim"]
 title = "macOS ohmyzsh + tmux + vim + iTerm2 + Powerlevel9k = Badass terminal"
+aliases = ["/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/"]
 layout = "post"
 
 +++

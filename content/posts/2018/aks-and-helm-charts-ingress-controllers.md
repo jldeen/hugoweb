@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2018-05-07-at-09.58.08_xqgcbs.png"
 slug = "aks-and-helm-charts-ingress-controllers"
 title = "AKS and Helm Charts: Ingress Controllers"
+aliases = ["/aks-and-helm-charts-ingress-controllers/"]
 layout = "post"
 
 +++

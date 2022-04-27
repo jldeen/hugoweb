@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2019-03-13-at-14.00.05.png"
 slug = "azure-devops-rest-api"
 tags = ["devops", "bash", "linux", "scripting", "powerlevel9k"]
 title = "How to use Azure DevOps open REST API with Curl"
+aliases = ["/azure-devops-rest-api/"]
 layout = "post"
 
 +++

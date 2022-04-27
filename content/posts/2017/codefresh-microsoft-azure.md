@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Codefresh_MSFT_h56n3q.jpg"
 slug = "codefresh-microsoft-azure"
 title = "Automate Deployment to Docker Swarm and Kubernetes on Azure using Codefresh"
+aliases = ["/codefresh-microsoft-azure/"]
 layout = "post"
 
 +++

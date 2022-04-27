@@ -8,6 +8,7 @@ image = "../../images/image002.png"
 slug = "using-helm-3-with-azure-devops"
 tags = ["aks", "helm", "azure devops", "Azure", "ci/cd", "bash"]
 title = "Using Helm 3 with Azure DevOps"
+aliases = ["/using-helm-3-with-azure-devops/"]
 layout = "post"
 
 +++

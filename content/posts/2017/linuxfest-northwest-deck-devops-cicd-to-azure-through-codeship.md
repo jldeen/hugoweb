@@ -8,6 +8,7 @@ image = "../../images/Screen-Shot-2017-05-06-at-13.24.13_mldg0t.png"
 slug = "linuxfest-northwest-deck-devops-cicd-to-azure-through-codeship"
 tags = ["ACS", "devops", "Docker", "linux"]
 title = "Linuxfest Northwest Deck: DevOps: CI/CD to Azure through Codeship"
+aliases = ["/linuxfest-northwest-deck-devops-cicd-to-azure-through-codeship/"]
 layout = "post"
 
 +++
