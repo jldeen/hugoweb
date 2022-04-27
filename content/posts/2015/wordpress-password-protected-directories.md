@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2015-08-17T14:11:04Z
 description = ""
 draft = false
-image = "../../images/wp-light-hi-2048x1536_wkvs4c.png"
 slug = "wordpress-password-protected-directories"
 title = "WordPress and Password Protected Directories"
 aliases = ["/wordpress-password-protected-directories/"]

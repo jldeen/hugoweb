@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2016-05-05T19:49:18Z
 description = ""
 draft = false
-image = "../../images/Wordpress_azure_pkymmw.jpg"
 slug = "microsoft-azure-and-wordpress-bitnami-cost-comparison-and-option-break-down"
 title = "Microsoft Azure and WordPress – Bitnami Cost Comparison and Option Break Down"
 aliases = ["/microsoft-azure-and-wordpress-bitnami-cost-comparison-and-option-break-down/"]

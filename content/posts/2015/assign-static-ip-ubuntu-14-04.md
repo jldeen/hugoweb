@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2015-08-28T14:12:08Z
 description = ""
 draft = false
-image = "../../generated/full/static_c9a6jl.webp"
 slug = "assign-static-ip-ubuntu-14-04"
 title = "How to assign a static IP in Ubuntu 14.04"
 aliases = ["/assign-static-ip-ubuntu-14-04/"]

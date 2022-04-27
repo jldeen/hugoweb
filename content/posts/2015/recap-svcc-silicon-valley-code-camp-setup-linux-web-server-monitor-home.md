@@ -3,7 +3,6 @@ author = "jldeen"
 date = 2015-10-05T15:14:28Z
 description = ""
 draft = false
-image = "../../images/silicon-valley-code-camp_aklito.png"
 slug = "recap-svcc-silicon-valley-code-camp-setup-linux-web-server-monitor-home"
 title = "RECAP: SVCC (Silicon Valley Code Camp) - How to setup a Linux Web Server and use it to monitor your home"
 aliases = ["/recap-svcc-silicon-valley-code-camp-setup-linux-web-server-monitor-home/"]
