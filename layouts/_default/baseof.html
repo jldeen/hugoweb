@@ -5,7 +5,9 @@
 
 <body>
 
-  {{ template "_internal/google_analytics.html" . }}
+  {{ if .Site.Params.googleAnalytics4 }}
+  {{ partial "analytics-gtag.html" . }}
+  {{ end }}
 
   {{ partial "header.html" . }}
 

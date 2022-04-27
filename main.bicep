@@ -5,7 +5,7 @@ param location string = 'eastus2'
 param repositoryToken string
 
 var customDomains = [
-  'devtest.jessicadeen.com'
+  'jessicadeen.com'
   ]
 
 resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {

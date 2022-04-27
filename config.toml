@@ -1,9 +1,8 @@
 #-------------------------------
 # General Site Settings
-baseURL = "https://devtest.jessicadeen.com/"
+baseURL = "https://jessicadeen.com/"
 languageCode = "en-us"
 title = "Jessica Deen | Deen of DevOps"
-#googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 paginate = 9
 enableGitInfo = true
 rssLimit = 20
@@ -53,6 +52,8 @@ rssLimit = 20
   ghRepo = "https://github.com/jldeen/hugoweb/"
 
   hugoRepo = "https://github.com/gohugoio/hugo/"
+
+  googleAnalytics4 = "G-HZSEQ4XGBG"
 
   #-------------------------------
   # Author Settings
