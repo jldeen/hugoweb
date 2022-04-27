@@ -6,6 +6,7 @@ draft = false
 image = "../../images/15603_Microsoft-Azure-Container-Service_m6s48o.jpg"
 slug = "azure-container-service-how-to-update-your-ssh-key-pair"
 title = "Azure Container Service: How to update your ssh key-pair"
+aliases = ["/azure-container-service-how-to-update-your-ssh-key-pair/"]
 layout = "post"
 
 +++

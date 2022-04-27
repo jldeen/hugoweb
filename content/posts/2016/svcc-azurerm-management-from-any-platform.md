@@ -6,6 +6,7 @@ draft = false
 image = "../../images/azuremgmtxplat_960_kk1umc.jpg"
 slug = "svcc-azurerm-management-from-any-platform"
 title = "SVCC: AzureRm Management from Any Platform and Channel 9 Video"
+aliases = ["/svcc-azurerm-management-from-any-platform/"]
 layout = "post"
 
 +++

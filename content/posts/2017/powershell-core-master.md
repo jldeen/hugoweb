@@ -6,6 +6,7 @@ draft = false
 image = "../../images/IMB_o0eiY6_q3tipg.gif"
 slug = "powershell-core-master"
 title = "PowerShell Core Master Install Script! Get started with just one command!"
+aliases = ["/powershell-core-master/"]
 layout = "post"
 
 +++

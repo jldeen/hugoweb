@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-08-23-at-20.40.37_todmei.png"
 slug = "complete-pipeline-with-jenkins-acs-docker-swarm-and-azure-container-registry"
 title = "Complete pipeline with Jenkins, ACS (Docker Swarm), and Azure Container Registry"
+aliases = ["/complete-pipeline-with-jenkins-acs-docker-swarm-and-azure-container-registry/"]
 layout = "post"
 
 +++

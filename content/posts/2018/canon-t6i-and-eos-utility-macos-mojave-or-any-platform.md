@@ -8,6 +8,7 @@ image = "../../images/canon.jpg"
 slug = "canon-t6i-and-eos-utility-macos-mojave-or-any-platform"
 tags = ["Canon", "Cameras", "macos"]
 title = "Canon Rebel T6i and EOS Utility macOS Mojave (or any platform)"
+aliases = ["/canon-t6i-and-eos-utility-macos-mojave-or-any-platform/"]
 layout = "post"
 
 +++

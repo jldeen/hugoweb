@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-03-11%20at%202.14.05%20PM.png"
 slug = "visual-test-consider-container"
 tags = ["codefresh", "containers", "azure devops", "ci/cd", "selenium", "visual testing", "ui testing"]
 title = "Things to consider when running visual tests in CI/CD pipelines: Container Pipeline Edition (Part 3)"
+aliases = ["/visual-test-consider-container/"]
 layout = "post"
 
 +++

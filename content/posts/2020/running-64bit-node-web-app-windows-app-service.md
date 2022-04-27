@@ -9,6 +9,7 @@ slug = "running-64bit-node-web-app-windows-app-service"
 tags = ["Azure", "app service", "windows", "architecture", "64bit"]
 title = "Running a 64 bit node Web App in Windows Azure App Service"
 layout = "post"
+aliases = ["/running-64bit-node-web-app-windows-app-service/"]
 
 +++
 

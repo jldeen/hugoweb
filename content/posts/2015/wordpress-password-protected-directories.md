@@ -6,6 +6,7 @@ draft = false
 image = "../../images/wp-light-hi-2048x1536_wkvs4c.png"
 slug = "wordpress-password-protected-directories"
 title = "WordPress and Password Protected Directories"
+aliases = ["/wordpress-password-protected-directories/"]
 layout = "post"
 
 +++

@@ -8,6 +8,7 @@ image = "../../images/Screen%20Shot%202020-03-04%20at%202.59.35%20PM.png"
 slug = "github-actions-self-hosted-runner"
 tags = ["devops", "github actions", "linux"]
 title = "How to use GitHub Actions with your own self-hosted runner (aka build agent)"
+aliases = ["/github-actions-self-hosted-runner/"]
 layout = "post"
 
 +++

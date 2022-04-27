@@ -8,6 +8,7 @@ image = "../../images/tcpbind-white.png"
 slug = "how-to-solve-the-listen-tcp-80-bind-permission-denied-error-in-docker"
 tags = ["Docker", "linux", "Azure", "containers", "Networking"]
 title = "How to solve the \"listen tcp :80: bind: permission denied\" error in Docker"
+aliases = ["/how-to-solve-the-listen-tcp-80-bind-permission-denied-error-in-docker/"]
 layout = "post"
 
 +++

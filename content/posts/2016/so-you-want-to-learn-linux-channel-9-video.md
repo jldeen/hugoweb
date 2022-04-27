@@ -6,6 +6,7 @@ draft = false
 image = "../../images/learnlinux_960_xyvnaw.jpg"
 slug = "so-you-want-to-learn-linux-channel-9-video"
 title = "So you want to learn Linux? Channel 9 video!"
+aliases =  ["/so-you-want-to-learn-linux-channel-9-video/"]
 layout = "post"
 
 +++

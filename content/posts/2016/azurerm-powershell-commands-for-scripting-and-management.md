@@ -8,6 +8,7 @@ image = "../../images/ObjectARM_d0pj9s.png"
 slug = "azurerm-powershell-commands-for-scripting-and-management"
 tags = ["ARM", "Azure", "powershell"]
 title = "AzureRm PowerShell Commands for scripting and management"
+aliases = ["/azurerm-powershell-commands-for-scripting-and-management/"]
 layout = "post"
 
 +++

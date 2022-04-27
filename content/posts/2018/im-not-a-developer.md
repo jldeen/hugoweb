@@ -9,6 +9,7 @@ slug = "im-not-a-developer"
 summary = "I'm currently on a plane flying back from TechBash 2018 (which was in the middle of nowhere) and it just hit me. \"I'm not a developer.\" \nWhat a load of shit. "
 tags = ["aks", "developer", "helm", "ghost", "blog"]
 title = "I'm not a developer."
+aliases = ["/im-not-a-developer/"]
 layout = "post"
 
 +++

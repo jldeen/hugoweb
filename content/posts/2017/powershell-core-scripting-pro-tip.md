@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-08-10-at-21.06.28_v6o0xr.png"
 slug = "powershell-core-scripting-pro-tip"
 title = "PowerShell Core Scripting Pro Tip!"
+aliases = ["/powershell-core-scripting-pro-tip/"]
 layout = "post"
 
 +++

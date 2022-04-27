@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2017-09-19-at-17.02.51_ypjwrv.png"
 slug = "tmux-2-6-copypaste-and-bind-tips-and-tricks"
 title = "Tmux 2.6 copy/paste and bind tips and tricks!"
+aliases = ["/tmux-2-6-copypaste-and-bind-tips-and-tricks/"]
 layout = "post"
 
 +++

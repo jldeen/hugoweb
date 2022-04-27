@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Fix-413-Request-Entity-Too-Large-on-Nginx-web-server-01-resize.png"
 slug = "error413-k8s-helm"
 title = "How to fix error 413: Request Entity Too Large in Kubernetes and Helm"
+aliases = ["/error413-k8s-helm/"]
 layout = "post"
 
 +++

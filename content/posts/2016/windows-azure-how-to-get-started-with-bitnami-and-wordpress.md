@@ -6,6 +6,7 @@ draft = false
 image = "../../images/bitnami_vliu7m.png"
 slug = "windows-azure-how-to-get-started-with-bitnami-and-wordpress"
 title = "Microsoft Azure: How to get started with Bitnami and WordPress"
+aliases = ["/windows-azure-how-to-get-started-with-bitnami-and-wordpress/"]
 layout = "post"
 
 +++

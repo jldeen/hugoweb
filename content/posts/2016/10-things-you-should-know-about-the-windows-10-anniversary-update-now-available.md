@@ -6,6 +6,7 @@ draft = false
 image = "../../images/windows-10-update-anniversary_phaofv.jpg"
 slug = "10-things-you-should-know-about-the-windows-10-anniversary-update-now-available"
 title = "10 things you should know about the Windows 10 Anniversary update &ndash; Now Available!"
+aliases = ["/10-things-you-should-know-about-the-windows-10-anniversary-update-now-available/"]
 layout = "post"
 
 +++

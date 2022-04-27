@@ -6,6 +6,7 @@ draft = false
 image = "../../images/Screen-Shot-2019-01-10-at-22.41.00.png"
 slug = "embedding-a-google-calendar-without-iframe-using-tockify"
 title = "Embedding a Google Calendar without iframe using Tockify"
+aliases = ["/embedding-a-google-calendar-without-iframe-using-tockify/"]
 layout = "post"
 
 +++

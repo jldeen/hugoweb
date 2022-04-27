@@ -6,6 +6,7 @@ draft = false
 image = "../../images/windows-10-ubutnu_axyqj4.png"
 slug = "15-ubuntu-linux-commands-everyone-should-know"
 title = "15 Ubuntu Linux Commands Everyone Should Know"
+aliases = ["/15-ubuntu-linux-commands-everyone-should-know/"]
 layout = "post"
 
 +++
