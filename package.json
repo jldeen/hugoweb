@@ -8,7 +8,7 @@
     "serve": "npm run images:optimize && npm run hugo:serve",
     "clean": "npm run hugo:clean",
     "hugo:build": "hugo -d build",
-    "hugo:serve": "hugo serve --enableGitInfo",
+    "hugo:serve": "hugo serve",
     "hugo:clean": "rm -rf build resources public",
     "images:optimize": "node scripts/optimize-images.js"
   },
@@ -27,7 +27,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "hugo-bin": "^0.85.0",
+    "hugo-bin": "^0.86.0",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0"
   }

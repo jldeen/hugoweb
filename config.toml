@@ -96,9 +96,9 @@ rssLimit = 20
 
   # Newsletter
   [params.mailchimp]
-    #mailchimp__identifier = "jessicadeen.us14.list-manage.com/subscribe/post?u=4071e8d8be0228abf4b25c28c&amp;id=061c2b75b7" # Add your MailChimp form identifier. 
-    #mailchimp__input__text = "Subscribe here"
-    #mailchimp__button__text = "Join the mailing list!"
+    mailchimp__identifier = "jessicadeen.us14.list-manage.com/subscribe/post?u=4071e8d8be0228abf4b25c28c&amp;id=061c2b75b7" # Add your MailChimp form identifier. 
+    mailchimp__input__text = "Subscribe here"
+    mailchimp__button__text = "Join the mailing list!"
 
 
   #-------------------------------

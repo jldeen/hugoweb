@@ -15,7 +15,7 @@ Jessica is a Principal Cloud Advocate for Microsoft focusing on Azure, Infrastru
 
 In 2015, she received her P.O.S.T Level 2 Certificate, which made her eligible to apply to serve as a reserve Level 2 Peace Officer in the state of California; the certification expired in 2018 when she chose to focus on her engineering and advocacy career with Microsoft for the time being.
 
-When she's not doing something geeky, you can find her doing something active, most likely running out of breath at her local CrossFit gym. Yes, she's one of those! She also enjoys biking (motorcycles and/or bicycles), shooting, eating, reading, and hanging with her 7-year-old rescue pup.
+When she’s not doing something geeky, you can find her doing something active with her family, most likely camping or hiking. She also enjoys biking, shooting, eating, reading, and hanging with her 9-year-old rescue pup Miley and her 2-year-old Covid puppy, Drake. Yes, both dogs are named after celebrities.
 
 ## Headshots:
 
