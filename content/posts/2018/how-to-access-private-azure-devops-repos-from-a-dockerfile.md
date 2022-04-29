@@ -24,17 +24,69 @@ Now, for your Docker image build you will want to stick to multi-stage builds b
 
 You can see in the below file I first define one build as “intermediate” and install Git. I also setup the environment to access the private repo. In the second build, I copy the project I cloned from the intermediate build.
 
-# this is our first build stage, it will not persist in the final image FROM ubuntu as intermediate # install git RUN apt-get update RUN apt-get install -y git # add credentials on build ARG SSH_PRIVATE_KEY RUN mkdir /root/.ssh/ RUN echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa RUN chmod 600 ~/.ssh/id_rsa # make sure your domain is accepted RUN touch /root/.ssh/known_hosts RUN ssh-keyscan vs-ssh.visualstudio.com >> /root/.ssh/known_hosts RUN git clone [azure-devops-account-name]@vs-ssh.visualstudio.com:v3/[azure-devops-account-name]/[project-name]/[project-name] FROM ubuntu # copy the repository form the previous image COPY --from=intermediate /[project-name] /srv/[project-name]
+```Dockerfile
+# this is our first build stage, it will not persist in the final image 
+FROM ubuntu as intermediate 
+
+# install git 
+RUN apt-get update 
+RUN apt-get install -y git 
+
+# add credentials on build 
+ARG SSH_PRIVATE_KEY
+
+RUN mkdir /root/.ssh/ 
+RUN echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa 
+RUN chmod 600 ~/.ssh/id_rsa 
+
+# make sure your domain is accepted 
+RUN touch /root/.ssh/known_hosts 
+RUN ssh-keyscan vs-ssh.visualstudio.com >> /root/.ssh/known_hosts 
+RUN git clone [azure-devops-account-name]@vs-ssh.visualstudio.com:v3/[azure-devops-account-name]/[project-name]/[project-name] 
+
+FROM ubuntu 
+
+# copy the repository form the previous image 
+COPY --from=intermediate /[project-name] /srv/[project-name]
+```
 
 Note, I did borrow parts of the above Dockerfile from [here](https://vsupalov.com/build-docker-image-clone-private-repo-ssh-key/), but I updated it accordingly for Azure DevOps (formerly VSTS).
 
-You can test that locally by running: `export SSH_PRIVATE_KEY=$(cat ~/.ssh/private-key-here)` and then `docker build --build-arg SSH_PRIVATE_KEY=$SSH_PRIVATE_KEY . -t repo-name/image-name`
+You can test that locally by running: 
+
+```bash
+export SSH_PRIVATE_KEY=$(cat ~/.ssh/private-key-here) 
+
+docker build --build-arg SSH_PRIVATE_KEY=$SSH_PRIVATE_KEY . -t repo-name/image-name
+```
 
 Then you can run that container and see your project in the /srv dir.
 
 The above image is a good start, but it’s not the best we can do. Currently, our Ubuntu image is 88.3mb. We can get that smaller if we use Alpine instead.
 
-# this is our first build stage, it will not persist in the final image FROM alpine as intermediate # install git RUN apk update RUN apk add git openssh # add credentials on build ARG SSH_PRIVATE_KEY RUN mkdir /root/.ssh/ RUN echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa RUN chmod 600 ~/.ssh/id_rsa # make sure your domain is accepted RUN touch /root/.ssh/known_hosts RUN ssh-keyscan vs-ssh.visualstudio.com >> /root/.ssh/known_hosts RUN git clone [azure-devops-account-name]@vs-ssh.visualstudio.com:v3/[azure-devops-account-name]/[project-name]/[project-name] FROM alpine # copy the repository form the previous image COPY --from=intermediate /k8-jldeen /srv/k8-jldeen
+```Dockerfile
+# this is our first build stage, it will not persist in the final image 
+FROM alpine as intermediate
+
+# install git RUN apk update 
+RUN apk add git openssh 
+
+# add credentials on build 
+ARG SSH_PRIVATE_KEY 
+
+RUN mkdir /root/.ssh/ 
+RUN echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa 
+RUN chmod 600 ~/.ssh/id_rsa 
+
+# make sure your domain is accepted 
+RUN touch /root/.ssh/known_hosts 
+RUN ssh-keyscan vs-ssh.visualstudio.com >> /root/.ssh/known_hosts 
+RUN git clone [azure-devops-account-name]@vs-ssh.visualstudio.com:v3/[azure-devops-account-name]/[project-name]/[project-name] 
+
+FROM alpine 
+# copy the repository form the previous image 
+COPY --from=intermediate /k8-jldeen /srv/k8-jldeen
+```
 
 ![](/generated/full/Screen-Shot-2018-09-13-at-17.14.55_r5sa1l.webp)
 
@@ -49,4 +101,3 @@ You will then need to reference the build argument in your Docker build task jus
 ![](/generated/full/Screen-Shot-2018-09-13-at-17.21.19_vzqmzt.webp)
 
 And that should be it! Comment below with any questions or suggestions! Also, if you’re going to Microsoft Ignite, be sure to check out my sessions on Containers and DevOps!
-
