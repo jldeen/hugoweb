@@ -27,7 +27,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "hugo-bin": "^0.86.0",
+    "hugo-bin": "^0.89.0",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0"
   }
