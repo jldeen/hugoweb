@@ -19,7 +19,7 @@ RUN apk add --update --no-cache ca-certificates openssl git curl && \
 
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-alpine-3.12
 # Required for hugo_extended
-RUN apk add --update --no-cache libc6-compat
+RUN apk add --update --no-cache libc6-compat nodejs npm
 COPY --from=0 /usr/bin/hugo /usr/bin
 EXPOSE 1313
 WORKDIR /src
