@@ -1,6 +1,6 @@
 +++
 author = "jldeen"
-date = 2022-11-28T14:55:00Z
+date = 2022-11-28
 description = ""
 draft = false
 image = "images/Con310-Preview2.png"
