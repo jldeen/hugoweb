@@ -1,6 +1,6 @@
 +++
 author = "jldeen"
-date = 2022-11-23
+date = 2022-11-28
 description = ""
 draft = false
 image = "images/Con310-Preview2.png"
@@ -11,9 +11,9 @@ layout = "post"
 
 +++
 
-## Best practices for a container management platform
+## Recap: Best practices for a container management platform
 
-In this chalk talk, learn about five best practices for building a container platform management system. This talk covers key steps that help drive efficiency and effectiveness, from assembling the right teams to innovate, design, and operate your container management platform to choosing the right AWS and ISV tools.
+In this chalk talk, we learned about five best practices for building a container platform management system. This talk covered key steps that help drive efficiency and effectiveness, from assembling the right teams to innovate, design, and operate your container management platform to choosing the right AWS and ISV tools.
 
 <a href="/generated/full/BoaP-CON310-darkmode.webp" download>Dark Mode - Graphic Download</a>
 
